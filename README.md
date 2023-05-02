@@ -6,3 +6,8 @@ Files corresponding to an example simulation of the human ubiquitine protein (PD
 
 nanotube:
 Files corresponding to the simulation of water flow across a carbon nanotube
+
+Overview about preparing NAMD simulations:
+
+https://saco.csic.es/index.php/s/RGcFsigFNZjgrFG
+
