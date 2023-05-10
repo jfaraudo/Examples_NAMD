@@ -1,0 +1,114 @@
+#############################################################
+## job: MD NVT Simulation                                  ##
+#############################################################
+
+# Set temperature (K) 
+set temperature    300
+
+#Name for output files
+set outputname      MD
+
+#############################################################
+## INPUT FILES                                             ##
+#############################################################
+
+# structure and coordinates
+structure          ../input/system.psf
+coordinates        ../input/system.pdb
+
+#continue using files from a previous simulation
+set inputname ../equilibration/MD
+binCoordinates     $inputname.restart.coor ;# read coordinates
+extendedSystem	   $inputname.restart.xsc     ;#read simulation box
+
+# Input Force Field
+paraTypeCharmm	    on
+#general FF parameters 
+parameters          ../input/par_water.inp
+parameters          ../input/par_nanotubes.inp
+
+#############################################################
+## SYSTEM SIZE AND BC                                      ##
+#############################################################
+
+# Periodic Boundary conditions
+# NOTE: Do not set the periodic cell basis if you have also 
+# specified an .xsc restart file!
+
+wrapWater           on
+wrapAll             on
+
+#############################################################
+## electrostatics and force field parameters               ##
+#############################################################
+
+# Force-Field Parameters
+exclude             scaled1-4
+1-4scaling          1.0
+cutoff              12.
+switching           on
+switchdist          10.
+pairlistdist        14
+
+# PME (for full-system periodic electrostatics)
+# recommended more than 1 angs per grid
+PME                 yes
+PMEGridSpacing      1.0
+
+
+#############################################################
+## INTEGRATION ALGORITHMS AND THERMODYNAMIC ENSEMBLE       ##
+#############################################################
+
+# Integrator Parameters
+firsttimestep       0
+timestep            2.0  ;# 2fs/step
+rigidBonds          all  ;# needed for 2fs steps
+nonbondedFreq       1   ;# 2fs/step
+fullElectFrequency  2  ;# 4fs/step
+stepspercycle       10
+
+#No external forces so center of mass does not move
+#(supress spurious motion due to PME inaccuracies)
+#This can be employed only when all atoms in system are allowed to move
+#zeroMomentum yes
+
+# Fixed Atoms Constraint (set PDB beta-column to 1)
+# If no fixed atoms are present you can comment all fixedAtoms commands
+
+fixedAtoms          on
+fixedAtomsFile     ../input/system.pdb
+fixedAtomsCol       B
+
+# Initial velocity from gaussian distribution
+temperature         $temperature
+
+# Thermostat control
+
+langevin            on    ;# langevin thermostat
+langevinDamping     1     ;# damping coefficient (gamma) of 1/ps
+langevinTemp        $temperature
+langevinHydrogen    off    ;# don't couple langevin bath to hydrogens
+
+#############################################################
+##            OUTPUT DATA                                 ##
+#############################################################
+
+#frequency for data output
+outputName          $outputname
+restartfreq         5000     ;# 5000steps = 10ps
+dcdfreq             5000     
+xstFreq             5000
+outputEnergies      5000
+outputPressure      5000
+
+#############################################################
+## EXECUTION SCRIPT                                        ##
+#############################################################
+
+# MD simulation run
+run  200000000 ;# 400000ps = 400ns
+
+
+
+
