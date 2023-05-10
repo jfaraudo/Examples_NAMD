@@ -1,0 +1,2547 @@
+Charm++> No provisioning arguments specified. Running with a single PE.
+         Use +auto-provision to fully subscribe resources or +p1 to silence this message.
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 1 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v6.10.2-0-g7bf00fa-namd-charm-6.10.2-build-2020-Aug-05-556
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 4 cores x 2 PUs = 8-way SMP)
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Info: Built with CUDA version 10010
+Did not find +devices i,j,k,... argument, using all
+Pe 0 physical rank 0 binding to CUDA device 0 on pcd31b: 'NVIDIA GeForce GTX 1080'  Mem: 8110MB  Rev: 6.1  PCI: 0:65:0
+Info: NAMD 2.14 for Linux-x86_64-multicore-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 61002 for multicore-linux-x86_64-iccstatic
+Info: Built Mon Aug 24 10:10:58 CDT 2020 by jim on belfast.ks.uiuc.edu
+Info: 1 NAMD  2.14  Linux-x86_64-multicore-CUDA  1    pcd31b  jfaraudo
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.264184 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 300.16 MB of memory in use based on /proc/self/stat
+Info: Configuration file is External_force_NVT.namd
+Info: Working in the current directory /home/jfaraudo/Cursos/Grau_nano/material_for_practical_sessions/water_in_nanotubes/material_GitHub/nanotube_water_transport/nonequilibrium
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   ../equilibration/MD.restart.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        10
+Info: PERIODIC CELL BASIS 1  17.194 0 0
+Info: PERIODIC CELL BASIS 2  0 17.018 0
+Info: PERIODIC CELL BASIS 3  0 0 72.2522
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             2000 steps
+Info: FIRST LDB TIMESTEP     50
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: VELOCITY FILE          ../equilibration/MD.restart.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           MD.dcd
+Info: DCD FREQUENCY          5000
+Info: DCD FIRST STEP         5000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           MD.xst
+Info: XST FREQUENCY          5000
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        MD
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       MD.restart
+Info: RESTART FREQUENCY      50000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      14
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        16.5
+Info: ENERGY OUTPUT STEPS    5000
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    50000
+Info: PRESSURE OUTPUT STEPS  5000
+Info: FIXED ATOMS ACTIVE
+Info: TCL GLOBAL FORCES ACTIVE
+Info: TCL GLOBAL FORCES SCRIPT INLINED IN CONFIG FILE
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   300
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         18 18 80
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from FFTW_NAMD_2.14_Linux-x86_64-multicore-CUDA.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.14_Linux-x86_64-multicore-CUDA.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      2
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1683730280
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         ../input/system.pdb
+Info: STRUCTURE FILE         ../input/system.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             ../input/par_water.inp
+Info: PARAMETERS             ../input/par_nanotubes.inp
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ../equilibration/MD.restart.coor
+Info: SUMMARY OF PARAMETERS:
+Info: 3 BONDS
+Info: 2 ANGLES
+Info: 1 DIHEDRAL
+Info: 0 IMPROPER
+Info: 0 CROSSTERM
+Info: 3 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.0058041
+Info: Reading pdb file ../input/system.pdb
+Info: TIME FOR READING PDB FILE: 0.00176338
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 1866 ATOMS
+Info: 1412 BONDS
+Info: 1118 ANGLES
+Info: 1004 DIHEDRALS
+Info: 0 IMPROPERS
+Info: 0 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 276 FIXED ATOMS
+Info: 1590 RIGID BONDS
+Info: 0 RIGID BONDS BETWEEN FIXED ATOMS
+Info: 3180 DEGREES OF FREEDOM
+Info: 806 HYDROGEN GROUPS
+Info: 3 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 806 MIGRATION GROUPS
+Info: 3 ATOMS IN LARGEST MIGRATION GROUP
+Info: 276 HYDROGEN GROUPS WITH ALL ATOMS FIXED
+Info: TOTAL MASS = 12863 amu
+Info: TOTAL CHARGE = 0 e
+Info: MASS DENSITY = 1.01033 g/cm^3
+Info: ATOM DENSITY = 0.0882623 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ../equilibration/MD.restart.coor
+Info: 
+Info: Entering startup at 11.5676 s, 304.078 MB of memory in use
+Info: Startup phase 0 took 4.9814e-05 s, 304.078 MB of memory in use
+Info: ADDED 3306 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.0004509 s, 304.078 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE FORCE: 2.64698e-23 AT 11.9138
+Info: RELATIVE IMPRECISION IN FAST TABLE FORCE: 1.40436e-16 AT 11.9138
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN SCOR TABLE FORCE: 4.10282e-22 AT 11.9138
+Info: RELATIVE IMPRECISION IN SCOR TABLE FORCE: 3.56912e-15 AT 11.9138
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE ENERGY: 9.86076e-32 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWA TABLE ENERGY: 6.75473e-14 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE FORCE: 4.62223e-32 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWA TABLE FORCE: 2.12237e-15 AT 11.9138
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 4.1359e-25 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 7.56853e-15 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE FORCE: 3.87741e-26 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWB TABLE FORCE: 5.97409e-16 AT 11.9138
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.000435345 s, 304.594 MB of memory in use
+Info: Startup phase 3 took 2.3682e-05 s, 304.594 MB of memory in use
+Info: Startup phase 4 took 2.1651e-05 s, 304.594 MB of memory in use
+Info: Startup phase 5 took 1.9457e-05 s, 304.594 MB of memory in use
+Info: PATCH GRID IS 1 (PERIODIC) BY 1 (PERIODIC) BY 4 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file ../equilibration/MD.restart.vel
+Info: REMOVING COM VELOCITY -0.0456868 0.0499809 -0.136499
+Info: LARGEST PATCH (0) HAS 525 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.000428432 s, 305.168 MB of memory in use
+Info: PME using 1 x 1 x 1 pencil grid for FFT and reciprocal sum.
+Info: Startup phase 7 took 9.0008e-05 s, 305.168 MB of memory in use
+Info: Updated CUDA force table with 4096 elements.
+Info: Updated CUDA LJ table with 3 x 3 elements.
+Info: Startup phase 8 took 0.000588572 s, 305.168 MB of memory in use
+Info: Startup phase 9 took 5.1152e-05 s, 305.168 MB of memory in use
+Info: Startup phase 10 took 2.6139e-05 s, 305.168 MB of memory in use
+Info: Startup phase 11 took 0.000825535 s, 307.82 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.000349877 s, 307.82 MB of memory in use
+Info: CREATING 93 COMPUTE OBJECTS
+Info: Found 4 unique exclusion lists needing 4 bytes
+Info: Startup phase 13 took 0.000938157 s, 307.82 MB of memory in use
+Info: Startup phase 14 took 4.0186e-05 s, 307.82 MB of memory in use
+Info: Startup phase 15 took 2.9008e-05 s, 307.82 MB of memory in use
+Info: Finished startup at 11.572 s, 307.82 MB of memory in use
+
+TCL: Running for 500000 steps
+PRESSURE: 0 -167.682 44.1628 135.767 53.4445 -927.057 -242.857 -183.554 -382.028 -1386.79
+GPRESSURE: 0 -158.199 141.443 515.124 -49.434 -760.372 -245.108 -382.123 -682.821 -1471.54
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0         0.0000         0.0000         0.0000         0.0000          -5634.9476       450.7957         0.0000         0.0000       958.1990          -4225.9530       303.2627     -5184.1519     -4224.1341       303.2627           -827.1772      -796.7026     21141.5399      -827.1772      -796.7026
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+LDB: ============= START OF LOAD BALANCING ============== 11.6359
+LDB: ============== END OF LOAD BALANCING =============== 11.6359
+LDB: =============== DONE WITH MIGRATION ================ 11.636
+LDB: ============= START OF LOAD BALANCING ============== 11.8849
+LDB: ============== END OF LOAD BALANCING =============== 11.885
+LDB: =============== DONE WITH MIGRATION ================ 11.885
+Info: Initial time: 1 CPUs 0.00623196 s/step 0.0360646 days/ns 310.523 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 11.9463
+LDB: ============== END OF LOAD BALANCING =============== 11.9464
+LDB: =============== DONE WITH MIGRATION ================ 11.9464
+LDB: ============= START OF LOAD BALANCING ============== 12.1925
+LDB: ============== END OF LOAD BALANCING =============== 12.1926
+LDB: =============== DONE WITH MIGRATION ================ 12.1926
+Info: Initial time: 1 CPUs 0.00614635 s/step 0.0355692 days/ns 310.523 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 12.499
+LDB: ============== END OF LOAD BALANCING =============== 12.499
+LDB: =============== DONE WITH MIGRATION ================ 12.4991
+Info: Initial time: 1 CPUs 0.00612727 s/step 0.0354588 days/ns 310.523 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 12.8081
+LDB: ============== END OF LOAD BALANCING =============== 12.8081
+LDB: =============== DONE WITH MIGRATION ================ 12.8082
+Info: Benchmark time: 1 CPUs 0.00618129 s/step 0.0357714 days/ns 310.523 MB memory
+Info: Benchmark time: 1 CPUs 0.00618938 s/step 0.0358182 days/ns 310.523 MB memory
+Info: Benchmark time: 1 CPUs 0.00614756 s/step 0.0355762 days/ns 310.523 MB memory
+Info: Benchmark time: 1 CPUs 0.00615552 s/step 0.0356222 days/ns 310.523 MB memory
+Info: Benchmark time: 1 CPUs 0.00613634 s/step 0.0355113 days/ns 310.523 MB memory
+Info: Benchmark time: 1 CPUs 0.00611197 s/step 0.0353702 days/ns 310.523 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 24.8857
+LDB: ============== END OF LOAD BALANCING =============== 24.8858
+LDB: =============== DONE WITH MIGRATION ================ 24.8859
+LDB: ============= START OF LOAD BALANCING ============== 25.1998
+LDB: ============== END OF LOAD BALANCING =============== 25.1998
+LDB: =============== DONE WITH MIGRATION ================ 25.1999
+LDB: ============= START OF LOAD BALANCING ============== 37.366
+LDB: ============== END OF LOAD BALANCING =============== 37.366
+LDB: =============== DONE WITH MIGRATION ================ 37.3661
+LDB: ============= START OF LOAD BALANCING ============== 37.6734
+LDB: ============== END OF LOAD BALANCING =============== 37.6734
+LDB: =============== DONE WITH MIGRATION ================ 37.6735
+PRESSURE: 5000 363.386 67.8817 267.313 56.2963 639.877 495.639 -151.011 638.579 4909.04
+GPRESSURE: 5000 426.666 65.526 83.2884 -6.72841 703.849 482.148 -315.703 823.368 4879.61
+PRESSAVG: 5000 75.9359 27.5009 -11.4851 27.1865 143.752 36.5237 71.7744 30.0141 2290.92
+GPRESSAVG: 5000 75.698 27.2509 -11.6172 27.3193 143.938 36.2108 71.8835 30.0235 2290.58
+ENERGY:    5000         0.0000         0.0000         0.0000         0.0000          -5770.0782       545.6926         0.0000         0.0000       973.9947          -4250.3909       308.2619     -5224.3856     -4247.6279       300.0058           1970.7665      2003.3746     21141.5399       836.8691       836.7398
+
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 5000
+The last position output (seq=5000) takes 0.000 seconds, 310.781 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 50.137
+LDB: ============== END OF LOAD BALANCING =============== 50.137
+LDB: =============== DONE WITH MIGRATION ================ 50.137
+LDB: ============= START OF LOAD BALANCING ============== 50.4426
+LDB: ============== END OF LOAD BALANCING =============== 50.4426
+LDB: =============== DONE WITH MIGRATION ================ 50.4427
+LDB: ============= START OF LOAD BALANCING ============== 62.9101
+LDB: ============== END OF LOAD BALANCING =============== 62.9101
+LDB: =============== DONE WITH MIGRATION ================ 62.9102
+LDB: ============= START OF LOAD BALANCING ============== 63.2186
+LDB: ============== END OF LOAD BALANCING =============== 63.2187
+LDB: =============== DONE WITH MIGRATION ================ 63.2187
+PRESSURE: 10000 1570.33 -305.016 -82.0722 -317.705 169.157 -1286.43 183.494 -808.883 2390.9
+GPRESSURE: 10000 1762.91 -660.939 -259.995 82.0846 48.5268 -1187.75 266.595 -714.614 2362.62
+PRESSAVG: 10000 557.517 13.1259 -21.3346 20.8776 529.492 -16.8754 78.8438 115.152 2996.4
+GPRESSAVG: 10000 557.669 13.2949 -21.3342 20.2212 529.747 -16.6336 78.7723 115.105 2996.65
+ENERGY:   10000         0.0000         0.0000         0.0000         0.0000          -5730.3912       525.9704         0.0000         0.0000       915.1252          -4289.2957       289.6302     -5204.4209     -4287.9335       297.9620           1376.7955      1391.3524     21141.5399      1361.1351      1361.3541
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 10000
+The last position output (seq=10000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 75.997
+LDB: ============== END OF LOAD BALANCING =============== 75.997
+LDB: =============== DONE WITH MIGRATION ================ 75.9971
+LDB: ============= START OF LOAD BALANCING ============== 76.3476
+LDB: ============== END OF LOAD BALANCING =============== 76.3477
+LDB: =============== DONE WITH MIGRATION ================ 76.3477
+LDB: ============= START OF LOAD BALANCING ============== 88.7269
+LDB: ============== END OF LOAD BALANCING =============== 88.727
+LDB: =============== DONE WITH MIGRATION ================ 88.727
+LDB: ============= START OF LOAD BALANCING ============== 89.0354
+LDB: ============== END OF LOAD BALANCING =============== 89.0355
+LDB: =============== DONE WITH MIGRATION ================ 89.0355
+LDB: ============= START OF LOAD BALANCING ============== 101.332
+LDB: ============== END OF LOAD BALANCING =============== 101.332
+LDB: =============== DONE WITH MIGRATION ================ 101.332
+LDB: ============= START OF LOAD BALANCING ============== 101.646
+LDB: ============== END OF LOAD BALANCING =============== 101.646
+LDB: =============== DONE WITH MIGRATION ================ 101.646
+PRESSURE: 15000 784.141 109.777 -2.12266 135.971 857.414 -199.869 214.481 160.83 4099.41
+GPRESSURE: 15000 730.403 161.027 -305.409 -38.0936 935.304 -263.397 678.741 335.783 4074.07
+PRESSAVG: 15000 720.81 16.429 18.3485 8.82908 697.671 1.75214 52.4569 112.248 3158.09
+GPRESSAVG: 15000 720.744 15.7592 18.5542 8.98834 698.112 1.54513 52.5156 112.292 3157.83
+ENERGY:   15000         0.0000         0.0000         0.0000         0.0000          -5714.8229       504.3058         0.0000         0.0000       945.9769          -4264.5403       299.3945     -5210.5172     -4262.0547       294.6529           1913.6543      1913.2577     21141.5399      1525.5249      1525.5622
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 15000
+The last position output (seq=15000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 114.373
+LDB: ============== END OF LOAD BALANCING =============== 114.373
+LDB: =============== DONE WITH MIGRATION ================ 114.373
+LDB: ============= START OF LOAD BALANCING ============== 114.71
+LDB: ============== END OF LOAD BALANCING =============== 114.71
+LDB: =============== DONE WITH MIGRATION ================ 114.71
+LDB: ============= START OF LOAD BALANCING ============== 127.401
+LDB: ============== END OF LOAD BALANCING =============== 127.401
+LDB: =============== DONE WITH MIGRATION ================ 127.401
+LDB: ============= START OF LOAD BALANCING ============== 127.754
+LDB: ============== END OF LOAD BALANCING =============== 127.754
+LDB: =============== DONE WITH MIGRATION ================ 127.754
+PRESSURE: 20000 573.758 -95.8723 562.055 -42.5915 1163.8 448.645 365.79 1174.44 4794.81
+GPRESSURE: 20000 512.402 -31.7083 613.435 111.072 1220.14 270.727 198.601 1148.79 4876.29
+PRESSAVG: 20000 1188.31 49.7655 19.2259 60.5059 1145.35 32.1524 -130.356 125.131 3831.62
+GPRESSAVG: 20000 1188.16 49.3996 18.8061 60.6368 1145.43 32.8598 -130.386 124.548 3832.04
+ENERGY:   20000         0.0000         0.0000         0.0000         0.0000          -5721.1823       513.6447         0.0000         0.0000       937.5621          -4269.9756       296.7313     -5207.5377     -4267.4549       301.1997           2177.4565      2202.9454     21141.5399      2055.0913      2055.2081
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 20000
+The last position output (seq=20000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 140.299
+LDB: ============== END OF LOAD BALANCING =============== 140.299
+LDB: =============== DONE WITH MIGRATION ================ 140.299
+LDB: ============= START OF LOAD BALANCING ============== 140.636
+LDB: ============== END OF LOAD BALANCING =============== 140.636
+LDB: =============== DONE WITH MIGRATION ================ 140.636
+LDB: ============= START OF LOAD BALANCING ============== 153.706
+LDB: ============== END OF LOAD BALANCING =============== 153.706
+LDB: =============== DONE WITH MIGRATION ================ 153.706
+LDB: ============= START OF LOAD BALANCING ============== 154.028
+LDB: ============== END OF LOAD BALANCING =============== 154.028
+LDB: =============== DONE WITH MIGRATION ================ 154.028
+LDB: ============= START OF LOAD BALANCING ============== 166.964
+LDB: ============== END OF LOAD BALANCING =============== 166.964
+LDB: =============== DONE WITH MIGRATION ================ 166.964
+LDB: ============= START OF LOAD BALANCING ============== 167.279
+LDB: ============== END OF LOAD BALANCING =============== 167.279
+LDB: =============== DONE WITH MIGRATION ================ 167.279
+PRESSURE: 25000 1266.39 390.246 98.8862 369.132 2563.68 801.185 -501.671 1052.06 3849.32
+GPRESSURE: 25000 1310.26 399.385 130.835 627.083 2625.46 742.797 -392.635 952.011 3766.2
+PRESSAVG: 25000 1104.34 30.44 -5.97211 39.1809 1097.41 30.9835 -56.9852 155.605 3510.42
+GPRESSAVG: 25000 1104.22 30.8338 -5.74764 39.0328 1097.41 31.0321 -57.2805 155.834 3510.38
+ENERGY:   25000         0.0000         0.0000         0.0000         0.0000          -5801.7136       594.8927         0.0000         0.0000       957.5386          -4249.2823       303.0537     -5206.8209     -4247.0390       298.3952           2559.7980      2567.3073     21141.5399      1904.0565      1904.0019
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 25000
+The last position output (seq=25000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 179.626
+LDB: ============== END OF LOAD BALANCING =============== 179.627
+LDB: =============== DONE WITH MIGRATION ================ 179.627
+LDB: ============= START OF LOAD BALANCING ============== 179.936
+LDB: ============== END OF LOAD BALANCING =============== 179.936
+LDB: =============== DONE WITH MIGRATION ================ 179.936
+LDB: ============= START OF LOAD BALANCING ============== 192.052
+LDB: ============== END OF LOAD BALANCING =============== 192.052
+LDB: =============== DONE WITH MIGRATION ================ 192.052
+LDB: ============= START OF LOAD BALANCING ============== 192.359
+LDB: ============== END OF LOAD BALANCING =============== 192.359
+LDB: =============== DONE WITH MIGRATION ================ 192.359
+PRESSURE: 30000 1207.03 -157.962 -213.813 -175.578 2115.67 376.23 467.789 433.198 2936.83
+GPRESSURE: 30000 1215.33 -76.2423 8.09941 78.0689 2080.71 481.721 726.251 463.706 3054.14
+PRESSAVG: 30000 914.6 72.4207 -8.06645 69.2651 889.495 -16.8102 97.6182 196.064 3453.08
+GPRESSAVG: 30000 914.427 72.5198 -7.92193 68.9843 889.6 -17.2221 96.8339 196.476 3452.77
+ENERGY:   30000         0.0000         0.0000         0.0000         0.0000          -5689.5808       530.6087         0.0000         0.0000       978.4684          -4180.5036       309.6778     -5158.9720     -4178.9580       304.4763           2086.5115      2116.7267     21141.5399      1752.3926      1752.2669
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 30000
+The last position output (seq=30000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 204.682
+LDB: ============== END OF LOAD BALANCING =============== 204.682
+LDB: =============== DONE WITH MIGRATION ================ 204.683
+LDB: ============= START OF LOAD BALANCING ============== 205.017
+LDB: ============== END OF LOAD BALANCING =============== 205.017
+LDB: =============== DONE WITH MIGRATION ================ 205.018
+LDB: ============= START OF LOAD BALANCING ============== 217.243
+LDB: ============== END OF LOAD BALANCING =============== 217.243
+LDB: =============== DONE WITH MIGRATION ================ 217.243
+LDB: ============= START OF LOAD BALANCING ============== 217.549
+LDB: ============== END OF LOAD BALANCING =============== 217.549
+LDB: =============== DONE WITH MIGRATION ================ 217.549
+LDB: ============= START OF LOAD BALANCING ============== 229.833
+LDB: ============== END OF LOAD BALANCING =============== 229.833
+LDB: =============== DONE WITH MIGRATION ================ 229.833
+LDB: ============= START OF LOAD BALANCING ============== 230.157
+LDB: ============== END OF LOAD BALANCING =============== 230.157
+LDB: =============== DONE WITH MIGRATION ================ 230.157
+PRESSURE: 35000 328.996 -221.788 121.011 -286.335 314.183 45.537 -354.213 -690.138 3338.44
+GPRESSURE: 35000 421.193 -224.976 325.798 -505.865 357.179 457.357 -596.644 -1355.99 3247.02
+PRESSAVG: 35000 1072.14 12.1432 11.1505 -2.31993 1091.45 7.40318 110.194 271.292 3680.61
+GPRESSAVG: 35000 1072.05 12.2842 10.7779 -2.66173 1091.15 7.8715 109.935 271.214 3680.85
+ENERGY:   35000         0.0000         0.0000         0.0000         0.0000          -5630.4583       467.6658         0.0000         0.0000       940.8743          -4221.9181       297.7795     -5162.7924     -4219.4886       306.1629           1327.2046      1341.7990     21141.5399      1948.0654      1948.0154
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 35000
+The last position output (seq=35000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 242.939
+LDB: ============== END OF LOAD BALANCING =============== 242.939
+LDB: =============== DONE WITH MIGRATION ================ 242.939
+LDB: ============= START OF LOAD BALANCING ============== 243.246
+LDB: ============== END OF LOAD BALANCING =============== 243.247
+LDB: =============== DONE WITH MIGRATION ================ 243.247
+LDB: ============= START OF LOAD BALANCING ============== 255.593
+LDB: ============== END OF LOAD BALANCING =============== 255.593
+LDB: =============== DONE WITH MIGRATION ================ 255.593
+LDB: ============= START OF LOAD BALANCING ============== 255.906
+LDB: ============== END OF LOAD BALANCING =============== 255.906
+LDB: =============== DONE WITH MIGRATION ================ 255.906
+PRESSURE: 40000 1182.37 -119.674 482.679 -90.525 868.808 -678.261 806.991 -264.527 4533.05
+GPRESSURE: 40000 1478.96 -286.863 718.155 -157.901 774.167 -290.148 804.926 -337.444 4401.79
+PRESSAVG: 40000 762.231 46.6413 -5.38844 45.7023 813.549 -6.95332 199.336 464.387 3129.3
+GPRESSAVG: 40000 762.107 47.2723 -4.93032 45.5766 813.122 -6.89537 199.549 463.786 3129.2
+ENERGY:   40000         0.0000         0.0000         0.0000         0.0000          -5727.0309       553.3385         0.0000         0.0000       933.8248          -4239.8676       295.5484     -5173.6923     -4238.0779       301.8610           2194.7430      2218.3052     21141.5399      1568.3614      1568.1420
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 40000
+The last position output (seq=40000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 268.586
+LDB: ============== END OF LOAD BALANCING =============== 268.586
+LDB: =============== DONE WITH MIGRATION ================ 268.586
+LDB: ============= START OF LOAD BALANCING ============== 268.918
+LDB: ============== END OF LOAD BALANCING =============== 268.918
+LDB: =============== DONE WITH MIGRATION ================ 268.918
+LDB: ============= START OF LOAD BALANCING ============== 281.391
+LDB: ============== END OF LOAD BALANCING =============== 281.391
+LDB: =============== DONE WITH MIGRATION ================ 281.391
+LDB: ============= START OF LOAD BALANCING ============== 281.706
+LDB: ============== END OF LOAD BALANCING =============== 281.706
+LDB: =============== DONE WITH MIGRATION ================ 281.706
+LDB: ============= START OF LOAD BALANCING ============== 294.454
+LDB: ============== END OF LOAD BALANCING =============== 294.454
+LDB: =============== DONE WITH MIGRATION ================ 294.454
+LDB: ============= START OF LOAD BALANCING ============== 294.767
+LDB: ============== END OF LOAD BALANCING =============== 294.767
+LDB: =============== DONE WITH MIGRATION ================ 294.767
+PRESSURE: 45000 360.485 480.118 -258.159 459.531 659.203 326.235 189.721 637.633 3620.43
+GPRESSURE: 45000 372.903 544.005 110.984 743.47 558.913 247.375 298.866 551.517 3841.33
+PRESSAVG: 45000 670.665 -80.1026 -3.12092 -77.5991 666.469 5.38312 27.8671 376.233 2760.43
+GPRESSAVG: 45000 670.597 -80.1968 -3.19627 -77.3209 666.707 5.55572 27.8086 376.431 2760.51
+ENERGY:   45000         0.0000         0.0000         0.0000         0.0000          -5730.8661       529.7564         0.0000         0.0000       950.9587          -4250.1510       300.9712     -5201.1097     -4248.6503       296.1968           1546.7064      1591.0481     21141.5399      1365.8534      1365.9387
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 45000
+The last position output (seq=45000) takes 0.000 seconds, 310.848 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 306.854
+LDB: ============== END OF LOAD BALANCING =============== 306.854
+LDB: =============== DONE WITH MIGRATION ================ 306.854
+LDB: ============= START OF LOAD BALANCING ============== 307.164
+LDB: ============== END OF LOAD BALANCING =============== 307.164
+LDB: =============== DONE WITH MIGRATION ================ 307.164
+LDB: ============= START OF LOAD BALANCING ============== 319.232
+LDB: ============== END OF LOAD BALANCING =============== 319.232
+LDB: =============== DONE WITH MIGRATION ================ 319.232
+LDB: ============= START OF LOAD BALANCING ============== 319.545
+LDB: ============== END OF LOAD BALANCING =============== 319.545
+LDB: =============== DONE WITH MIGRATION ================ 319.545
+PRESSURE: 50000 1196.27 -799.6 -357.602 -790.831 591.128 408.697 -366.024 876.035 2942.44
+GPRESSURE: 50000 1084.09 -909.75 -594.94 -662.717 753.918 601.842 -17.847 642.47 2924.96
+PRESSAVG: 50000 594.986 10.0112 26.9099 8.99145 666.656 -3.58236 132.461 423.506 2660.69
+GPRESSAVG: 50000 595.05 9.72535 26.8481 8.8898 666.264 -4.0022 132.803 423.718 2660.28
+TIMING: 50000  CPU: 319.552, 0.0063909/step  Wall: 319.56, 0.00639104/step, 0.79888 hours remaining, 310.847656 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   50000         0.0000         0.0000         0.0000         0.0000          -5704.7960       521.9232         0.0000         0.0000       937.8448          -4245.0280       296.8207     -5182.8728     -4242.8311       300.0686           1576.6121      1587.6564     21141.5399      1307.4426      1307.1970
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 50000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 50000
+WRITING COORDINATES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=50000) takes 0.000 seconds, 311.102 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=50000) takes 0.000 seconds, 311.102 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 332.099
+LDB: ============== END OF LOAD BALANCING =============== 332.099
+LDB: =============== DONE WITH MIGRATION ================ 332.099
+LDB: ============= START OF LOAD BALANCING ============== 332.432
+LDB: ============== END OF LOAD BALANCING =============== 332.432
+LDB: =============== DONE WITH MIGRATION ================ 332.432
+LDB: ============= START OF LOAD BALANCING ============== 345.018
+LDB: ============== END OF LOAD BALANCING =============== 345.018
+LDB: =============== DONE WITH MIGRATION ================ 345.018
+LDB: ============= START OF LOAD BALANCING ============== 345.329
+LDB: ============== END OF LOAD BALANCING =============== 345.329
+LDB: =============== DONE WITH MIGRATION ================ 345.329
+LDB: ============= START OF LOAD BALANCING ============== 358.116
+LDB: ============== END OF LOAD BALANCING =============== 358.116
+LDB: =============== DONE WITH MIGRATION ================ 358.116
+LDB: ============= START OF LOAD BALANCING ============== 358.436
+LDB: ============== END OF LOAD BALANCING =============== 358.436
+LDB: =============== DONE WITH MIGRATION ================ 358.436
+PRESSURE: 55000 1836.74 393.212 -266.22 393.587 89.0012 -362.577 -376.424 224.069 1821.27
+GPRESSURE: 55000 1781.93 157.146 -113.563 216.35 309.872 -169.326 -266.63 226.183 1743.69
+PRESSAVG: 55000 799.289 -21.9202 -37.881 -25.0206 703.242 -50.4943 94.8044 192.43 2761.84
+GPRESSAVG: 55000 798.985 -22.2519 -37.8218 -25.3237 702.898 -50.0885 94.7743 192.096 2762.11
+ENERGY:   55000         0.0000         0.0000         0.0000         0.0000          -5695.8575       508.0777         0.0000         0.0000       914.7183          -4273.0615       289.5014     -5187.7798     -4269.6493       298.7720           1249.0054      1278.4953     21141.5399      1421.4576      1421.3299
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 55000
+LDB: ============= START OF LOAD BALANCING ============== 371.018
+LDB: ============== END OF LOAD BALANCING =============== 371.018
+LDB: =============== DONE WITH MIGRATION ================ 371.018
+LDB: ============= START OF LOAD BALANCING ============== 371.328
+LDB: ============== END OF LOAD BALANCING =============== 371.328
+LDB: =============== DONE WITH MIGRATION ================ 371.328
+LDB: ============= START OF LOAD BALANCING ============== 383.584
+LDB: ============== END OF LOAD BALANCING =============== 383.584
+LDB: =============== DONE WITH MIGRATION ================ 383.584
+LDB: ============= START OF LOAD BALANCING ============== 383.892
+LDB: ============== END OF LOAD BALANCING =============== 383.892
+LDB: =============== DONE WITH MIGRATION ================ 383.892
+PRESSURE: 60000 965.013 970.818 514.974 941.323 1764.66 -885.006 873.233 -770.274 2711.57
+GPRESSURE: 60000 1074.3 912.377 482.363 880.674 1874.87 -807.845 1107.31 -931.429 2526.52
+PRESSAVG: 60000 830.235 19.3072 -27.4244 15.7154 762.626 -28.186 45.3008 287.458 2744.71
+GPRESSAVG: 60000 829.517 19.2223 -27.1852 15.9974 763.03 -28.7417 45.1167 287.951 2744.3
+ENERGY:   60000         0.0000         0.0000         0.0000         0.0000          -5810.4127       561.7849         0.0000         0.0000       960.5531          -4288.0747       304.0077     -5248.6278     -4285.5310       298.6977           1813.7473      1825.2295     21141.5399      1445.8562      1445.6150
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 60000
+LDB: ============= START OF LOAD BALANCING ============== 396.083
+LDB: ============== END OF LOAD BALANCING =============== 396.083
+LDB: =============== DONE WITH MIGRATION ================ 396.083
+LDB: ============= START OF LOAD BALANCING ============== 396.396
+LDB: ============== END OF LOAD BALANCING =============== 396.396
+LDB: =============== DONE WITH MIGRATION ================ 396.396
+LDB: ============= START OF LOAD BALANCING ============== 408.563
+LDB: ============== END OF LOAD BALANCING =============== 408.563
+LDB: =============== DONE WITH MIGRATION ================ 408.563
+LDB: ============= START OF LOAD BALANCING ============== 408.872
+LDB: ============== END OF LOAD BALANCING =============== 408.872
+LDB: =============== DONE WITH MIGRATION ================ 408.872
+LDB: ============= START OF LOAD BALANCING ============== 421.196
+LDB: ============== END OF LOAD BALANCING =============== 421.196
+LDB: =============== DONE WITH MIGRATION ================ 421.196
+LDB: ============= START OF LOAD BALANCING ============== 421.506
+LDB: ============== END OF LOAD BALANCING =============== 421.506
+LDB: =============== DONE WITH MIGRATION ================ 421.506
+PRESSURE: 65000 -442.012 -480.949 419.951 -465.964 565.346 -2.56944 302.608 295.988 2770.46
+GPRESSURE: 65000 -572.502 -374.363 679.752 -515.408 643.482 -8.58849 -81.0222 96.929 2933.02
+PRESSAVG: 65000 597.631 56.7405 37.3364 55.3823 639.784 -16.6126 44.0918 212.899 2533.09
+GPRESSAVG: 65000 597.481 56.5759 36.6073 55.1992 639.589 -16.0245 44.2586 212.485 2533.07
+ENERGY:   65000         0.0000         0.0000         0.0000         0.0000          -5672.0763       463.7870         0.0000         0.0000       954.5000          -4253.7894       302.0920     -5208.2894     -4251.6193       296.8914            964.5976      1001.3337     21141.5399      1256.8339      1256.7137
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 65000
+LDB: ============= START OF LOAD BALANCING ============== 433.619
+LDB: ============== END OF LOAD BALANCING =============== 433.619
+LDB: =============== DONE WITH MIGRATION ================ 433.619
+LDB: ============= START OF LOAD BALANCING ============== 433.925
+LDB: ============== END OF LOAD BALANCING =============== 433.925
+LDB: =============== DONE WITH MIGRATION ================ 433.926
+LDB: ============= START OF LOAD BALANCING ============== 445.984
+LDB: ============== END OF LOAD BALANCING =============== 445.984
+LDB: =============== DONE WITH MIGRATION ================ 445.984
+LDB: ============= START OF LOAD BALANCING ============== 446.292
+LDB: ============== END OF LOAD BALANCING =============== 446.292
+LDB: =============== DONE WITH MIGRATION ================ 446.292
+PRESSURE: 70000 981.865 29.5298 -362.694 54.5253 1242.64 -209.994 -319.195 -326.22 3233.63
+GPRESSURE: 70000 937.007 188.141 -360.618 -369.093 1328.44 -255.34 -221.383 -563.421 3299.53
+PRESSAVG: 70000 956.55 -0.947103 -19.2797 4.35847 830.905 85.148 4.69146 310.981 2986.51
+GPRESSAVG: 70000 956.837 -1.20932 -18.9383 4.28914 831.061 84.8327 4.28819 310.549 2986.23
+ENERGY:   70000         0.0000         0.0000         0.0000         0.0000          -5706.7385       528.3055         0.0000         0.0000       907.3518          -4271.0812       287.1699     -5178.4330     -4269.8362       296.9356           1819.3792      1854.9936     21141.5399      1591.3226      1591.3753
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 70000
+LDB: ============= START OF LOAD BALANCING ============== 458.205
+LDB: ============== END OF LOAD BALANCING =============== 458.205
+LDB: =============== DONE WITH MIGRATION ================ 458.205
+LDB: ============= START OF LOAD BALANCING ============== 458.512
+LDB: ============== END OF LOAD BALANCING =============== 458.512
+LDB: =============== DONE WITH MIGRATION ================ 458.512
+LDB: ============= START OF LOAD BALANCING ============== 470.434
+LDB: ============== END OF LOAD BALANCING =============== 470.434
+LDB: =============== DONE WITH MIGRATION ================ 470.434
+LDB: ============= START OF LOAD BALANCING ============== 470.741
+LDB: ============== END OF LOAD BALANCING =============== 470.741
+LDB: =============== DONE WITH MIGRATION ================ 470.741
+LDB: ============= START OF LOAD BALANCING ============== 482.637
+LDB: ============== END OF LOAD BALANCING =============== 482.637
+LDB: =============== DONE WITH MIGRATION ================ 482.637
+LDB: ============= START OF LOAD BALANCING ============== 482.942
+LDB: ============== END OF LOAD BALANCING =============== 482.942
+LDB: =============== DONE WITH MIGRATION ================ 482.943
+PRESSURE: 75000 319.014 -250.596 213.491 -252.093 574.408 148.774 471.885 151.869 1593
+GPRESSURE: 75000 215.014 -195.456 367.638 -164.027 643.488 238.606 827.744 185.382 1732.5
+PRESSAVG: 75000 623.806 13.5165 -11.6857 11.2527 625.78 1.4074 272.916 245.301 2615.17
+GPRESSAVG: 75000 623.923 14.2659 -11.5954 10.6432 625.527 1.21382 272.817 245.784 2615.17
+ENERGY:   75000         0.0000         0.0000         0.0000         0.0000          -5665.3893       483.4882         0.0000         0.0000       896.1606          -4285.7405       283.6280     -5181.9011     -4283.2087       294.3144            828.8088       863.6668     21141.5399      1288.2513      1288.2078
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 75000
+LDB: ============= START OF LOAD BALANCING ============== 494.855
+LDB: ============== END OF LOAD BALANCING =============== 494.855
+LDB: =============== DONE WITH MIGRATION ================ 494.855
+LDB: ============= START OF LOAD BALANCING ============== 495.158
+LDB: ============== END OF LOAD BALANCING =============== 495.158
+LDB: =============== DONE WITH MIGRATION ================ 495.158
+LDB: ============= START OF LOAD BALANCING ============== 507.129
+LDB: ============== END OF LOAD BALANCING =============== 507.129
+LDB: =============== DONE WITH MIGRATION ================ 507.129
+LDB: ============= START OF LOAD BALANCING ============== 507.434
+LDB: ============== END OF LOAD BALANCING =============== 507.434
+LDB: =============== DONE WITH MIGRATION ================ 507.434
+PRESSURE: 80000 1296.4 -536.741 -96.3811 -530.409 769.072 -373.647 72.8441 -1.93986 3161.68
+GPRESSURE: 80000 1208.43 -263.32 -70.4171 -734.054 800.201 -501.369 262.68 316.641 3307.57
+PRESSAVG: 80000 894.148 -13.9266 25.9398 -9.22572 950.057 7.60253 335.438 218.538 2893.93
+GPRESSAVG: 80000 894.366 -14.11 26.1414 -9.10235 949.755 7.77591 335.44 218.586 2894
+ENERGY:   80000         0.0000         0.0000         0.0000         0.0000          -5784.2619       547.5744         0.0000         0.0000       964.1452          -4272.5423       305.1446     -5236.6874     -4270.9406       296.8770           1742.3851      1772.0661     21141.5399      1579.3780      1579.3727
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 80000
+LDB: ============= START OF LOAD BALANCING ============== 519.399
+LDB: ============== END OF LOAD BALANCING =============== 519.399
+LDB: =============== DONE WITH MIGRATION ================ 519.399
+LDB: ============= START OF LOAD BALANCING ============== 519.706
+LDB: ============== END OF LOAD BALANCING =============== 519.706
+LDB: =============== DONE WITH MIGRATION ================ 519.706
+LDB: ============= START OF LOAD BALANCING ============== 531.773
+LDB: ============== END OF LOAD BALANCING =============== 531.773
+LDB: =============== DONE WITH MIGRATION ================ 531.773
+LDB: ============= START OF LOAD BALANCING ============== 532.081
+LDB: ============== END OF LOAD BALANCING =============== 532.081
+LDB: =============== DONE WITH MIGRATION ================ 532.081
+LDB: ============= START OF LOAD BALANCING ============== 544.18
+LDB: ============== END OF LOAD BALANCING =============== 544.18
+LDB: =============== DONE WITH MIGRATION ================ 544.18
+LDB: ============= START OF LOAD BALANCING ============== 544.489
+LDB: ============== END OF LOAD BALANCING =============== 544.489
+LDB: =============== DONE WITH MIGRATION ================ 544.489
+PRESSURE: 85000 -415.639 -116.665 -94.232 -39.4386 -26.3707 359.033 154.135 -97.0677 3145.24
+GPRESSURE: 85000 -488.176 41.9394 3.57653 217.333 40.6053 334.075 -38.068 273.167 3208.58
+PRESSAVG: 85000 980.194 6.51086 16.6139 8.85812 882.788 -5.60889 389.311 173.711 2888.7
+GPRESSAVG: 85000 980.156 6.35614 16.9462 9.0179 883.12 -5.48946 389.397 173.934 2888.68
+ENERGY:   85000         0.0000         0.0000         0.0000         0.0000          -5651.8775       444.6788         0.0000         0.0000       965.3359          -4241.8627       305.5215     -5207.1987     -4239.6582       300.9179            901.0772       920.3354     21141.5399      1583.8945      1583.9859
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 85000
+LDB: ============= START OF LOAD BALANCING ============== 556.61
+LDB: ============== END OF LOAD BALANCING =============== 556.61
+LDB: =============== DONE WITH MIGRATION ================ 556.61
+LDB: ============= START OF LOAD BALANCING ============== 556.917
+LDB: ============== END OF LOAD BALANCING =============== 556.917
+LDB: =============== DONE WITH MIGRATION ================ 556.917
+LDB: ============= START OF LOAD BALANCING ============== 568.92
+LDB: ============== END OF LOAD BALANCING =============== 568.921
+LDB: =============== DONE WITH MIGRATION ================ 568.921
+LDB: ============= START OF LOAD BALANCING ============== 569.231
+LDB: ============== END OF LOAD BALANCING =============== 569.231
+LDB: =============== DONE WITH MIGRATION ================ 569.232
+PRESSURE: 90000 2093.63 -206.932 -308.857 -243.685 1185.61 850.036 701.66 760.947 3903.26
+GPRESSURE: 90000 2021.64 -355.428 102.407 -383.055 1373.81 879.237 735.291 923.855 3836.67
+PRESSAVG: 90000 1179.26 39.8168 45.5224 47.5379 1078.11 40.609 332.581 -45.3645 3261.22
+GPRESSAVG: 90000 1179.52 39.984 45.4713 47.2351 1077.89 40.6748 332.573 -45.8176 3261.31
+ENERGY:   90000         0.0000         0.0000         0.0000         0.0000          -5797.5983       578.3352         0.0000         0.0000       986.8017          -4232.4614       312.3152     -5219.2632     -4230.0509       298.2120           2394.1667      2410.7090     21141.5399      1839.5333      1839.5764
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 90000
+LDB: ============= START OF LOAD BALANCING ============== 581.271
+LDB: ============== END OF LOAD BALANCING =============== 581.271
+LDB: =============== DONE WITH MIGRATION ================ 581.271
+LDB: ============= START OF LOAD BALANCING ============== 581.583
+LDB: ============== END OF LOAD BALANCING =============== 581.583
+LDB: =============== DONE WITH MIGRATION ================ 581.583
+LDB: ============= START OF LOAD BALANCING ============== 593.604
+LDB: ============== END OF LOAD BALANCING =============== 593.604
+LDB: =============== DONE WITH MIGRATION ================ 593.604
+LDB: ============= START OF LOAD BALANCING ============== 593.909
+LDB: ============== END OF LOAD BALANCING =============== 593.909
+LDB: =============== DONE WITH MIGRATION ================ 593.909
+LDB: ============= START OF LOAD BALANCING ============== 605.831
+LDB: ============== END OF LOAD BALANCING =============== 605.831
+LDB: =============== DONE WITH MIGRATION ================ 605.831
+LDB: ============= START OF LOAD BALANCING ============== 606.137
+LDB: ============== END OF LOAD BALANCING =============== 606.137
+LDB: =============== DONE WITH MIGRATION ================ 606.137
+PRESSURE: 95000 248.748 -59.6452 141.347 -74.5625 1338.41 -557.945 498.565 -751.509 2369.34
+GPRESSURE: 95000 416.503 181.376 224.796 -659.372 1174.79 -813.776 1006.66 -518.764 2424.12
+PRESSAVG: 95000 692.231 49.7412 8.58591 44.3686 602.027 82.0065 372.4 -109.068 2874.63
+GPRESSAVG: 95000 692.32 49.9175 8.62386 45.0315 602.086 81.6507 371.991 -108.812 2874.44
+ENERGY:   95000         0.0000         0.0000         0.0000         0.0000          -5737.9320       508.7951         0.0000         0.0000       932.2612          -4296.8757       295.0536     -5229.1369     -4295.3457       299.4652           1318.8344      1338.4725     21141.5399      1389.6308      1389.6148
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 95000
+LDB: ============= START OF LOAD BALANCING ============== 618.063
+LDB: ============== END OF LOAD BALANCING =============== 618.063
+LDB: =============== DONE WITH MIGRATION ================ 618.063
+LDB: ============= START OF LOAD BALANCING ============== 618.369
+LDB: ============== END OF LOAD BALANCING =============== 618.369
+LDB: =============== DONE WITH MIGRATION ================ 618.369
+LDB: ============= START OF LOAD BALANCING ============== 630.355
+LDB: ============== END OF LOAD BALANCING =============== 630.355
+LDB: =============== DONE WITH MIGRATION ================ 630.355
+LDB: ============= START OF LOAD BALANCING ============== 630.659
+LDB: ============== END OF LOAD BALANCING =============== 630.659
+LDB: =============== DONE WITH MIGRATION ================ 630.659
+PRESSURE: 100000 974.493 -258.445 259.069 -263.135 987.316 -3.32237 266.572 -433.363 4114.46
+GPRESSURE: 100000 1138.76 17.2639 136.208 -431.267 968.379 -29.959 420.896 -339.877 4028.72
+PRESSAVG: 100000 716.092 7.37859 -24.5395 -6.97438 652.886 -67.6641 214.7 -488.882 3046.35
+GPRESSAVG: 100000 715.432 7.13321 -24.8778 -6.95823 652.982 -67.2672 215.216 -489.33 3046.64
+TIMING: 100000  CPU: 630.159, 0.00621214/step  Wall: 630.183, 0.00621245/step, 0.690272 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000         0.0000         0.0000         0.0000         0.0000          -5729.1385       529.1518         0.0000         0.0000       912.0389          -4287.9477       288.6534     -5199.9866     -4285.7092       294.3798           2025.4220      2045.2875     21141.5399      1471.7775      1471.6840
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 100000
+WRITING COORDINATES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=100000) takes 0.000 seconds, 311.102 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 642.68
+LDB: ============== END OF LOAD BALANCING =============== 642.68
+LDB: =============== DONE WITH MIGRATION ================ 642.68
+LDB: ============= START OF LOAD BALANCING ============== 642.983
+LDB: ============== END OF LOAD BALANCING =============== 642.983
+LDB: =============== DONE WITH MIGRATION ================ 642.983
+LDB: ============= START OF LOAD BALANCING ============== 655.038
+LDB: ============== END OF LOAD BALANCING =============== 655.038
+LDB: =============== DONE WITH MIGRATION ================ 655.038
+LDB: ============= START OF LOAD BALANCING ============== 655.348
+LDB: ============== END OF LOAD BALANCING =============== 655.348
+LDB: =============== DONE WITH MIGRATION ================ 655.348
+LDB: ============= START OF LOAD BALANCING ============== 667.301
+LDB: ============== END OF LOAD BALANCING =============== 667.301
+LDB: =============== DONE WITH MIGRATION ================ 667.301
+LDB: ============= START OF LOAD BALANCING ============== 667.608
+LDB: ============== END OF LOAD BALANCING =============== 667.608
+LDB: =============== DONE WITH MIGRATION ================ 667.609
+PRESSURE: 105000 1276 -148.612 326.616 -164.057 589.913 568.446 851.084 6.81788 5082.87
+GPRESSURE: 105000 1530.93 -215.98 248.088 -176.608 441.954 496.388 751.107 123.498 5027.03
+PRESSAVG: 105000 1139.3 65.7095 19.3363 62.9502 1060.68 -15.6207 366.033 -295.862 3660.17
+GPRESSAVG: 105000 1139.84 65.8433 19.681 62.3636 1060.75 -15.2357 366.029 -295.465 3660.05
+ENERGY:  105000         0.0000         0.0000         0.0000         0.0000          -5794.4627       547.1335         0.0000         0.0000       967.1150          -4280.2142       306.0845     -5247.3292     -4276.6840       292.3476           2316.2612      2333.3062     21141.5399      1953.3831      1953.5458
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 105000
+LDB: ============= START OF LOAD BALANCING ============== 679.62
+LDB: ============== END OF LOAD BALANCING =============== 679.62
+LDB: =============== DONE WITH MIGRATION ================ 679.62
+LDB: ============= START OF LOAD BALANCING ============== 679.962
+LDB: ============== END OF LOAD BALANCING =============== 679.962
+LDB: =============== DONE WITH MIGRATION ================ 679.962
+LDB: ============= START OF LOAD BALANCING ============== 691.9
+LDB: ============== END OF LOAD BALANCING =============== 691.9
+LDB: =============== DONE WITH MIGRATION ================ 691.9
+LDB: ============= START OF LOAD BALANCING ============== 692.204
+LDB: ============== END OF LOAD BALANCING =============== 692.204
+LDB: =============== DONE WITH MIGRATION ================ 692.204
+PRESSURE: 110000 -52.764 386.544 -1211.54 364.472 700.043 230.028 -704.431 179.825 3368.51
+GPRESSURE: 110000 -196.312 311.213 -958.816 364.008 753.771 118.29 -529.69 41.594 3498.5
+PRESSAVG: 110000 864.969 -14.5902 21.1572 -26.5663 829.634 25.7323 264.263 -141.548 3389.79
+GPRESSAVG: 110000 864.47 -14.329 20.6994 -27.0843 829.601 25.6457 264.278 -141.829 3390.28
+ENERGY:  110000         0.0000         0.0000         0.0000         0.0000          -5670.5771       476.3904         0.0000         0.0000       932.9044          -4261.2823       295.2571     -5194.1867     -4259.0214       299.8591           1338.5951      1351.9849     21141.5399      1694.7962      1694.7820
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 110000
+LDB: ============= START OF LOAD BALANCING ============== 704.054
+LDB: ============== END OF LOAD BALANCING =============== 704.054
+LDB: =============== DONE WITH MIGRATION ================ 704.054
+LDB: ============= START OF LOAD BALANCING ============== 704.357
+LDB: ============== END OF LOAD BALANCING =============== 704.357
+LDB: =============== DONE WITH MIGRATION ================ 704.357
+LDB: ============= START OF LOAD BALANCING ============== 716.372
+LDB: ============== END OF LOAD BALANCING =============== 716.372
+LDB: =============== DONE WITH MIGRATION ================ 716.372
+LDB: ============= START OF LOAD BALANCING ============== 716.676
+LDB: ============== END OF LOAD BALANCING =============== 716.676
+LDB: =============== DONE WITH MIGRATION ================ 716.676
+LDB: ============= START OF LOAD BALANCING ============== 728.672
+LDB: ============== END OF LOAD BALANCING =============== 728.672
+LDB: =============== DONE WITH MIGRATION ================ 728.672
+LDB: ============= START OF LOAD BALANCING ============== 728.975
+LDB: ============== END OF LOAD BALANCING =============== 728.975
+LDB: =============== DONE WITH MIGRATION ================ 728.975
+PRESSURE: 115000 1106.22 -210.994 176.525 -200.12 1074.02 529.609 -54.4217 261.568 4050.48
+GPRESSURE: 115000 960.627 30.0682 379.358 -562.79 1238.31 358.92 -256.824 588.278 4085.76
+PRESSAVG: 115000 1129.12 42.9712 -26.7601 49.151 1128.84 -19.8381 232.553 -10.1732 3696.33
+GPRESSAVG: 115000 1129.02 43.2616 -26.6436 49.7435 1128.74 -19.6734 232.305 -10.8335 3696.74
+ENERGY:  115000         0.0000         0.0000         0.0000         0.0000          -5807.6705       545.6303         0.0000         0.0000       945.2975          -4316.7426       299.1795     -5262.0402     -4315.4713       298.9941           2076.9094      2094.8972     21141.5399      1984.7639      1984.8334
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 115000
+LDB: ============= START OF LOAD BALANCING ============== 740.847
+LDB: ============== END OF LOAD BALANCING =============== 740.847
+LDB: =============== DONE WITH MIGRATION ================ 740.847
+LDB: ============= START OF LOAD BALANCING ============== 741.151
+LDB: ============== END OF LOAD BALANCING =============== 741.151
+LDB: =============== DONE WITH MIGRATION ================ 741.151
+LDB: ============= START OF LOAD BALANCING ============== 753.037
+LDB: ============== END OF LOAD BALANCING =============== 753.037
+LDB: =============== DONE WITH MIGRATION ================ 753.037
+LDB: ============= START OF LOAD BALANCING ============== 753.342
+LDB: ============== END OF LOAD BALANCING =============== 753.342
+LDB: =============== DONE WITH MIGRATION ================ 753.342
+PRESSURE: 120000 819.703 -111.93 528.99 -115.486 491.622 758.313 750.844 639.95 3345.03
+GPRESSURE: 120000 762.566 -116.09 500.885 -298.428 636.691 727.006 620.003 676.484 3327.2
+PRESSAVG: 120000 856.965 12.6942 7.76617 16.3731 886.503 -29.6596 247.496 -62.0416 3331.5
+GPRESSAVG: 120000 857.268 12.5643 8.07088 16.5757 886.177 -29.615 246.98 -61.6171 3331.22
+ENERGY:  120000         0.0000         0.0000         0.0000         0.0000          -5716.0345       515.1356         0.0000         0.0000       938.6321          -4262.2669       297.0699     -5200.8989     -4260.4301       297.5761           1552.1191      1575.4854     21141.5399      1691.6574      1691.5546
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 120000
+LDB: ============= START OF LOAD BALANCING ============== 765.205
+LDB: ============== END OF LOAD BALANCING =============== 765.205
+LDB: =============== DONE WITH MIGRATION ================ 765.205
+LDB: ============= START OF LOAD BALANCING ============== 765.514
+LDB: ============== END OF LOAD BALANCING =============== 765.514
+LDB: =============== DONE WITH MIGRATION ================ 765.515
+LDB: ============= START OF LOAD BALANCING ============== 777.49
+LDB: ============== END OF LOAD BALANCING =============== 777.49
+LDB: =============== DONE WITH MIGRATION ================ 777.49
+LDB: ============= START OF LOAD BALANCING ============== 777.794
+LDB: ============== END OF LOAD BALANCING =============== 777.794
+LDB: =============== DONE WITH MIGRATION ================ 777.794
+LDB: ============= START OF LOAD BALANCING ============== 789.796
+LDB: ============== END OF LOAD BALANCING =============== 789.796
+LDB: =============== DONE WITH MIGRATION ================ 789.796
+LDB: ============= START OF LOAD BALANCING ============== 790.101
+LDB: ============== END OF LOAD BALANCING =============== 790.101
+LDB: =============== DONE WITH MIGRATION ================ 790.101
+PRESSURE: 125000 1541.47 -214.357 -112.586 -247.575 1863.4 307.529 -301.797 789.685 2485.65
+GPRESSURE: 125000 1431.74 -456.819 -43.9345 -260.387 1707.46 557.139 -123.229 1043.99 2830.2
+PRESSAVG: 125000 820.311 -2.85004 -11.7319 -3.23497 765.103 78.4678 161.285 276.725 2971.46
+GPRESSAVG: 125000 819.775 -2.96372 -11.547 -3.28587 765.308 78.4733 161.314 276.939 2971.95
+ENERGY:  125000         0.0000         0.0000         0.0000         0.0000          -5676.3892       527.5293         0.0000         0.0000       952.6793          -4196.1806       301.5158     -5148.8599     -4194.0758       303.3162           1963.5050      1989.8030     21141.5399      1518.9563      1519.0104
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 125000
+LDB: ============= START OF LOAD BALANCING ============== 801.996
+LDB: ============== END OF LOAD BALANCING =============== 801.996
+LDB: =============== DONE WITH MIGRATION ================ 801.996
+LDB: ============= START OF LOAD BALANCING ============== 802.299
+LDB: ============== END OF LOAD BALANCING =============== 802.299
+LDB: =============== DONE WITH MIGRATION ================ 802.299
+LDB: ============= START OF LOAD BALANCING ============== 814.291
+LDB: ============== END OF LOAD BALANCING =============== 814.291
+LDB: =============== DONE WITH MIGRATION ================ 814.291
+LDB: ============= START OF LOAD BALANCING ============== 814.595
+LDB: ============== END OF LOAD BALANCING =============== 814.595
+LDB: =============== DONE WITH MIGRATION ================ 814.595
+PRESSURE: 130000 1086.59 -302.186 40.3096 -341.654 957.711 116.808 815.166 491.147 4093.83
+GPRESSURE: 130000 1315.1 -129.618 -560.113 -371.398 897.159 9.17258 781.81 654.372 3980.84
+PRESSAVG: 130000 737.312 -6.51907 77.3885 -17.0691 792.699 34.182 408.976 485.136 2934.42
+GPRESSAVG: 130000 737.782 -6.64026 76.8011 -16.8235 792.756 34.6885 408.839 484.938 2934.06
+ENERGY:  130000         0.0000         0.0000         0.0000         0.0000          -5720.1947       542.6080         0.0000         0.0000      1003.7148          -4173.8719       317.6681     -5177.5867     -4171.7340       302.4265           2046.0453      2064.3682     21141.5399      1488.1439      1488.2006
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 130000
+LDB: ============= START OF LOAD BALANCING ============== 826.542
+LDB: ============== END OF LOAD BALANCING =============== 826.542
+LDB: =============== DONE WITH MIGRATION ================ 826.542
+LDB: ============= START OF LOAD BALANCING ============== 826.847
+LDB: ============== END OF LOAD BALANCING =============== 826.847
+LDB: =============== DONE WITH MIGRATION ================ 826.848
+LDB: ============= START OF LOAD BALANCING ============== 838.906
+LDB: ============== END OF LOAD BALANCING =============== 838.906
+LDB: =============== DONE WITH MIGRATION ================ 838.906
+LDB: ============= START OF LOAD BALANCING ============== 839.209
+LDB: ============== END OF LOAD BALANCING =============== 839.209
+LDB: =============== DONE WITH MIGRATION ================ 839.209
+LDB: ============= START OF LOAD BALANCING ============== 851.152
+LDB: ============== END OF LOAD BALANCING =============== 851.152
+LDB: =============== DONE WITH MIGRATION ================ 851.152
+LDB: ============= START OF LOAD BALANCING ============== 851.455
+LDB: ============== END OF LOAD BALANCING =============== 851.455
+LDB: =============== DONE WITH MIGRATION ================ 851.455
+PRESSURE: 135000 1115.48 -332.925 538.916 -350.172 932.047 -308.657 541.941 -220.376 3356.26
+GPRESSURE: 135000 1235.76 -288.931 817.897 -492.642 882.171 -444.917 561.854 -271.906 3331.59
+PRESSAVG: 135000 612.675 28.299 14.8919 28.3362 572.588 -83.531 439.785 172.056 2691.9
+GPRESSAVG: 135000 612.551 28.5764 15.2094 28.5422 572.422 -83.4855 439.802 172.01 2692.08
+ENERGY:  135000         0.0000         0.0000         0.0000         0.0000          -5744.7616       540.6477         0.0000         0.0000       929.4846          -4274.6294       294.1748     -5204.1139     -4272.0019       303.7635           1801.2626      1816.5092     21141.5399      1292.3862      1292.3499
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 135000
+LDB: ============= START OF LOAD BALANCING ============== 863.361
+LDB: ============== END OF LOAD BALANCING =============== 863.361
+LDB: =============== DONE WITH MIGRATION ================ 863.361
+LDB: ============= START OF LOAD BALANCING ============== 863.664
+LDB: ============== END OF LOAD BALANCING =============== 863.664
+LDB: =============== DONE WITH MIGRATION ================ 863.664
+LDB: ============= START OF LOAD BALANCING ============== 875.503
+LDB: ============== END OF LOAD BALANCING =============== 875.503
+LDB: =============== DONE WITH MIGRATION ================ 875.503
+LDB: ============= START OF LOAD BALANCING ============== 875.807
+LDB: ============== END OF LOAD BALANCING =============== 875.807
+LDB: =============== DONE WITH MIGRATION ================ 875.807
+PRESSURE: 140000 1096.03 -424.06 -1002.1 -440.702 -377.109 70.4639 -958.093 645.127 3251.69
+GPRESSURE: 140000 1070.68 -606.526 -966.896 -238.108 -281.387 373.54 -1096.54 626.811 3236.69
+PRESSAVG: 140000 635.51 -0.884315 -65.0407 -9.03871 583.79 -10.4818 373.746 348.069 2835.17
+GPRESSAVG: 140000 635.294 -1.03256 -65.2205 -9.0497 583.526 -10.4417 373.563 348.122 2835.05
+ENERGY:  140000         0.0000         0.0000         0.0000         0.0000          -5642.6986       473.5974         0.0000         0.0000       987.7252          -4181.3761       312.6075     -5169.1013     -4178.4506       299.0329           1323.5385      1341.9944     21141.5399      1351.4898      1351.2884
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 140000
+LDB: ============= START OF LOAD BALANCING ============== 887.629
+LDB: ============== END OF LOAD BALANCING =============== 887.629
+LDB: =============== DONE WITH MIGRATION ================ 887.629
+LDB: ============= START OF LOAD BALANCING ============== 887.933
+LDB: ============== END OF LOAD BALANCING =============== 887.933
+LDB: =============== DONE WITH MIGRATION ================ 887.933
+LDB: ============= START OF LOAD BALANCING ============== 899.868
+LDB: ============== END OF LOAD BALANCING =============== 899.869
+LDB: =============== DONE WITH MIGRATION ================ 899.869
+LDB: ============= START OF LOAD BALANCING ============== 900.173
+LDB: ============== END OF LOAD BALANCING =============== 900.173
+LDB: =============== DONE WITH MIGRATION ================ 900.173
+LDB: ============= START OF LOAD BALANCING ============== 912.027
+LDB: ============== END OF LOAD BALANCING =============== 912.027
+LDB: =============== DONE WITH MIGRATION ================ 912.027
+LDB: ============= START OF LOAD BALANCING ============== 912.332
+LDB: ============== END OF LOAD BALANCING =============== 912.332
+LDB: =============== DONE WITH MIGRATION ================ 912.332
+PRESSURE: 145000 13.144 -144.367 -38.0741 -179.135 389.094 170.966 139.117 810.65 2183.93
+GPRESSURE: 145000 -40.8001 -106.751 60.0402 74.1673 396.884 31.2869 157.863 891.664 2303.69
+PRESSAVG: 145000 595.416 8.66625 -5.57372 11.1394 528.128 22.7401 336.691 380.541 2785.55
+GPRESSAVG: 145000 595.39 8.94364 -5.45708 10.9813 528.013 22.3337 337.158 381.097 2785.58
+ENERGY:  145000         0.0000         0.0000         0.0000         0.0000          -5693.1146       486.8568         0.0000         0.0000       929.6035          -4276.6543       294.2124     -5206.2578     -4274.2999       300.3548            862.0552       886.5913     21141.5399      1303.0307      1302.9954
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 145000
+LDB: ============= START OF LOAD BALANCING ============== 924.226
+LDB: ============== END OF LOAD BALANCING =============== 924.226
+LDB: =============== DONE WITH MIGRATION ================ 924.226
+LDB: ============= START OF LOAD BALANCING ============== 924.532
+LDB: ============== END OF LOAD BALANCING =============== 924.532
+LDB: =============== DONE WITH MIGRATION ================ 924.532
+LDB: ============= START OF LOAD BALANCING ============== 936.533
+LDB: ============== END OF LOAD BALANCING =============== 936.533
+LDB: =============== DONE WITH MIGRATION ================ 936.533
+LDB: ============= START OF LOAD BALANCING ============== 936.846
+LDB: ============== END OF LOAD BALANCING =============== 936.846
+LDB: =============== DONE WITH MIGRATION ================ 936.846
+PRESSURE: 150000 -73.6381 -313.711 -238.815 -275.714 1934.13 726.818 237.068 1361.09 3581.85
+GPRESSURE: 150000 39.5598 -724.045 -131.025 -60.223 2037.38 681.876 227.252 1078.7 3402.26
+PRESSAVG: 150000 619.072 -30.1229 -34.643 -37.8307 695.801 34.0964 320.434 348.039 2715.67
+GPRESSAVG: 150000 619.424 -30.3759 -34.3156 -37.857 696.549 34.0312 320.544 348.11 2714.98
+TIMING: 150000  CPU: 936.3, 0.00612284/step  Wall: 936.331, 0.00612296/step, 0.595287 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  150000         0.0000         0.0000         0.0000         0.0000          -5782.1042       553.0373         0.0000         0.0000       960.7841          -4268.2828       304.0809     -5229.0669     -4266.0389       293.9742           1814.1142      1826.4004     21141.5399      1343.5141      1343.6501
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 150000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 150000
+WRITING COORDINATES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=150000) takes 0.000 seconds, 311.102 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 948.829
+LDB: ============== END OF LOAD BALANCING =============== 948.829
+LDB: =============== DONE WITH MIGRATION ================ 948.829
+LDB: ============= START OF LOAD BALANCING ============== 949.134
+LDB: ============== END OF LOAD BALANCING =============== 949.134
+LDB: =============== DONE WITH MIGRATION ================ 949.134
+LDB: ============= START OF LOAD BALANCING ============== 961.169
+LDB: ============== END OF LOAD BALANCING =============== 961.17
+LDB: =============== DONE WITH MIGRATION ================ 961.17
+LDB: ============= START OF LOAD BALANCING ============== 961.514
+LDB: ============== END OF LOAD BALANCING =============== 961.514
+LDB: =============== DONE WITH MIGRATION ================ 961.514
+LDB: ============= START OF LOAD BALANCING ============== 973.537
+LDB: ============== END OF LOAD BALANCING =============== 973.537
+LDB: =============== DONE WITH MIGRATION ================ 973.537
+LDB: ============= START OF LOAD BALANCING ============== 973.846
+LDB: ============== END OF LOAD BALANCING =============== 973.846
+LDB: =============== DONE WITH MIGRATION ================ 973.846
+PRESSURE: 155000 1170.06 -1.78362 503.999 -32.652 1112.54 408.238 391.759 815.564 1783.28
+GPRESSURE: 155000 1133.47 -62.2422 416.567 -45.7407 949.158 164.281 535.283 760.063 2070.98
+PRESSAVG: 155000 333.451 38.2149 6.66098 34.7028 320.592 -15.874 340.854 320.82 2248.33
+GPRESSAVG: 155000 333.338 37.7132 7.32433 34.999 320.323 -15.3593 340.771 320.323 2248.49
+ENERGY:  155000         0.0000         0.0000         0.0000         0.0000          -5643.3508       508.7040         0.0000         0.0000       951.6982          -4182.9486       301.2052     -5134.6468     -4180.9174       298.3241           1355.2957      1384.5337     21141.5399       967.4594       967.3844
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 155000
+LDB: ============= START OF LOAD BALANCING ============== 985.801
+LDB: ============== END OF LOAD BALANCING =============== 985.801
+LDB: =============== DONE WITH MIGRATION ================ 985.801
+LDB: ============= START OF LOAD BALANCING ============== 986.125
+LDB: ============== END OF LOAD BALANCING =============== 986.125
+LDB: =============== DONE WITH MIGRATION ================ 986.125
+LDB: ============= START OF LOAD BALANCING ============== 998.104
+LDB: ============== END OF LOAD BALANCING =============== 998.104
+LDB: =============== DONE WITH MIGRATION ================ 998.104
+LDB: ============= START OF LOAD BALANCING ============== 998.412
+LDB: ============== END OF LOAD BALANCING =============== 998.412
+LDB: =============== DONE WITH MIGRATION ================ 998.412
+PRESSURE: 160000 644.283 225.709 -273.223 218.598 1577.36 -432.39 213.261 -628.903 3853.96
+GPRESSURE: 160000 801.796 252.002 -97.2626 235.941 1546.5 -372.072 10.4319 -843.223 3810.14
+PRESSAVG: 160000 777.201 -29.2904 37.6816 -30.3468 798.95 -16.219 469.565 435.4 2642.43
+GPRESSAVG: 160000 777.342 -29.0693 37.5079 -30.9921 798.882 -16.609 469.848 434.987 2642.35
+ENERGY:  160000         0.0000         0.0000         0.0000         0.0000          -5777.0761       554.7617         0.0000         0.0000       911.1578          -4311.1565       288.3745     -5222.3144     -4309.5450       300.6122           2025.1991      2052.8115     21141.5399      1406.1944      1406.1917
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 160000
+LDB: ============= START OF LOAD BALANCING ============== 1010.36
+LDB: ============== END OF LOAD BALANCING =============== 1010.36
+LDB: =============== DONE WITH MIGRATION ================ 1010.36
+LDB: ============= START OF LOAD BALANCING ============== 1010.67
+LDB: ============== END OF LOAD BALANCING =============== 1010.67
+LDB: =============== DONE WITH MIGRATION ================ 1010.67
+LDB: ============= START OF LOAD BALANCING ============== 1022.74
+LDB: ============== END OF LOAD BALANCING =============== 1022.74
+LDB: =============== DONE WITH MIGRATION ================ 1022.74
+LDB: ============= START OF LOAD BALANCING ============== 1023.05
+LDB: ============== END OF LOAD BALANCING =============== 1023.05
+LDB: =============== DONE WITH MIGRATION ================ 1023.05
+LDB: ============= START OF LOAD BALANCING ============== 1034.94
+LDB: ============== END OF LOAD BALANCING =============== 1034.94
+LDB: =============== DONE WITH MIGRATION ================ 1034.94
+LDB: ============= START OF LOAD BALANCING ============== 1035.25
+LDB: ============== END OF LOAD BALANCING =============== 1035.25
+LDB: =============== DONE WITH MIGRATION ================ 1035.25
+PRESSURE: 165000 80.5418 -479.919 -460.692 -439.26 967.154 299.036 483.333 577.471 5122.6
+GPRESSURE: 165000 66.9286 -509.184 -364.295 -344.725 1150.21 396.51 552.966 635.048 5026.18
+PRESSAVG: 165000 1084.78 -48.8259 -20.5379 -39.0665 1139.27 12.562 266.728 478.913 3590.92
+GPRESSAVG: 165000 1084.91 -48.9372 -20.7176 -38.8958 1139.21 12.1888 266.576 479.251 3591.03
+ENERGY:  165000         0.0000         0.0000         0.0000         0.0000          -5735.1050       510.6706         0.0000         0.0000       974.8368          -4249.5977       308.5284     -5224.4345     -4246.1479       293.4758           2056.7661      2081.1038     21141.5399      1938.3269      1938.3826
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 165000
+LDB: ============= START OF LOAD BALANCING ============== 1047.38
+LDB: ============== END OF LOAD BALANCING =============== 1047.38
+LDB: =============== DONE WITH MIGRATION ================ 1047.38
+LDB: ============= START OF LOAD BALANCING ============== 1047.69
+LDB: ============== END OF LOAD BALANCING =============== 1047.69
+LDB: =============== DONE WITH MIGRATION ================ 1047.69
+LDB: ============= START OF LOAD BALANCING ============== 1059.63
+LDB: ============== END OF LOAD BALANCING =============== 1059.63
+LDB: =============== DONE WITH MIGRATION ================ 1059.63
+LDB: ============= START OF LOAD BALANCING ============== 1059.94
+LDB: ============== END OF LOAD BALANCING =============== 1059.94
+LDB: =============== DONE WITH MIGRATION ================ 1059.94
+PRESSURE: 170000 1329.65 -146.874 545.194 -134.034 1565.98 -444.596 1060.19 163.822 4511.44
+GPRESSURE: 170000 1237.85 -291.425 579.292 -138.865 1644.02 -83.6843 858.899 262.413 4600.8
+PRESSAVG: 170000 1831.4 -58.2872 22.0685 -59.6047 1895.09 -13.2768 485.084 548.944 4740.82
+GPRESSAVG: 170000 1831.27 -58.2454 22.5858 -59.3844 1894.95 -12.9548 485.242 548.558 4740.96
+ENERGY:  170000         0.0000         0.0000         0.0000         0.0000          -5865.2051       572.5676         0.0000         0.0000       973.4806          -4319.1570       308.0992     -5292.6375     -4317.0624       301.5287           2469.0225      2494.2222     21141.5399      2822.4382      2822.3921
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 170000
+LDB: ============= START OF LOAD BALANCING ============== 1071.9
+LDB: ============== END OF LOAD BALANCING =============== 1071.9
+LDB: =============== DONE WITH MIGRATION ================ 1071.9
+LDB: ============= START OF LOAD BALANCING ============== 1072.21
+LDB: ============== END OF LOAD BALANCING =============== 1072.21
+LDB: =============== DONE WITH MIGRATION ================ 1072.21
+LDB: ============= START OF LOAD BALANCING ============== 1084.1
+LDB: ============== END OF LOAD BALANCING =============== 1084.1
+LDB: =============== DONE WITH MIGRATION ================ 1084.1
+LDB: ============= START OF LOAD BALANCING ============== 1084.4
+LDB: ============== END OF LOAD BALANCING =============== 1084.4
+LDB: =============== DONE WITH MIGRATION ================ 1084.4
+LDB: ============= START OF LOAD BALANCING ============== 1096.29
+LDB: ============== END OF LOAD BALANCING =============== 1096.29
+LDB: =============== DONE WITH MIGRATION ================ 1096.29
+LDB: ============= START OF LOAD BALANCING ============== 1096.6
+LDB: ============== END OF LOAD BALANCING =============== 1096.6
+LDB: =============== DONE WITH MIGRATION ================ 1096.6
+PRESSURE: 175000 1744 -414.544 -293.951 -444.699 513.028 -443.195 -92.1812 36.9667 2884.43
+GPRESSURE: 175000 1644.71 -412.976 -719.547 -522.297 572.205 -237.383 128.091 -50.2783 2974.85
+PRESSAVG: 175000 1771.02 -8.58002 -8.4506 -12.1244 1680.92 -13.4448 372.091 675.506 4689.57
+GPRESSAVG: 175000 1770.86 -8.5551 -8.37082 -12.7914 1680.39 -13.823 372.417 676.173 4689.58
+ENERGY:  175000         0.0000         0.0000         0.0000         0.0000          -5672.8485       484.6023         0.0000         0.0000       967.1603          -4221.0859       306.0989     -5188.2462     -4219.9581       304.0345           1713.8179      1730.5869     21141.5399      2713.8360      2713.6076
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 175000
+LDB: ============= START OF LOAD BALANCING ============== 1108.7
+LDB: ============== END OF LOAD BALANCING =============== 1108.7
+LDB: =============== DONE WITH MIGRATION ================ 1108.7
+LDB: ============= START OF LOAD BALANCING ============== 1109
+LDB: ============== END OF LOAD BALANCING =============== 1109
+LDB: =============== DONE WITH MIGRATION ================ 1109
+LDB: ============= START OF LOAD BALANCING ============== 1121
+LDB: ============== END OF LOAD BALANCING =============== 1121
+LDB: =============== DONE WITH MIGRATION ================ 1121
+LDB: ============= START OF LOAD BALANCING ============== 1121.31
+LDB: ============== END OF LOAD BALANCING =============== 1121.31
+LDB: =============== DONE WITH MIGRATION ================ 1121.31
+PRESSURE: 180000 1670.88 -430.647 -274.194 -406.828 2138.72 571.011 -11.2436 1184.73 3569.63
+GPRESSURE: 180000 1760.38 -85.0546 -249.638 -635.795 2257.45 671.35 127.022 982.215 3451.96
+PRESSAVG: 180000 1520.26 13.3783 -48.5679 7.93926 1505.12 5.40072 260.294 634.036 4135.56
+GPRESSAVG: 180000 1519.68 13.6761 -48.4453 8.14451 1505.07 5.57834 259.535 634.269 4135.96
+ENERGY:  180000         0.0000         0.0000         0.0000         0.0000          -5837.9228       561.8500         0.0000         0.0000       956.4729          -4319.6000       302.7164     -5276.0729     -4317.5852       300.7061           2459.7425      2489.9295     21141.5399      2386.9791      2386.9004
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 180000
+LDB: ============= START OF LOAD BALANCING ============== 1133.28
+LDB: ============== END OF LOAD BALANCING =============== 1133.28
+LDB: =============== DONE WITH MIGRATION ================ 1133.28
+LDB: ============= START OF LOAD BALANCING ============== 1133.58
+LDB: ============== END OF LOAD BALANCING =============== 1133.58
+LDB: =============== DONE WITH MIGRATION ================ 1133.58
+LDB: ============= START OF LOAD BALANCING ============== 1145.48
+LDB: ============== END OF LOAD BALANCING =============== 1145.48
+LDB: =============== DONE WITH MIGRATION ================ 1145.48
+LDB: ============= START OF LOAD BALANCING ============== 1145.79
+LDB: ============== END OF LOAD BALANCING =============== 1145.79
+LDB: =============== DONE WITH MIGRATION ================ 1145.79
+LDB: ============= START OF LOAD BALANCING ============== 1157.81
+LDB: ============== END OF LOAD BALANCING =============== 1157.81
+LDB: =============== DONE WITH MIGRATION ================ 1157.81
+LDB: ============= START OF LOAD BALANCING ============== 1158.12
+LDB: ============== END OF LOAD BALANCING =============== 1158.12
+LDB: =============== DONE WITH MIGRATION ================ 1158.12
+PRESSURE: 185000 1398.57 131.632 -403.661 164.02 1545.97 727.886 -265.228 1217.13 4297.31
+GPRESSURE: 185000 1584.4 370.685 -714.672 251.226 1596.61 575.784 256.385 1503.71 4141.15
+PRESSAVG: 185000 1898.76 42.44 -32.9555 46.0266 1867.83 45.7228 222.169 536.608 4699.16
+GPRESSAVG: 185000 1899.31 41.8342 -33.1354 46.0207 1867.98 46.2231 222.152 536.117 4698.73
+ENERGY:  185000         0.0000         0.0000         0.0000         0.0000          -5833.9898       549.8420         0.0000         0.0000       922.3409          -4361.8069       291.9139     -5284.1478     -4360.4024       301.6622           2413.9528      2440.7208     21141.5399      2821.9146      2822.0042
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 185000
+LDB: ============= START OF LOAD BALANCING ============== 1170.2
+LDB: ============== END OF LOAD BALANCING =============== 1170.2
+LDB: =============== DONE WITH MIGRATION ================ 1170.2
+LDB: ============= START OF LOAD BALANCING ============== 1170.51
+LDB: ============== END OF LOAD BALANCING =============== 1170.51
+LDB: =============== DONE WITH MIGRATION ================ 1170.51
+LDB: ============= START OF LOAD BALANCING ============== 1182.49
+LDB: ============== END OF LOAD BALANCING =============== 1182.49
+LDB: =============== DONE WITH MIGRATION ================ 1182.49
+LDB: ============= START OF LOAD BALANCING ============== 1182.8
+LDB: ============== END OF LOAD BALANCING =============== 1182.8
+LDB: =============== DONE WITH MIGRATION ================ 1182.8
+PRESSURE: 190000 1690.78 -52.7035 -254.895 -36.5178 2185.82 271.661 -116.637 498.114 4856.64
+GPRESSURE: 190000 1686.25 -329.48 -362.005 59.6091 2334.67 105.691 -101.922 740.186 4802.71
+PRESSAVG: 190000 1689.97 -22.404 66.4293 -20.0473 1658.34 -24.7488 310.278 484.754 4306.44
+GPRESSAVG: 190000 1690.07 -22.6628 66.1153 -20.0546 1658.12 -25.1322 309.995 484.999 4306.27
+ENERGY:  190000         0.0000         0.0000         0.0000         0.0000          -5858.1527       604.2515         0.0000         0.0000       909.1931          -4344.7081       287.7527     -5253.9012     -4343.6684       295.8993           2911.0784      2941.2086     21141.5399      2551.5844      2551.4866
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 190000
+LDB: ============= START OF LOAD BALANCING ============== 1194.77
+LDB: ============== END OF LOAD BALANCING =============== 1194.77
+LDB: =============== DONE WITH MIGRATION ================ 1194.77
+LDB: ============= START OF LOAD BALANCING ============== 1195.08
+LDB: ============== END OF LOAD BALANCING =============== 1195.08
+LDB: =============== DONE WITH MIGRATION ================ 1195.08
+LDB: ============= START OF LOAD BALANCING ============== 1206.97
+LDB: ============== END OF LOAD BALANCING =============== 1206.97
+LDB: =============== DONE WITH MIGRATION ================ 1206.97
+LDB: ============= START OF LOAD BALANCING ============== 1207.27
+LDB: ============== END OF LOAD BALANCING =============== 1207.27
+LDB: =============== DONE WITH MIGRATION ================ 1207.27
+LDB: ============= START OF LOAD BALANCING ============== 1219.37
+LDB: ============== END OF LOAD BALANCING =============== 1219.37
+LDB: =============== DONE WITH MIGRATION ================ 1219.37
+LDB: ============= START OF LOAD BALANCING ============== 1219.68
+LDB: ============== END OF LOAD BALANCING =============== 1219.68
+LDB: =============== DONE WITH MIGRATION ================ 1219.68
+PRESSURE: 195000 2907.18 -229.479 215.053 -253.285 2605.14 161.255 175.789 1313.32 3736.04
+GPRESSURE: 195000 2982.03 -60.9448 298.802 -314.5 2765.12 148.337 175.872 1411.9 3617.91
+PRESSAVG: 195000 1771.7 8.14807 26.4312 -8.75919 1718.2 11.4169 73.6991 514.652 4565.7
+GPRESSAVG: 195000 1771.63 8.58956 27.2366 -9.37913 1718.31 11.4536 73.6721 514.569 4566.04
+ENERGY:  195000         0.0000         0.0000         0.0000         0.0000          -5817.2695       597.1984         0.0000         0.0000       915.1478          -4304.9233       289.6373     -5220.0712     -4303.6079       297.0980           3082.7890      3121.6875     21141.5399      2685.1993      2685.3292
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 195000
+LDB: ============= START OF LOAD BALANCING ============== 1231.53
+LDB: ============== END OF LOAD BALANCING =============== 1231.53
+LDB: =============== DONE WITH MIGRATION ================ 1231.53
+LDB: ============= START OF LOAD BALANCING ============== 1231.84
+LDB: ============== END OF LOAD BALANCING =============== 1231.84
+LDB: =============== DONE WITH MIGRATION ================ 1231.84
+LDB: ============= START OF LOAD BALANCING ============== 1243.6
+LDB: ============== END OF LOAD BALANCING =============== 1243.6
+LDB: =============== DONE WITH MIGRATION ================ 1243.6
+LDB: ============= START OF LOAD BALANCING ============== 1243.9
+LDB: ============== END OF LOAD BALANCING =============== 1243.9
+LDB: =============== DONE WITH MIGRATION ================ 1243.9
+PRESSURE: 200000 2783.19 267.142 292.609 281.576 1723.21 -401.045 419.724 900.985 5162.77
+GPRESSURE: 200000 3004.65 -64.9727 378.875 214.136 1605.51 -396.564 392.139 520.62 5213.07
+PRESSAVG: 200000 1784.19 16.9813 0.107339 13.8062 1874.39 -37.1633 59.4781 822.509 4330.83
+GPRESSAVG: 200000 1784.08 16.7688 -0.397645 14.0348 1874.04 -36.7571 59.5152 822.169 4331.21
+TIMING: 200000  CPU: 1242.88, 0.00613163/step  Wall: 1243.14, 0.00613623/step, 0.511352 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  200000         0.0000         0.0000         0.0000         0.0000          -5791.6846       587.2209         0.0000         0.0000       926.7937          -4277.6700       293.3231     -5204.4636     -4275.3312       296.0076           3223.0570      3274.4095     21141.5399      2663.1358      2663.1106
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 200000
+WRITING COORDINATES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=200000) takes 0.000 seconds, 311.102 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 1255.61
+LDB: ============== END OF LOAD BALANCING =============== 1255.61
+LDB: =============== DONE WITH MIGRATION ================ 1255.61
+LDB: ============= START OF LOAD BALANCING ============== 1255.92
+LDB: ============== END OF LOAD BALANCING =============== 1255.92
+LDB: =============== DONE WITH MIGRATION ================ 1255.92
+LDB: ============= START OF LOAD BALANCING ============== 1267.64
+LDB: ============== END OF LOAD BALANCING =============== 1267.64
+LDB: =============== DONE WITH MIGRATION ================ 1267.64
+LDB: ============= START OF LOAD BALANCING ============== 1267.94
+LDB: ============== END OF LOAD BALANCING =============== 1267.94
+LDB: =============== DONE WITH MIGRATION ================ 1267.94
+LDB: ============= START OF LOAD BALANCING ============== 1279.65
+LDB: ============== END OF LOAD BALANCING =============== 1279.65
+LDB: =============== DONE WITH MIGRATION ================ 1279.65
+LDB: ============= START OF LOAD BALANCING ============== 1279.96
+LDB: ============== END OF LOAD BALANCING =============== 1279.96
+LDB: =============== DONE WITH MIGRATION ================ 1279.96
+PRESSURE: 205000 1726.73 -111.696 -413.391 -123.794 1841.36 -205.68 -621.288 1022.88 2364.02
+GPRESSURE: 205000 1800.57 -130.766 -339.499 -450.682 1793.4 -302.744 -539.199 1366.89 2425.42
+PRESSAVG: 205000 1931.14 -31.5804 6.80385 -34.9621 1901.23 -8.99473 14.2049 997.479 4235.98
+GPRESSAVG: 205000 1931.02 -31.4852 6.75233 -34.9108 1901.54 -8.96128 14.3393 998.545 4235.84
+ENERGY:  205000         0.0000         0.0000         0.0000         0.0000          -5845.1943       552.3502         0.0000         0.0000       922.0533          -4370.7907       291.8229     -5292.8441     -4368.5837       299.0664           1977.3696      2006.4631     21141.5399      2689.4495      2689.4670
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 205000
+LDB: ============= START OF LOAD BALANCING ============== 1291.71
+LDB: ============== END OF LOAD BALANCING =============== 1291.71
+LDB: =============== DONE WITH MIGRATION ================ 1291.71
+LDB: ============= START OF LOAD BALANCING ============== 1292.01
+LDB: ============== END OF LOAD BALANCING =============== 1292.01
+LDB: =============== DONE WITH MIGRATION ================ 1292.01
+LDB: ============= START OF LOAD BALANCING ============== 1303.76
+LDB: ============== END OF LOAD BALANCING =============== 1303.76
+LDB: =============== DONE WITH MIGRATION ================ 1303.76
+LDB: ============= START OF LOAD BALANCING ============== 1304.06
+LDB: ============== END OF LOAD BALANCING =============== 1304.06
+LDB: =============== DONE WITH MIGRATION ================ 1304.06
+PRESSURE: 210000 1466.53 67.8088 -332.84 64.3272 1546.37 -192.581 -663.29 373.018 3437.09
+GPRESSURE: 210000 1479.64 -1.14048 172.332 15.9866 1467.57 -352.43 -848.78 481.911 3532.4
+PRESSAVG: 210000 1401.85 -13.3328 7.76885 -4.68113 1304.54 -53.6275 -305.826 1039.13 3697.63
+GPRESSAVG: 210000 1401.85 -13.2174 8.03676 -4.56878 1304.66 -53.8409 -306.185 1038.79 3697.65
+ENERGY:  210000         0.0000         0.0000         0.0000         0.0000          -5852.0717       574.2679         0.0000         0.0000       953.6006          -4324.2032       301.8073     -5277.8037     -4321.1709       298.5979           2149.9979      2159.8719     21141.5399      2134.6725      2134.7182
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 210000
+LDB: ============= START OF LOAD BALANCING ============== 1315.82
+LDB: ============== END OF LOAD BALANCING =============== 1315.82
+LDB: =============== DONE WITH MIGRATION ================ 1315.82
+LDB: ============= START OF LOAD BALANCING ============== 1316.12
+LDB: ============== END OF LOAD BALANCING =============== 1316.12
+LDB: =============== DONE WITH MIGRATION ================ 1316.12
+LDB: ============= START OF LOAD BALANCING ============== 1327.85
+LDB: ============== END OF LOAD BALANCING =============== 1327.85
+LDB: =============== DONE WITH MIGRATION ================ 1327.85
+LDB: ============= START OF LOAD BALANCING ============== 1328.15
+LDB: ============== END OF LOAD BALANCING =============== 1328.15
+LDB: =============== DONE WITH MIGRATION ================ 1328.15
+LDB: ============= START OF LOAD BALANCING ============== 1339.92
+LDB: ============== END OF LOAD BALANCING =============== 1339.92
+LDB: =============== DONE WITH MIGRATION ================ 1339.92
+LDB: ============= START OF LOAD BALANCING ============== 1340.22
+LDB: ============== END OF LOAD BALANCING =============== 1340.22
+LDB: =============== DONE WITH MIGRATION ================ 1340.22
+PRESSURE: 215000 992.361 465.334 332.567 506.834 588.078 113.121 -79.6785 1244.03 3031.92
+GPRESSURE: 215000 1042.24 154.492 339.279 756.158 417.588 365.264 -128.645 936.817 3229.95
+PRESSAVG: 215000 1336.4 19.1522 8.73547 10.8089 1324.26 -14.6674 -136.189 1181.61 3617.51
+GPRESSAVG: 215000 1336.55 19.012 8.85493 10.5762 1323.9 -14.3446 -136.197 1181.83 3617.48
+ENERGY:  215000         0.0000         0.0000         0.0000         0.0000          -5717.8192       494.2545         0.0000         0.0000       946.1063          -4277.4584       299.4355     -5223.5647     -4275.6808       301.5400           1537.4530      1563.2595     21141.5399      2092.7217      2092.6432
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 215000
+LDB: ============= START OF LOAD BALANCING ============== 1352.05
+LDB: ============== END OF LOAD BALANCING =============== 1352.05
+LDB: =============== DONE WITH MIGRATION ================ 1352.05
+LDB: ============= START OF LOAD BALANCING ============== 1352.35
+LDB: ============== END OF LOAD BALANCING =============== 1352.35
+LDB: =============== DONE WITH MIGRATION ================ 1352.35
+LDB: ============= START OF LOAD BALANCING ============== 1364.11
+LDB: ============== END OF LOAD BALANCING =============== 1364.11
+LDB: =============== DONE WITH MIGRATION ================ 1364.11
+LDB: ============= START OF LOAD BALANCING ============== 1364.41
+LDB: ============== END OF LOAD BALANCING =============== 1364.41
+LDB: =============== DONE WITH MIGRATION ================ 1364.41
+PRESSURE: 220000 1078.12 -191.52 -722.279 -168.35 889.666 230.363 -578.012 1241.54 4735.6
+GPRESSURE: 220000 1154.2 -358.955 -773.207 -144.471 804.718 180.324 -647.334 1161.98 4811.32
+PRESSAVG: 220000 2014.92 -7.78059 44.6849 -4.0297 1958.22 41.5647 -104.196 1236.32 4798.65
+GPRESSAVG: 220000 2015 -7.56573 44.5313 -3.69572 1957.86 41.67 -104.629 1236.72 4798.77
+ENERGY:  220000         0.0000         0.0000         0.0000         0.0000          -5771.9163       518.1194         0.0000         0.0000       933.5132          -4320.2838       295.4498     -5253.7969     -4318.2146       303.9134           2234.4627      2256.7448     21141.5399      2923.9297      2923.8749
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 220000
+LDB: ============= START OF LOAD BALANCING ============== 1376.13
+LDB: ============== END OF LOAD BALANCING =============== 1376.13
+LDB: =============== DONE WITH MIGRATION ================ 1376.13
+LDB: ============= START OF LOAD BALANCING ============== 1376.43
+LDB: ============== END OF LOAD BALANCING =============== 1376.43
+LDB: =============== DONE WITH MIGRATION ================ 1376.43
+LDB: ============= START OF LOAD BALANCING ============== 1388.15
+LDB: ============== END OF LOAD BALANCING =============== 1388.15
+LDB: =============== DONE WITH MIGRATION ================ 1388.15
+LDB: ============= START OF LOAD BALANCING ============== 1388.45
+LDB: ============== END OF LOAD BALANCING =============== 1388.45
+LDB: =============== DONE WITH MIGRATION ================ 1388.45
+LDB: ============= START OF LOAD BALANCING ============== 1400.16
+LDB: ============== END OF LOAD BALANCING =============== 1400.16
+LDB: =============== DONE WITH MIGRATION ================ 1400.16
+LDB: ============= START OF LOAD BALANCING ============== 1400.46
+LDB: ============== END OF LOAD BALANCING =============== 1400.46
+LDB: =============== DONE WITH MIGRATION ================ 1400.46
+PRESSURE: 225000 1000.07 11.1471 453.882 25.2542 1927.45 266.174 726.987 1583.88 3261.92
+GPRESSURE: 225000 965.823 260.027 290.244 -110.797 2040.19 302.929 857.843 1508.93 3280.76
+PRESSAVG: 225000 2015.82 7.91007 -11.3272 8.626 1984.19 13.7699 308.192 1255.37 4863.66
+GPRESSAVG: 225000 2015.4 7.47844 -11.125 8.99106 1984.51 13.1703 308.882 1255.48 4863.79
+ENERGY:  225000         0.0000         0.0000         0.0000         0.0000          -5800.9366       525.7772         0.0000         0.0000       944.7974          -4330.3621       299.0212     -5275.1595     -4327.7059       296.9310           2063.1474      2095.5903     21141.5399      2954.5563      2954.5655
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 225000
+LDB: ============= START OF LOAD BALANCING ============== 1412.42
+LDB: ============== END OF LOAD BALANCING =============== 1412.42
+LDB: =============== DONE WITH MIGRATION ================ 1412.42
+LDB: ============= START OF LOAD BALANCING ============== 1412.72
+LDB: ============== END OF LOAD BALANCING =============== 1412.72
+LDB: =============== DONE WITH MIGRATION ================ 1412.72
+LDB: ============= START OF LOAD BALANCING ============== 1424.47
+LDB: ============== END OF LOAD BALANCING =============== 1424.47
+LDB: =============== DONE WITH MIGRATION ================ 1424.47
+LDB: ============= START OF LOAD BALANCING ============== 1424.77
+LDB: ============== END OF LOAD BALANCING =============== 1424.77
+LDB: =============== DONE WITH MIGRATION ================ 1424.77
+PRESSURE: 230000 1638.68 -1046.39 -267.39 -1063.59 1680.72 -500.417 377.493 970.774 6439.23
+GPRESSURE: 230000 1555.52 -1246.49 -136.845 -691.56 1763.36 -90.6872 197.269 1013.18 6501.14
+PRESSAVG: 230000 1809.28 28.8748 38.298 28.4144 1789.39 14.9259 208.478 1317.01 4718.46
+GPRESSAVG: 230000 1809.68 28.7981 38.308 28.31 1789.52 15.1834 208.335 1317.47 4718.14
+ENERGY:  230000         0.0000         0.0000         0.0000         0.0000          -5814.8432       567.2579         0.0000         0.0000       905.7119          -4341.8734       286.6509     -5247.5853     -4339.7624       296.5459           3252.8791      3273.3400     21141.5399      2772.3757      2772.4470
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 230000
+LDB: ============= START OF LOAD BALANCING ============== 1436.5
+LDB: ============== END OF LOAD BALANCING =============== 1436.5
+LDB: =============== DONE WITH MIGRATION ================ 1436.5
+LDB: ============= START OF LOAD BALANCING ============== 1436.8
+LDB: ============== END OF LOAD BALANCING =============== 1436.8
+LDB: =============== DONE WITH MIGRATION ================ 1436.8
+LDB: ============= START OF LOAD BALANCING ============== 1448.52
+LDB: ============== END OF LOAD BALANCING =============== 1448.52
+LDB: =============== DONE WITH MIGRATION ================ 1448.52
+LDB: ============= START OF LOAD BALANCING ============== 1448.82
+LDB: ============== END OF LOAD BALANCING =============== 1448.82
+LDB: =============== DONE WITH MIGRATION ================ 1448.82
+LDB: ============= START OF LOAD BALANCING ============== 1460.56
+LDB: ============== END OF LOAD BALANCING =============== 1460.56
+LDB: =============== DONE WITH MIGRATION ================ 1460.56
+LDB: ============= START OF LOAD BALANCING ============== 1460.86
+LDB: ============== END OF LOAD BALANCING =============== 1460.86
+LDB: =============== DONE WITH MIGRATION ================ 1460.86
+PRESSURE: 235000 1112.36 562.071 -363.543 577.074 2879.04 440.549 -91.0476 1773.09 4582
+GPRESSURE: 235000 1057.92 471.445 -303.992 440.375 2970.23 466.887 68.2659 1646.3 4601.43
+PRESSAVG: 235000 1720.56 -6.08269 15.1686 -5.19648 1728.29 -17.5946 134.999 1264.69 4648.92
+GPRESSAVG: 235000 1720.9 -5.68378 14.9823 -5.07331 1728.11 -17.4952 134.763 1264.48 4649.09
+ENERGY:  235000         0.0000         0.0000         0.0000         0.0000          -5810.2617       563.9031         0.0000         0.0000       964.7280          -4281.6307       305.3291     -5246.3587     -4278.6338       299.9457           2857.8018      2876.5226     21141.5399      2699.2577      2699.3641
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 235000
+LDB: ============= START OF LOAD BALANCING ============== 1472.61
+LDB: ============== END OF LOAD BALANCING =============== 1472.61
+LDB: =============== DONE WITH MIGRATION ================ 1472.61
+LDB: ============= START OF LOAD BALANCING ============== 1472.91
+LDB: ============== END OF LOAD BALANCING =============== 1472.91
+LDB: =============== DONE WITH MIGRATION ================ 1472.91
+LDB: ============= START OF LOAD BALANCING ============== 1484.66
+LDB: ============== END OF LOAD BALANCING =============== 1484.66
+LDB: =============== DONE WITH MIGRATION ================ 1484.66
+LDB: ============= START OF LOAD BALANCING ============== 1484.96
+LDB: ============== END OF LOAD BALANCING =============== 1484.96
+LDB: =============== DONE WITH MIGRATION ================ 1484.96
+PRESSURE: 240000 2124.93 200.089 879.955 382.999 2371.43 184.759 747.603 1272.22 6770.96
+GPRESSURE: 240000 2353.62 74.6096 760.706 138.503 2239.43 455.552 1105.54 957.582 6799.27
+PRESSAVG: 240000 2008.14 48.0411 47.8594 50.8994 2012.87 33.3289 297.511 1290.59 5067.52
+GPRESSAVG: 240000 2008.07 48.5356 48.003 50.6814 2012.8 33.517 297.453 1290.47 5067.33
+ENERGY:  240000         0.0000         0.0000         0.0000         0.0000          -5762.6872       557.4111         0.0000         0.0000       966.4954          -4238.7807       305.8884     -5205.2761     -4237.2191       305.7333           3755.7724      3797.4412     21141.5399      3029.5133      3029.4007
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 240000
+LDB: ============= START OF LOAD BALANCING ============== 1496.69
+LDB: ============== END OF LOAD BALANCING =============== 1496.69
+LDB: =============== DONE WITH MIGRATION ================ 1496.69
+LDB: ============= START OF LOAD BALANCING ============== 1496.99
+LDB: ============== END OF LOAD BALANCING =============== 1496.99
+LDB: =============== DONE WITH MIGRATION ================ 1496.99
+LDB: ============= START OF LOAD BALANCING ============== 1508.77
+LDB: ============== END OF LOAD BALANCING =============== 1508.77
+LDB: =============== DONE WITH MIGRATION ================ 1508.77
+LDB: ============= START OF LOAD BALANCING ============== 1509.07
+LDB: ============== END OF LOAD BALANCING =============== 1509.07
+LDB: =============== DONE WITH MIGRATION ================ 1509.07
+LDB: ============= START OF LOAD BALANCING ============== 1520.78
+LDB: ============== END OF LOAD BALANCING =============== 1520.78
+LDB: =============== DONE WITH MIGRATION ================ 1520.78
+LDB: ============= START OF LOAD BALANCING ============== 1521.08
+LDB: ============== END OF LOAD BALANCING =============== 1521.08
+LDB: =============== DONE WITH MIGRATION ================ 1521.08
+PRESSURE: 245000 2139.42 -140.48 883.424 -142.445 341.716 -177.776 841.253 557.264 5082.12
+GPRESSURE: 245000 2438.28 -156.284 843.593 35.2579 339.949 -230.565 584.424 565.09 4889.34
+PRESSAVG: 245000 2111.15 0.869564 32.5077 3.03077 2130.89 20.182 314.89 1005.69 4987.29
+GPRESSAVG: 245000 2111.27 0.415959 32.4032 3.16978 2131.08 20.3894 315.123 1005.44 4987.18
+ENERGY:  245000         0.0000         0.0000         0.0000         0.0000          -5824.2567       567.1111         0.0000         0.0000       920.2025          -4336.9430       291.2371     -5257.1455     -4334.3863       294.9965           2521.0856      2555.8576     21141.5399      3076.4453      3076.5117
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 245000
+LDB: ============= START OF LOAD BALANCING ============== 1532.84
+LDB: ============== END OF LOAD BALANCING =============== 1532.84
+LDB: =============== DONE WITH MIGRATION ================ 1532.84
+LDB: ============= START OF LOAD BALANCING ============== 1533.14
+LDB: ============== END OF LOAD BALANCING =============== 1533.14
+LDB: =============== DONE WITH MIGRATION ================ 1533.14
+LDB: ============= START OF LOAD BALANCING ============== 1544.87
+LDB: ============== END OF LOAD BALANCING =============== 1544.87
+LDB: =============== DONE WITH MIGRATION ================ 1544.87
+LDB: ============= START OF LOAD BALANCING ============== 1545.17
+LDB: ============== END OF LOAD BALANCING =============== 1545.17
+LDB: =============== DONE WITH MIGRATION ================ 1545.17
+PRESSURE: 250000 571.607 -371.585 383.11 -350.159 1059.24 -70.0147 -384.028 874.29 3396.09
+GPRESSURE: 250000 563.994 -405.02 589.569 -544.573 1120.84 136.152 -465.03 796.371 3402.52
+PRESSAVG: 250000 1388.77 -39.148 36.1004 -33.8248 1337.71 -22.318 21.6421 993.095 3834.99
+GPRESSAVG: 250000 1388.32 -39.3321 36.1527 -34.0171 1337.58 -22.031 21.2916 992.855 3835.8
+TIMING: 250000  CPU: 1544.14, 0.00602507/step  Wall: 1544.41, 0.00602536/step, 0.418428 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  250000         0.0000         0.0000         0.0000         0.0000          -5779.1839       517.7841         0.0000         0.0000       901.3018          -4360.0980       285.2551     -5261.3998     -4358.3609       294.1901           1675.6440      1695.7863     21141.5399      2187.1584      2187.2352
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 250000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 250000
+WRITING COORDINATES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=250000) takes 0.000 seconds, 311.102 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 1556.88
+LDB: ============== END OF LOAD BALANCING =============== 1556.88
+LDB: =============== DONE WITH MIGRATION ================ 1556.88
+LDB: ============= START OF LOAD BALANCING ============== 1557.18
+LDB: ============== END OF LOAD BALANCING =============== 1557.18
+LDB: =============== DONE WITH MIGRATION ================ 1557.18
+LDB: ============= START OF LOAD BALANCING ============== 1568.9
+LDB: ============== END OF LOAD BALANCING =============== 1568.9
+LDB: =============== DONE WITH MIGRATION ================ 1568.9
+LDB: ============= START OF LOAD BALANCING ============== 1569.2
+LDB: ============== END OF LOAD BALANCING =============== 1569.2
+LDB: =============== DONE WITH MIGRATION ================ 1569.2
+LDB: ============= START OF LOAD BALANCING ============== 1580.96
+LDB: ============== END OF LOAD BALANCING =============== 1580.96
+LDB: =============== DONE WITH MIGRATION ================ 1580.96
+LDB: ============= START OF LOAD BALANCING ============== 1581.26
+LDB: ============== END OF LOAD BALANCING =============== 1581.26
+LDB: =============== DONE WITH MIGRATION ================ 1581.26
+PRESSURE: 255000 2427.55 -280.131 4.57184 -325.6 1667.65 36.9645 -11.6559 795.874 3750.62
+GPRESSURE: 255000 2325.69 -303.396 307.486 -346.986 1844.23 -61.3111 -120.605 620.664 3765.99
+PRESSAVG: 255000 1481.79 25.9392 3.93555 23.4102 1407.46 -76.624 -18.7689 659.966 4075.17
+GPRESSAVG: 255000 1481.62 26.2978 4.205 23.2501 1407.71 -76.8134 -18.8103 659.816 4074.97
+ENERGY:  255000         0.0000         0.0000         0.0000         0.0000          -5819.0176       593.2209         0.0000         0.0000       938.5232          -4287.2735       297.0354     -5225.7967     -4284.8117       292.5360           2615.2706      2645.3054     21141.5399      2321.4763      2321.4338
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 255000
+LDB: ============= START OF LOAD BALANCING ============== 1593
+LDB: ============== END OF LOAD BALANCING =============== 1593
+LDB: =============== DONE WITH MIGRATION ================ 1593
+LDB: ============= START OF LOAD BALANCING ============== 1593.3
+LDB: ============== END OF LOAD BALANCING =============== 1593.3
+LDB: =============== DONE WITH MIGRATION ================ 1593.3
+LDB: ============= START OF LOAD BALANCING ============== 1605.02
+LDB: ============== END OF LOAD BALANCING =============== 1605.02
+LDB: =============== DONE WITH MIGRATION ================ 1605.02
+LDB: ============= START OF LOAD BALANCING ============== 1605.32
+LDB: ============== END OF LOAD BALANCING =============== 1605.32
+LDB: =============== DONE WITH MIGRATION ================ 1605.32
+PRESSURE: 260000 734.537 -247.474 131.489 -264.326 841.012 375.14 -440.626 959.21 3883.21
+GPRESSURE: 260000 627.586 -32.2818 120.876 2.34169 987.56 581.763 -335.926 845.396 3929.2
+PRESSAVG: 260000 1438.77 -57.6388 -6.30498 -67.9047 1433.44 -47.8928 -3.29992 463.867 3936.24
+GPRESSAVG: 260000 1438.6 -57.6698 -6.62701 -67.7372 1433.39 -47.6093 -3.14085 463.87 3936.36
+ENERGY:  260000         0.0000         0.0000         0.0000         0.0000          -5832.3990       533.1101         0.0000         0.0000       915.4515          -4383.8374       289.7334     -5299.2889     -4382.2384       298.4288           1819.5853      1848.1154     21141.5399      2269.4827      2269.4498
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 260000
+LDB: ============= START OF LOAD BALANCING ============== 1617.02
+LDB: ============== END OF LOAD BALANCING =============== 1617.02
+LDB: =============== DONE WITH MIGRATION ================ 1617.02
+LDB: ============= START OF LOAD BALANCING ============== 1617.32
+LDB: ============== END OF LOAD BALANCING =============== 1617.32
+LDB: =============== DONE WITH MIGRATION ================ 1617.32
+LDB: ============= START OF LOAD BALANCING ============== 1629.03
+LDB: ============== END OF LOAD BALANCING =============== 1629.03
+LDB: =============== DONE WITH MIGRATION ================ 1629.03
+LDB: ============= START OF LOAD BALANCING ============== 1629.33
+LDB: ============== END OF LOAD BALANCING =============== 1629.33
+LDB: =============== DONE WITH MIGRATION ================ 1629.33
+LDB: ============= START OF LOAD BALANCING ============== 1641.03
+LDB: ============== END OF LOAD BALANCING =============== 1641.03
+LDB: =============== DONE WITH MIGRATION ================ 1641.03
+LDB: ============= START OF LOAD BALANCING ============== 1641.33
+LDB: ============== END OF LOAD BALANCING =============== 1641.33
+LDB: =============== DONE WITH MIGRATION ================ 1641.33
+PRESSURE: 265000 1762.44 -738.596 -59.6729 -787.219 911.225 -188.875 -455.969 55.1663 3911.58
+GPRESSURE: 265000 1690.89 -456.228 258.29 -1017.26 970.55 -366.676 -373.229 264.492 4024.76
+PRESSAVG: 265000 1493.6 35.9785 -34.1684 34.0092 1571.93 49.9014 -190.379 638.287 4332.13
+GPRESSAVG: 265000 1493.63 36.0616 -34.2926 33.9565 1572.27 48.9667 -190.401 638.703 4332
+ENERGY:  265000         0.0000         0.0000         0.0000         0.0000          -5764.0933       547.6566         0.0000         0.0000       927.8831          -4288.5537       293.6679     -5216.4367     -4286.3413       295.2772           2195.0812      2228.7311     21141.5399      2465.8877      2465.9655
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 265000
+LDB: ============= START OF LOAD BALANCING ============== 1653.09
+LDB: ============== END OF LOAD BALANCING =============== 1653.09
+LDB: =============== DONE WITH MIGRATION ================ 1653.09
+LDB: ============= START OF LOAD BALANCING ============== 1653.4
+LDB: ============== END OF LOAD BALANCING =============== 1653.4
+LDB: =============== DONE WITH MIGRATION ================ 1653.4
+LDB: ============= START OF LOAD BALANCING ============== 1665.1
+LDB: ============== END OF LOAD BALANCING =============== 1665.1
+LDB: =============== DONE WITH MIGRATION ================ 1665.1
+LDB: ============= START OF LOAD BALANCING ============== 1665.4
+LDB: ============== END OF LOAD BALANCING =============== 1665.4
+LDB: =============== DONE WITH MIGRATION ================ 1665.4
+PRESSURE: 270000 1135.38 -446.398 407.194 -439.212 1107.88 515.828 290.907 1541.2 4812.98
+GPRESSURE: 270000 1071.33 -565.223 355.11 -439.57 1321.81 615.139 394.115 1592.41 4783.73
+PRESSAVG: 270000 1301.73 -58.077 74.3034 -52.9797 1300.85 -15.0228 22.5064 553.718 4099.07
+GPRESSAVG: 270000 1301.66 -57.8683 74.2651 -53.0802 1300.82 -14.7566 22.3719 552.804 4098.94
+ENERGY:  270000         0.0000         0.0000         0.0000         0.0000          -5844.8401       570.7728         0.0000         0.0000       897.5360          -4376.5314       284.0633     -5274.0674     -4374.1128       295.2118           2352.0795      2392.2885     21141.5399      2233.8826      2233.8039
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 270000
+LDB: ============= START OF LOAD BALANCING ============== 1677.13
+LDB: ============== END OF LOAD BALANCING =============== 1677.13
+LDB: =============== DONE WITH MIGRATION ================ 1677.13
+LDB: ============= START OF LOAD BALANCING ============== 1677.43
+LDB: ============== END OF LOAD BALANCING =============== 1677.43
+LDB: =============== DONE WITH MIGRATION ================ 1677.43
+LDB: ============= START OF LOAD BALANCING ============== 1689.16
+LDB: ============== END OF LOAD BALANCING =============== 1689.16
+LDB: =============== DONE WITH MIGRATION ================ 1689.16
+LDB: ============= START OF LOAD BALANCING ============== 1689.46
+LDB: ============== END OF LOAD BALANCING =============== 1689.46
+LDB: =============== DONE WITH MIGRATION ================ 1689.46
+LDB: ============= START OF LOAD BALANCING ============== 1701.29
+LDB: ============== END OF LOAD BALANCING =============== 1701.29
+LDB: =============== DONE WITH MIGRATION ================ 1701.29
+LDB: ============= START OF LOAD BALANCING ============== 1701.59
+LDB: ============== END OF LOAD BALANCING =============== 1701.59
+LDB: =============== DONE WITH MIGRATION ================ 1701.59
+PRESSURE: 275000 2470.52 -596.536 -58.9813 -610.905 2145.04 -206.681 384.18 189.246 4451.92
+GPRESSURE: 275000 2542.32 -859.632 -201.742 -405.767 2276.79 -441.249 347.957 456.983 4286.04
+PRESSAVG: 275000 1627.84 6.77278 -31.9989 -1.30441 1618.68 -69.9694 48.8022 506.381 4390.97
+GPRESSAVG: 275000 1628.15 6.90883 -32.0955 -1.51652 1618.4 -70.502 49.0567 506.367 4391.14
+ENERGY:  275000         0.0000         0.0000         0.0000         0.0000          -5870.5666       614.8122         0.0000         0.0000       922.8038          -4332.9506       292.0604     -5255.7543     -4331.6507       296.7243           3022.4937      3035.0491     21141.5399      2545.8282      2545.8954
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 275000
+LDB: ============= START OF LOAD BALANCING ============== 1713.43
+LDB: ============== END OF LOAD BALANCING =============== 1713.43
+LDB: =============== DONE WITH MIGRATION ================ 1713.43
+LDB: ============= START OF LOAD BALANCING ============== 1713.73
+LDB: ============== END OF LOAD BALANCING =============== 1713.73
+LDB: =============== DONE WITH MIGRATION ================ 1713.73
+LDB: ============= START OF LOAD BALANCING ============== 1725.55
+LDB: ============== END OF LOAD BALANCING =============== 1725.55
+LDB: =============== DONE WITH MIGRATION ================ 1725.55
+LDB: ============= START OF LOAD BALANCING ============== 1725.86
+LDB: ============== END OF LOAD BALANCING =============== 1725.86
+LDB: =============== DONE WITH MIGRATION ================ 1725.86
+PRESSURE: 280000 1419.56 -49.5961 -571.645 -32.5572 1477.58 121.755 -663.111 1147.16 3311.18
+GPRESSURE: 280000 1520.44 -289.98 -556.337 31.0174 1296.94 200.091 -1252.89 996.736 3487.38
+PRESSAVG: 280000 1962.01 -34.4797 4.68131 -37.3764 1895.62 26.7514 -166.665 806.301 4708.16
+GPRESSAVG: 280000 1962.11 -34.4357 5.01053 -37.3814 1895.84 27.3419 -166.974 805.599 4708.01
+ENERGY:  280000         0.0000         0.0000         0.0000         0.0000          -5822.7683       552.0273         0.0000         0.0000       937.2572          -4333.4838       296.6348     -5270.7410     -4332.0955       299.5208           2069.4429      2101.5844     21141.5399      2855.2631      2855.3185
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 280000
+LDB: ============= START OF LOAD BALANCING ============== 1737.72
+LDB: ============== END OF LOAD BALANCING =============== 1737.72
+LDB: =============== DONE WITH MIGRATION ================ 1737.72
+LDB: ============= START OF LOAD BALANCING ============== 1738.02
+LDB: ============== END OF LOAD BALANCING =============== 1738.02
+LDB: =============== DONE WITH MIGRATION ================ 1738.02
+LDB: ============= START OF LOAD BALANCING ============== 1749.8
+LDB: ============== END OF LOAD BALANCING =============== 1749.8
+LDB: =============== DONE WITH MIGRATION ================ 1749.8
+LDB: ============= START OF LOAD BALANCING ============== 1750.1
+LDB: ============== END OF LOAD BALANCING =============== 1750.1
+LDB: =============== DONE WITH MIGRATION ================ 1750.1
+LDB: ============= START OF LOAD BALANCING ============== 1761.97
+LDB: ============== END OF LOAD BALANCING =============== 1761.97
+LDB: =============== DONE WITH MIGRATION ================ 1761.97
+LDB: ============= START OF LOAD BALANCING ============== 1762.27
+LDB: ============== END OF LOAD BALANCING =============== 1762.27
+LDB: =============== DONE WITH MIGRATION ================ 1762.27
+PRESSURE: 285000 942.385 103.256 -578.26 87.9654 1380.4 73.0474 -149.142 805.289 5195.25
+GPRESSURE: 285000 1048.23 167.912 -353.712 98.59 1256.95 90.882 95.2384 643.779 5275.04
+PRESSAVG: 285000 1675.91 -14.6437 -21.4748 -10.6734 1626.32 35.2537 -117.068 783.649 4608.17
+GPRESSAVG: 285000 1676.32 -14.7081 -21.4295 -10.6941 1626.18 35.2393 -117.006 783.943 4608
+ENERGY:  285000         0.0000         0.0000         0.0000         0.0000          -5791.7742       550.8764         0.0000         0.0000       932.4677          -4308.4300       295.1189     -5240.8978     -4307.8143       296.7731           2506.0131      2526.7394     21141.5399      2636.8000      2636.8354
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 285000
+LDB: ============= START OF LOAD BALANCING ============== 1774.13
+LDB: ============== END OF LOAD BALANCING =============== 1774.13
+LDB: =============== DONE WITH MIGRATION ================ 1774.13
+LDB: ============= START OF LOAD BALANCING ============== 1774.43
+LDB: ============== END OF LOAD BALANCING =============== 1774.43
+LDB: =============== DONE WITH MIGRATION ================ 1774.43
+LDB: ============= START OF LOAD BALANCING ============== 1786.24
+LDB: ============== END OF LOAD BALANCING =============== 1786.24
+LDB: =============== DONE WITH MIGRATION ================ 1786.24
+LDB: ============= START OF LOAD BALANCING ============== 1786.55
+LDB: ============== END OF LOAD BALANCING =============== 1786.55
+LDB: =============== DONE WITH MIGRATION ================ 1786.55
+PRESSURE: 290000 1538.07 436.43 451.242 422.883 1520.18 148.566 525.245 506.682 4370.1
+GPRESSURE: 290000 1630.24 293.812 723.234 830.57 1607.83 53.8452 315.191 799.489 4328.28
+PRESSAVG: 290000 1299.4 -12.5792 -22.2153 -4.03722 1253.91 71.2708 -364.141 750.375 4357.55
+GPRESSAVG: 290000 1299.19 -12.33 -22.5286 -4.0803 1254.17 70.8689 -364.069 750.31 4357.64
+ENERGY:  290000         0.0000         0.0000         0.0000         0.0000          -5743.8073       547.7556         0.0000         0.0000       859.4789          -4336.5727       272.0185     -5196.0516     -4333.3913       294.8028           2476.1198      2522.1165     21141.5399      2303.6199      2303.6681
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 290000
+LDB: ============= START OF LOAD BALANCING ============== 1798.49
+LDB: ============== END OF LOAD BALANCING =============== 1798.49
+LDB: =============== DONE WITH MIGRATION ================ 1798.49
+LDB: ============= START OF LOAD BALANCING ============== 1798.8
+LDB: ============== END OF LOAD BALANCING =============== 1798.8
+LDB: =============== DONE WITH MIGRATION ================ 1798.8
+LDB: ============= START OF LOAD BALANCING ============== 1810.63
+LDB: ============== END OF LOAD BALANCING =============== 1810.63
+LDB: =============== DONE WITH MIGRATION ================ 1810.63
+LDB: ============= START OF LOAD BALANCING ============== 1810.93
+LDB: ============== END OF LOAD BALANCING =============== 1810.93
+LDB: =============== DONE WITH MIGRATION ================ 1810.93
+LDB: ============= START OF LOAD BALANCING ============== 1822.63
+LDB: ============== END OF LOAD BALANCING =============== 1822.63
+LDB: =============== DONE WITH MIGRATION ================ 1822.63
+LDB: ============= START OF LOAD BALANCING ============== 1822.93
+LDB: ============== END OF LOAD BALANCING =============== 1822.93
+LDB: =============== DONE WITH MIGRATION ================ 1822.93
+PRESSURE: 295000 1582.83 300.565 -44.7256 299.067 954.332 -657.141 -412.294 352.193 4214.95
+GPRESSURE: 295000 1522.94 163.498 -53.6117 395.143 986.665 -540.95 -449.538 346 4319.05
+PRESSAVG: 295000 1642.54 -6.78458 -8.16429 -7.06583 1562.68 -36.1364 -185.605 717.363 4552.8
+GPRESSAVG: 295000 1642.81 -6.81931 -8.25091 -6.46162 1562.82 -35.9488 -185.455 717.456 4552.77
+ENERGY:  295000         0.0000         0.0000         0.0000         0.0000          -5769.6815       536.4018         0.0000         0.0000       939.9679          -4293.3118       297.4927     -5233.2797     -4290.7911       303.4289           2250.7024      2276.2179     21141.5399      2586.0066      2586.1339
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 295000
+LDB: ============= START OF LOAD BALANCING ============== 1834.77
+LDB: ============== END OF LOAD BALANCING =============== 1834.77
+LDB: =============== DONE WITH MIGRATION ================ 1834.77
+LDB: ============= START OF LOAD BALANCING ============== 1835.07
+LDB: ============== END OF LOAD BALANCING =============== 1835.07
+LDB: =============== DONE WITH MIGRATION ================ 1835.07
+LDB: ============= START OF LOAD BALANCING ============== 1846.87
+LDB: ============== END OF LOAD BALANCING =============== 1846.87
+LDB: =============== DONE WITH MIGRATION ================ 1846.87
+LDB: ============= START OF LOAD BALANCING ============== 1847.17
+LDB: ============== END OF LOAD BALANCING =============== 1847.17
+LDB: =============== DONE WITH MIGRATION ================ 1847.17
+PRESSURE: 300000 1192.25 104.356 195.849 109.098 1091.54 491.868 -409.733 1208.61 4963.17
+GPRESSURE: 300000 1177.65 121.432 92.3775 96.3234 984.436 515.582 -224.534 1173.14 5180.79
+PRESSAVG: 300000 1665.46 35.035 17.8373 36.7091 1737.17 23.4579 -244.73 850.531 4594.08
+GPRESSAVG: 300000 1665.49 35.1428 17.8627 35.9376 1737.06 22.7904 -245.268 850.575 4593.76
+TIMING: 300000  CPU: 1846.02, 0.00603766/step  Wall: 1846.38, 0.00603944/step, 0.335524 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  300000         0.0000         0.0000         0.0000         0.0000          -5774.4312       542.0844         0.0000         0.0000       953.6311          -4278.7157       301.8170     -5232.3468     -4276.6073       301.1139           2415.6556      2447.6254     21141.5399      2665.5686      2665.4359
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 300000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 300000
+WRITING COORDINATES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1858.84
+LDB: ============== END OF LOAD BALANCING =============== 1858.84
+LDB: =============== DONE WITH MIGRATION ================ 1858.84
+LDB: ============= START OF LOAD BALANCING ============== 1859.14
+LDB: ============== END OF LOAD BALANCING =============== 1859.14
+LDB: =============== DONE WITH MIGRATION ================ 1859.14
+LDB: ============= START OF LOAD BALANCING ============== 1870.8
+LDB: ============== END OF LOAD BALANCING =============== 1870.8
+LDB: =============== DONE WITH MIGRATION ================ 1870.8
+LDB: ============= START OF LOAD BALANCING ============== 1871.1
+LDB: ============== END OF LOAD BALANCING =============== 1871.1
+LDB: =============== DONE WITH MIGRATION ================ 1871.1
+LDB: ============= START OF LOAD BALANCING ============== 1882.76
+LDB: ============== END OF LOAD BALANCING =============== 1882.76
+LDB: =============== DONE WITH MIGRATION ================ 1882.76
+LDB: ============= START OF LOAD BALANCING ============== 1883.06
+LDB: ============== END OF LOAD BALANCING =============== 1883.06
+LDB: =============== DONE WITH MIGRATION ================ 1883.06
+PRESSURE: 305000 188.385 -72.2732 556.333 -56.1868 551.956 -162.107 21.9351 288.939 3776.17
+GPRESSURE: 305000 253.34 3.15593 348.206 -193.397 589.672 -461.058 44.8556 474.729 3710.74
+PRESSAVG: 305000 1252.81 50.9215 16.7044 55.6214 1289.04 5.4893 -300.683 739.56 4272.3
+GPRESSAVG: 305000 1252.82 51.1697 16.4333 55.7551 1288.75 6.11342 -300.136 739.418 4272.51
+ENERGY:  305000         0.0000         0.0000         0.0000         0.0000          -5684.1807       490.3137         0.0000         0.0000       991.7238          -4202.1432       313.8730     -5193.8671     -4198.7499       302.6758           1505.5035      1517.9168     21141.5399      2271.3843      2271.3614
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 305000
+LDB: ============= START OF LOAD BALANCING ============== 1895.26
+LDB: ============== END OF LOAD BALANCING =============== 1895.26
+LDB: =============== DONE WITH MIGRATION ================ 1895.26
+LDB: ============= START OF LOAD BALANCING ============== 1895.57
+LDB: ============== END OF LOAD BALANCING =============== 1895.57
+LDB: =============== DONE WITH MIGRATION ================ 1895.57
+LDB: ============= START OF LOAD BALANCING ============== 1908.07
+LDB: ============== END OF LOAD BALANCING =============== 1908.07
+LDB: =============== DONE WITH MIGRATION ================ 1908.07
+LDB: ============= START OF LOAD BALANCING ============== 1908.37
+LDB: ============== END OF LOAD BALANCING =============== 1908.37
+LDB: =============== DONE WITH MIGRATION ================ 1908.37
+PRESSURE: 310000 2614.48 771.881 120.334 795.691 2146 226.702 -41.9826 465.906 6455.83
+GPRESSURE: 310000 2565.25 962.733 -99.8272 723.423 2002.38 195.851 43.0363 450.616 6710.47
+PRESSAVG: 310000 1120.77 -96.1815 58.0741 -93.2494 1312.08 18.9848 -87.8731 428.569 4516.95
+GPRESSAVG: 310000 1120.75 -96.3468 57.8945 -93.4381 1312.64 18.6271 -87.8201 428.954 4516.63
+ENERGY:  310000         0.0000         0.0000         0.0000         0.0000          -5799.8564       612.1065         0.0000         0.0000       993.6715          -4194.0784       314.4895     -5187.7499     -4190.8528       304.1656           3738.7709      3759.3649     21141.5399      2316.5986      2316.6722
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 310000
+LDB: ============= START OF LOAD BALANCING ============== 1921.09
+LDB: ============== END OF LOAD BALANCING =============== 1921.09
+LDB: =============== DONE WITH MIGRATION ================ 1921.09
+LDB: ============= START OF LOAD BALANCING ============== 1921.42
+LDB: ============== END OF LOAD BALANCING =============== 1921.42
+LDB: =============== DONE WITH MIGRATION ================ 1921.42
+LDB: ============= START OF LOAD BALANCING ============== 1933.55
+LDB: ============== END OF LOAD BALANCING =============== 1933.55
+LDB: =============== DONE WITH MIGRATION ================ 1933.55
+LDB: ============= START OF LOAD BALANCING ============== 1933.86
+LDB: ============== END OF LOAD BALANCING =============== 1933.86
+LDB: =============== DONE WITH MIGRATION ================ 1933.86
+LDB: ============= START OF LOAD BALANCING ============== 1946.41
+LDB: ============== END OF LOAD BALANCING =============== 1946.41
+LDB: =============== DONE WITH MIGRATION ================ 1946.41
+LDB: ============= START OF LOAD BALANCING ============== 1946.75
+LDB: ============== END OF LOAD BALANCING =============== 1946.75
+LDB: =============== DONE WITH MIGRATION ================ 1946.75
+PRESSURE: 315000 1838.88 568.253 -338.671 586.656 1755.06 -648.491 -184.487 -705.044 4599.95
+GPRESSURE: 315000 1808.32 192.508 -273.209 518.628 1636.42 -811.764 -520.114 -498.002 4758.16
+PRESSAVG: 315000 1747.02 20.8298 45.8021 10.2081 1896.23 -9.11354 221.886 31.8439 5055.8
+GPRESSAVG: 315000 1746.43 20.8962 45.4812 10.5951 1896.02 -8.88 221.658 31.5028 5055.98
+ENERGY:  315000         0.0000         0.0000         0.0000         0.0000          -5814.0925       568.4596         0.0000         0.0000       951.0736          -4294.5594       301.0075     -5245.6329     -4293.9897       307.0663           2731.2974      2734.2999     21141.5399      2899.6812      2899.4763
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 315000
+LDB: ============= START OF LOAD BALANCING ============== 1958.85
+LDB: ============== END OF LOAD BALANCING =============== 1958.85
+LDB: =============== DONE WITH MIGRATION ================ 1958.85
+LDB: ============= START OF LOAD BALANCING ============== 1959.16
+LDB: ============== END OF LOAD BALANCING =============== 1959.16
+LDB: =============== DONE WITH MIGRATION ================ 1959.16
+LDB: ============= START OF LOAD BALANCING ============== 1971.11
+LDB: ============== END OF LOAD BALANCING =============== 1971.11
+LDB: =============== DONE WITH MIGRATION ================ 1971.11
+LDB: ============= START OF LOAD BALANCING ============== 1971.42
+LDB: ============== END OF LOAD BALANCING =============== 1971.42
+LDB: =============== DONE WITH MIGRATION ================ 1971.42
+PRESSURE: 320000 2029.63 377.263 -147.243 353.241 1620.11 -106.512 529.958 -1.50355 4810.2
+GPRESSURE: 320000 2226.18 318.848 -504.221 414.706 1578.39 -133.832 446.509 46.7472 4783.01
+PRESSAVG: 320000 1695.9 -35.3471 -71.0057 -26.4378 1758.68 10.5093 147.133 261.258 4902.03
+GPRESSAVG: 320000 1695.63 -35.1583 -70.9772 -26.6209 1758.61 10.4235 147.038 261.952 4902.31
+ENERGY:  320000         0.0000         0.0000         0.0000         0.0000          -5852.4865       587.5045         0.0000         0.0000       968.4794          -4296.5025       306.5164     -5264.9820     -4294.8399       302.0241           2819.9791      2862.5305     21141.5399      2785.5365      2785.5159
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 320000
+LDB: ============= START OF LOAD BALANCING ============== 1983.17
+LDB: ============== END OF LOAD BALANCING =============== 1983.17
+LDB: =============== DONE WITH MIGRATION ================ 1983.17
+LDB: ============= START OF LOAD BALANCING ============== 1983.47
+LDB: ============== END OF LOAD BALANCING =============== 1983.47
+LDB: =============== DONE WITH MIGRATION ================ 1983.47
+LDB: ============= START OF LOAD BALANCING ============== 1995.3
+LDB: ============== END OF LOAD BALANCING =============== 1995.3
+LDB: =============== DONE WITH MIGRATION ================ 1995.3
+LDB: ============= START OF LOAD BALANCING ============== 1995.61
+LDB: ============== END OF LOAD BALANCING =============== 1995.61
+LDB: =============== DONE WITH MIGRATION ================ 1995.61
+LDB: ============= START OF LOAD BALANCING ============== 2007.45
+LDB: ============== END OF LOAD BALANCING =============== 2007.45
+LDB: =============== DONE WITH MIGRATION ================ 2007.45
+LDB: ============= START OF LOAD BALANCING ============== 2007.76
+LDB: ============== END OF LOAD BALANCING =============== 2007.76
+LDB: =============== DONE WITH MIGRATION ================ 2007.76
+PRESSURE: 325000 1392.15 -651.371 357.886 -584.06 1723.7 -299.488 15.4811 -4.48155 5585.05
+GPRESSURE: 325000 1496.05 -500.224 165.33 -431.951 1687.78 -340.931 333.054 -330.242 5578.54
+PRESSAVG: 325000 1660.89 49.2961 -5.22164 48.9891 1728.78 -49.5726 12.2993 307.362 4883.38
+GPRESSAVG: 325000 1660.97 49.1195 -4.94923 49.0479 1728.34 -49.2152 12.4453 307.365 4883.17
+ENERGY:  325000         0.0000         0.0000         0.0000         0.0000          -5783.6812       552.6190         0.0000         0.0000       967.7335          -4263.3287       306.2803     -5231.0622     -4261.1508       299.3132           2900.3010      2920.7926     21141.5399      2757.6829      2757.4927
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 325000
+LDB: ============= START OF LOAD BALANCING ============== 2019.53
+LDB: ============== END OF LOAD BALANCING =============== 2019.53
+LDB: =============== DONE WITH MIGRATION ================ 2019.53
+LDB: ============= START OF LOAD BALANCING ============== 2019.83
+LDB: ============== END OF LOAD BALANCING =============== 2019.83
+LDB: =============== DONE WITH MIGRATION ================ 2019.83
+LDB: ============= START OF LOAD BALANCING ============== 2031.63
+LDB: ============== END OF LOAD BALANCING =============== 2031.63
+LDB: =============== DONE WITH MIGRATION ================ 2031.63
+LDB: ============= START OF LOAD BALANCING ============== 2031.94
+LDB: ============== END OF LOAD BALANCING =============== 2031.94
+LDB: =============== DONE WITH MIGRATION ================ 2031.94
+PRESSURE: 330000 2586.33 133.454 -79.4544 150.816 1608.91 779.835 611.147 1156.73 5848.61
+GPRESSURE: 330000 2621.03 293.469 49.9585 209.826 1810.16 662.776 645.589 1229.45 5696.23
+PRESSAVG: 330000 1558.56 -17.5734 30.0113 -18.3512 1493.88 18.4344 -16.2366 238.661 4708.98
+GPRESSAVG: 330000 1558.38 -18.0494 29.6501 -17.8252 1493.74 18.3038 -16.3345 238.622 4708.94
+ENERGY:  330000         0.0000         0.0000         0.0000         0.0000          -5851.4017       609.5443         0.0000         0.0000       901.1841          -4340.6732       285.2179     -5241.8574     -4337.9051       297.5599           3347.9502      3375.8064     21141.5399      2587.1384      2587.0168
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 330000
+LDB: ============= START OF LOAD BALANCING ============== 2043.8
+LDB: ============== END OF LOAD BALANCING =============== 2043.8
+LDB: =============== DONE WITH MIGRATION ================ 2043.8
+LDB: ============= START OF LOAD BALANCING ============== 2044.1
+LDB: ============== END OF LOAD BALANCING =============== 2044.1
+LDB: =============== DONE WITH MIGRATION ================ 2044.1
+LDB: ============= START OF LOAD BALANCING ============== 2055.91
+LDB: ============== END OF LOAD BALANCING =============== 2055.91
+LDB: =============== DONE WITH MIGRATION ================ 2055.91
+LDB: ============= START OF LOAD BALANCING ============== 2056.21
+LDB: ============== END OF LOAD BALANCING =============== 2056.21
+LDB: =============== DONE WITH MIGRATION ================ 2056.21
+LDB: ============= START OF LOAD BALANCING ============== 2067.99
+LDB: ============== END OF LOAD BALANCING =============== 2067.99
+LDB: =============== DONE WITH MIGRATION ================ 2067.99
+LDB: ============= START OF LOAD BALANCING ============== 2068.29
+LDB: ============== END OF LOAD BALANCING =============== 2068.29
+LDB: =============== DONE WITH MIGRATION ================ 2068.29
+PRESSURE: 335000 1830.98 199.991 373.543 199.874 2154.6 -1039.82 461.395 51.667 6096.02
+GPRESSURE: 335000 1780.97 170.324 359.251 572.371 2143.22 -715.396 -4.35132 -227.015 6258.83
+PRESSAVG: 335000 2100.73 28.8946 -57.1863 29.2244 2040.88 -15.9899 288.242 689.635 5438.76
+GPRESSAVG: 335000 2100.64 28.3832 -57.3942 28.7858 2040.84 -15.3774 288.201 689.767 5439.19
+ENERGY:  335000         0.0000         0.0000         0.0000         0.0000          -5863.8572       602.6289         0.0000         0.0000       936.6422          -4324.5862       296.4401     -5261.2283     -4322.5778       298.4585           3360.5346      3394.3392     21141.5399      3193.4571      3193.5534
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 335000
+LDB: ============= START OF LOAD BALANCING ============== 2080.04
+LDB: ============== END OF LOAD BALANCING =============== 2080.04
+LDB: =============== DONE WITH MIGRATION ================ 2080.04
+LDB: ============= START OF LOAD BALANCING ============== 2080.35
+LDB: ============== END OF LOAD BALANCING =============== 2080.36
+LDB: =============== DONE WITH MIGRATION ================ 2080.36
+LDB: ============= START OF LOAD BALANCING ============== 2092.39
+LDB: ============== END OF LOAD BALANCING =============== 2092.39
+LDB: =============== DONE WITH MIGRATION ================ 2092.39
+LDB: ============= START OF LOAD BALANCING ============== 2092.7
+LDB: ============== END OF LOAD BALANCING =============== 2092.7
+LDB: =============== DONE WITH MIGRATION ================ 2092.7
+PRESSURE: 340000 2628.97 119.167 520.435 158.89 3167.78 168.156 850.731 752.142 5440.01
+GPRESSURE: 340000 2736.07 78.6667 288.855 162.754 3038.55 370.315 660.226 759.069 5449.24
+PRESSAVG: 340000 1872.73 -5.57227 -44.0578 -13.9537 1959.09 2.45332 167.628 801.707 5276.84
+GPRESSAVG: 340000 1872.86 -5.87218 -43.7123 -13.951 1958.83 1.93363 167.783 801.871 5276.9
+ENERGY:  340000         0.0000         0.0000         0.0000         0.0000          -5890.9026       618.5762         0.0000         0.0000       946.4275          -4325.8989       299.5371     -5272.3264     -4322.2112       299.4821           3745.5870      3741.2882     21141.5399      3036.2197      3036.1971
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 340000
+LDB: ============= START OF LOAD BALANCING ============== 2104.45
+LDB: ============== END OF LOAD BALANCING =============== 2104.45
+LDB: =============== DONE WITH MIGRATION ================ 2104.45
+LDB: ============= START OF LOAD BALANCING ============== 2104.75
+LDB: ============== END OF LOAD BALANCING =============== 2104.75
+LDB: =============== DONE WITH MIGRATION ================ 2104.75
+LDB: ============= START OF LOAD BALANCING ============== 2116.42
+LDB: ============== END OF LOAD BALANCING =============== 2116.42
+LDB: =============== DONE WITH MIGRATION ================ 2116.42
+LDB: ============= START OF LOAD BALANCING ============== 2116.72
+LDB: ============== END OF LOAD BALANCING =============== 2116.72
+LDB: =============== DONE WITH MIGRATION ================ 2116.72
+LDB: ============= START OF LOAD BALANCING ============== 2128.4
+LDB: ============== END OF LOAD BALANCING =============== 2128.4
+LDB: =============== DONE WITH MIGRATION ================ 2128.4
+LDB: ============= START OF LOAD BALANCING ============== 2128.7
+LDB: ============== END OF LOAD BALANCING =============== 2128.7
+LDB: =============== DONE WITH MIGRATION ================ 2128.7
+PRESSURE: 345000 1940.6 757.723 -239.9 720.772 1773.54 -865.494 -380.701 6.36173 5330.98
+GPRESSURE: 345000 1830.48 754.624 -594.808 906.308 1801.95 -619.617 -357.976 8.99371 5515.95
+PRESSAVG: 345000 1790.07 0.765796 -33.7301 5.98212 1745.18 -0.352015 -39.4518 716.829 4924.87
+GPRESSAVG: 345000 1790.18 1.08587 -33.696 6.30527 1745.11 -0.0338117 -39.1806 717.214 4924.55
+ENERGY:  345000         0.0000         0.0000         0.0000         0.0000          -5849.5146       606.1118         0.0000         0.0000       954.4949          -4288.9080       302.0904     -5243.4029     -4286.6334       299.3037           3015.0394      3049.4602     21141.5399      2820.0387      2819.9455
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 345000
+LDB: ============= START OF LOAD BALANCING ============== 2140.42
+LDB: ============== END OF LOAD BALANCING =============== 2140.42
+LDB: =============== DONE WITH MIGRATION ================ 2140.42
+LDB: ============= START OF LOAD BALANCING ============== 2140.72
+LDB: ============== END OF LOAD BALANCING =============== 2140.72
+LDB: =============== DONE WITH MIGRATION ================ 2140.72
+LDB: ============= START OF LOAD BALANCING ============== 2152.4
+LDB: ============== END OF LOAD BALANCING =============== 2152.4
+LDB: =============== DONE WITH MIGRATION ================ 2152.4
+LDB: ============= START OF LOAD BALANCING ============== 2152.7
+LDB: ============== END OF LOAD BALANCING =============== 2152.7
+LDB: =============== DONE WITH MIGRATION ================ 2152.7
+PRESSURE: 350000 1747.03 814.191 630.84 839.469 2057.35 -58.5651 1031.32 412.315 4120.61
+GPRESSURE: 350000 1835.08 805.158 247.552 618.112 1963.1 66.8194 1340.12 469.393 4174.25
+PRESSAVG: 350000 1429.62 -46.3263 -25.8718 -46.6745 1392.91 39.855 143.034 920.301 4420.53
+GPRESSAVG: 350000 1429.62 -45.9916 -25.3728 -46.9994 1392.42 39.6868 143.092 920.534 4420.58
+TIMING: 350000  CPU: 2151.56, 0.00611079/step  Wall: 2151.94, 0.00611107/step, 0.254628 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  350000         0.0000         0.0000         0.0000         0.0000          -5826.8812       576.6477         0.0000         0.0000       914.2705          -4335.9630       289.3596     -5250.2335     -4332.6525       294.7681           2641.6618      2657.4733     21141.5399      2414.3532      2414.2086
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 350000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 350000
+WRITING COORDINATES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2164.4
+LDB: ============== END OF LOAD BALANCING =============== 2164.4
+LDB: =============== DONE WITH MIGRATION ================ 2164.4
+LDB: ============= START OF LOAD BALANCING ============== 2164.7
+LDB: ============== END OF LOAD BALANCING =============== 2164.7
+LDB: =============== DONE WITH MIGRATION ================ 2164.7
+LDB: ============= START OF LOAD BALANCING ============== 2176.37
+LDB: ============== END OF LOAD BALANCING =============== 2176.37
+LDB: =============== DONE WITH MIGRATION ================ 2176.37
+LDB: ============= START OF LOAD BALANCING ============== 2176.67
+LDB: ============== END OF LOAD BALANCING =============== 2176.67
+LDB: =============== DONE WITH MIGRATION ================ 2176.67
+LDB: ============= START OF LOAD BALANCING ============== 2188.4
+LDB: ============== END OF LOAD BALANCING =============== 2188.4
+LDB: =============== DONE WITH MIGRATION ================ 2188.4
+LDB: ============= START OF LOAD BALANCING ============== 2188.7
+LDB: ============== END OF LOAD BALANCING =============== 2188.7
+LDB: =============== DONE WITH MIGRATION ================ 2188.7
+PRESSURE: 355000 1313.31 862.818 167.123 948.842 2167.14 180.207 791.544 760.951 6321.48
+GPRESSURE: 355000 1512.09 798.998 70.9994 960.313 2168.89 181.102 745.65 630.654 6192.95
+PRESSAVG: 355000 1647.99 -50.0105 87.4417 -46.4647 1683.36 -6.97222 548.019 579.414 4858.88
+GPRESSAVG: 355000 1648.03 -50.0802 87.6122 -46.1546 1683.72 -7.32672 548.169 579.819 4858.87
+ENERGY:  355000         0.0000         0.0000         0.0000         0.0000          -5908.5344       617.3459         0.0000         0.0000       904.2926          -4386.8959       286.2017     -5291.1885     -4385.2351       294.4206           3267.3079      3291.3108     21141.5399      2730.0782      2730.2032
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 355000
+LDB: ============= START OF LOAD BALANCING ============== 2200.39
+LDB: ============== END OF LOAD BALANCING =============== 2200.39
+LDB: =============== DONE WITH MIGRATION ================ 2200.39
+LDB: ============= START OF LOAD BALANCING ============== 2200.69
+LDB: ============== END OF LOAD BALANCING =============== 2200.69
+LDB: =============== DONE WITH MIGRATION ================ 2200.69
+LDB: ============= START OF LOAD BALANCING ============== 2212.38
+LDB: ============== END OF LOAD BALANCING =============== 2212.38
+LDB: =============== DONE WITH MIGRATION ================ 2212.38
+LDB: ============= START OF LOAD BALANCING ============== 2212.68
+LDB: ============== END OF LOAD BALANCING =============== 2212.68
+LDB: =============== DONE WITH MIGRATION ================ 2212.68
+PRESSURE: 360000 1462.42 -382.676 76.8517 -370.51 1469.2 -219.084 330.718 -12.8243 4036.76
+GPRESSURE: 360000 1329.09 -181.786 189.925 -407.905 1571.95 -784.608 274.78 146.209 4185.39
+PRESSAVG: 360000 1504.94 30.7343 -34.3957 38.2401 1521.62 -6.25862 575.15 457.826 4903.29
+GPRESSAVG: 360000 1504.95 30.612 -34.3433 38.3019 1521.79 -6.19208 574.733 457.545 4903.07
+ENERGY:  360000         0.0000         0.0000         0.0000         0.0000          -5771.5386       531.7848         0.0000         0.0000       921.1480          -4318.6058       291.5363     -5239.7538     -4317.9513       294.6392           2322.7929      2362.1454     21141.5399      2643.2835      2643.2699
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 360000
+LDB: ============= START OF LOAD BALANCING ============== 2224.36
+LDB: ============== END OF LOAD BALANCING =============== 2224.36
+LDB: =============== DONE WITH MIGRATION ================ 2224.36
+LDB: ============= START OF LOAD BALANCING ============== 2224.66
+LDB: ============== END OF LOAD BALANCING =============== 2224.66
+LDB: =============== DONE WITH MIGRATION ================ 2224.66
+LDB: ============= START OF LOAD BALANCING ============== 2236.34
+LDB: ============== END OF LOAD BALANCING =============== 2236.34
+LDB: =============== DONE WITH MIGRATION ================ 2236.34
+LDB: ============= START OF LOAD BALANCING ============== 2236.64
+LDB: ============== END OF LOAD BALANCING =============== 2236.64
+LDB: =============== DONE WITH MIGRATION ================ 2236.64
+LDB: ============= START OF LOAD BALANCING ============== 2248.4
+LDB: ============== END OF LOAD BALANCING =============== 2248.4
+LDB: =============== DONE WITH MIGRATION ================ 2248.4
+LDB: ============= START OF LOAD BALANCING ============== 2248.7
+LDB: ============== END OF LOAD BALANCING =============== 2248.7
+LDB: =============== DONE WITH MIGRATION ================ 2248.7
+PRESSURE: 365000 1521.25 -135.431 345.031 -131.328 1434.6 -333.716 1163.83 559.901 4708.96
+GPRESSURE: 365000 1453.27 -267.128 538.874 -268.42 1472.26 -442.141 1003.54 968.362 4828.41
+PRESSAVG: 365000 1783.68 -4.85035 6.32282 -1.95871 1646.46 9.47494 578.533 612.897 5297.15
+GPRESSAVG: 365000 1783.88 -4.77025 6.09501 -2.24149 1646.76 9.1579 578.522 612.816 5296.96
+ENERGY:  365000         0.0000         0.0000         0.0000         0.0000          -5749.1643       527.4283         0.0000         0.0000       941.0970          -4280.6390       297.8500     -5221.7360     -4278.1148       302.5417           2554.9345      2584.6468     21141.5399      2909.0971      2909.1989
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 365000
+LDB: ============= START OF LOAD BALANCING ============== 2260.38
+LDB: ============== END OF LOAD BALANCING =============== 2260.38
+LDB: =============== DONE WITH MIGRATION ================ 2260.38
+LDB: ============= START OF LOAD BALANCING ============== 2260.68
+LDB: ============== END OF LOAD BALANCING =============== 2260.68
+LDB: =============== DONE WITH MIGRATION ================ 2260.68
+LDB: ============= START OF LOAD BALANCING ============== 2272.35
+LDB: ============== END OF LOAD BALANCING =============== 2272.35
+LDB: =============== DONE WITH MIGRATION ================ 2272.35
+LDB: ============= START OF LOAD BALANCING ============== 2272.65
+LDB: ============== END OF LOAD BALANCING =============== 2272.65
+LDB: =============== DONE WITH MIGRATION ================ 2272.65
+PRESSURE: 370000 1423.69 -195.04 -120.267 -219.551 2270.46 158.091 925.614 705.493 4697.24
+GPRESSURE: 370000 1492.55 -211.718 -198.574 -166.496 2191.68 382.364 1161.64 386.52 4812.46
+PRESSAVG: 370000 1982.26 11.2989 21.1912 6.80586 1879.06 0.299625 671.084 522.953 5304.47
+GPRESSAVG: 370000 1982.47 10.7268 21.3757 6.92997 1879.16 0.548959 670.945 522.558 5304.43
+ENERGY:  370000         0.0000         0.0000         0.0000         0.0000          -5797.1130       545.5354         0.0000         0.0000       929.9322          -4321.6455       294.3165     -5251.5777     -4319.4265       303.2504           2797.1291      2832.2292     21141.5399      3055.2607      3055.3510
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 370000
+LDB: ============= START OF LOAD BALANCING ============== 2284.3
+LDB: ============== END OF LOAD BALANCING =============== 2284.3
+LDB: =============== DONE WITH MIGRATION ================ 2284.3
+LDB: ============= START OF LOAD BALANCING ============== 2284.59
+LDB: ============== END OF LOAD BALANCING =============== 2284.59
+LDB: =============== DONE WITH MIGRATION ================ 2284.59
+LDB: ============= START OF LOAD BALANCING ============== 2296.26
+LDB: ============== END OF LOAD BALANCING =============== 2296.26
+LDB: =============== DONE WITH MIGRATION ================ 2296.26
+LDB: ============= START OF LOAD BALANCING ============== 2296.56
+LDB: ============== END OF LOAD BALANCING =============== 2296.56
+LDB: =============== DONE WITH MIGRATION ================ 2296.56
+LDB: ============= START OF LOAD BALANCING ============== 2308.32
+LDB: ============== END OF LOAD BALANCING =============== 2308.32
+LDB: =============== DONE WITH MIGRATION ================ 2308.32
+LDB: ============= START OF LOAD BALANCING ============== 2308.62
+LDB: ============== END OF LOAD BALANCING =============== 2308.62
+LDB: =============== DONE WITH MIGRATION ================ 2308.62
+PRESSURE: 375000 1468.19 -154.108 485.981 -156.398 2117 277.874 1164.62 300.674 4457.48
+GPRESSURE: 375000 1523.55 -325.901 254.247 95.5125 2041.34 303.309 1088.75 371.129 4535.7
+PRESSAVG: 375000 1965.59 46.579 -38.6844 53.7705 1837.8 59.2239 553.491 534.006 5134.64
+GPRESSAVG: 375000 1965.71 46.3925 -38.9941 53.5217 1837.34 59.5492 552.928 534.344 5134.82
+ENERGY:  375000         0.0000         0.0000         0.0000         0.0000          -5799.4712       551.4758         0.0000         0.0000       946.3479          -4301.6475       299.5119     -5247.9954     -4300.6709       300.6293           2680.8903      2700.1978     21141.5399      2979.3439      2979.2866
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 375000
+LDB: ============= START OF LOAD BALANCING ============== 2320.38
+LDB: ============== END OF LOAD BALANCING =============== 2320.38
+LDB: =============== DONE WITH MIGRATION ================ 2320.38
+LDB: ============= START OF LOAD BALANCING ============== 2320.7
+LDB: ============== END OF LOAD BALANCING =============== 2320.7
+LDB: =============== DONE WITH MIGRATION ================ 2320.7
+LDB: ============= START OF LOAD BALANCING ============== 2332.71
+LDB: ============== END OF LOAD BALANCING =============== 2332.71
+LDB: =============== DONE WITH MIGRATION ================ 2332.71
+LDB: ============= START OF LOAD BALANCING ============== 2333.01
+LDB: ============== END OF LOAD BALANCING =============== 2333.01
+LDB: =============== DONE WITH MIGRATION ================ 2333.01
+PRESSURE: 380000 706.464 -172.435 208.94 -140.355 2075.7 160.678 1133.43 659.342 5293.02
+GPRESSURE: 380000 823.968 -426.974 760.464 -239.347 1919.99 406.119 953.109 616.899 5411.67
+PRESSAVG: 380000 1900.78 18.157 4.03867 16.3935 1733.56 8.08183 782.675 414.627 5270.31
+GPRESSAVG: 380000 1900.88 18.041 4.43226 16.4306 1733.45 7.16486 782.682 414.561 5270.48
+ENERGY:  380000         0.0000         0.0000         0.0000         0.0000          -5826.3843       555.1030         0.0000         0.0000       922.7763          -4348.5050       292.0517     -5271.2813     -4346.3202       293.7924           2691.7279      2718.5414     21141.5399      2968.2169      2968.2711
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 380000
+LDB: ============= START OF LOAD BALANCING ============== 2344.71
+LDB: ============== END OF LOAD BALANCING =============== 2344.71
+LDB: =============== DONE WITH MIGRATION ================ 2344.71
+LDB: ============= START OF LOAD BALANCING ============== 2345.01
+LDB: ============== END OF LOAD BALANCING =============== 2345.01
+LDB: =============== DONE WITH MIGRATION ================ 2345.01
+LDB: ============= START OF LOAD BALANCING ============== 2356.82
+LDB: ============== END OF LOAD BALANCING =============== 2356.82
+LDB: =============== DONE WITH MIGRATION ================ 2356.82
+LDB: ============= START OF LOAD BALANCING ============== 2357.12
+LDB: ============== END OF LOAD BALANCING =============== 2357.12
+LDB: =============== DONE WITH MIGRATION ================ 2357.12
+LDB: ============= START OF LOAD BALANCING ============== 2368.84
+LDB: ============== END OF LOAD BALANCING =============== 2368.84
+LDB: =============== DONE WITH MIGRATION ================ 2368.84
+LDB: ============= START OF LOAD BALANCING ============== 2369.14
+LDB: ============== END OF LOAD BALANCING =============== 2369.14
+LDB: =============== DONE WITH MIGRATION ================ 2369.14
+PRESSURE: 385000 2611.91 424.258 528 444.304 2160.8 -265.961 714.724 271.129 6322.74
+GPRESSURE: 385000 2613.47 635.426 835.891 321.227 2278.74 -458 848.129 408.399 6250.17
+PRESSAVG: 385000 1975.76 -31.2305 41.6637 -29.9266 1939.88 34.5945 621.876 479.338 5928.13
+GPRESSAVG: 385000 1975.53 -31.0511 41.8849 -30.0149 1939.99 35.1246 621.72 479.107 5927.87
+ENERGY:  385000         0.0000         0.0000         0.0000         0.0000          -5852.5799       606.5985         0.0000         0.0000       960.0686          -4285.9128       303.8544     -5245.9814     -4283.3318       299.6610           3698.4851      3714.1274     21141.5399      3281.2581      3281.1283
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 385000
+LDB: ============= START OF LOAD BALANCING ============== 2380.77
+LDB: ============== END OF LOAD BALANCING =============== 2380.77
+LDB: =============== DONE WITH MIGRATION ================ 2380.77
+LDB: ============= START OF LOAD BALANCING ============== 2381.07
+LDB: ============== END OF LOAD BALANCING =============== 2381.07
+LDB: =============== DONE WITH MIGRATION ================ 2381.07
+LDB: ============= START OF LOAD BALANCING ============== 2392.73
+LDB: ============== END OF LOAD BALANCING =============== 2392.73
+LDB: =============== DONE WITH MIGRATION ================ 2392.73
+LDB: ============= START OF LOAD BALANCING ============== 2393.03
+LDB: ============== END OF LOAD BALANCING =============== 2393.03
+LDB: =============== DONE WITH MIGRATION ================ 2393.03
+PRESSURE: 390000 1943.07 -125.804 -305.069 -125.4 2391.67 -400.211 90.2651 -17.5863 5182.79
+GPRESSURE: 390000 1903.24 25.2076 -466.905 -294.599 2691.18 -462.059 389.659 1.19951 5037.14
+PRESSAVG: 390000 2021.2 27.4487 24.9595 21.3288 2021.46 -19.7904 603.126 229.896 5909.14
+GPRESSAVG: 390000 2021.16 27.6827 24.5573 21.2505 2021.21 -19.2055 603.175 229.531 5909.09
+ENERGY:  390000         0.0000         0.0000         0.0000         0.0000          -5834.9064       590.1099         0.0000         0.0000       960.5339          -4284.2625       304.0017     -5244.7964     -4282.4678       302.7701           3172.5095      3210.5185     21141.5399      3317.2669      3317.1538
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 390000
+LDB: ============= START OF LOAD BALANCING ============== 2404.67
+LDB: ============== END OF LOAD BALANCING =============== 2404.67
+LDB: =============== DONE WITH MIGRATION ================ 2404.67
+LDB: ============= START OF LOAD BALANCING ============== 2404.97
+LDB: ============== END OF LOAD BALANCING =============== 2404.97
+LDB: =============== DONE WITH MIGRATION ================ 2404.97
+LDB: ============= START OF LOAD BALANCING ============== 2416.96
+LDB: ============== END OF LOAD BALANCING =============== 2416.96
+LDB: =============== DONE WITH MIGRATION ================ 2416.96
+LDB: ============= START OF LOAD BALANCING ============== 2417.3
+LDB: ============== END OF LOAD BALANCING =============== 2417.3
+LDB: =============== DONE WITH MIGRATION ================ 2417.3
+LDB: ============= START OF LOAD BALANCING ============== 2429.03
+LDB: ============== END OF LOAD BALANCING =============== 2429.03
+LDB: =============== DONE WITH MIGRATION ================ 2429.03
+LDB: ============= START OF LOAD BALANCING ============== 2429.33
+LDB: ============== END OF LOAD BALANCING =============== 2429.33
+LDB: =============== DONE WITH MIGRATION ================ 2429.33
+PRESSURE: 395000 1451.29 -15.2396 485.402 -49.8174 1482.85 39.2405 649.143 -554.12 6217.64
+GPRESSURE: 395000 1532.95 117.063 111.737 -266.198 1519.75 -34.8011 558.117 -162.987 6161.55
+PRESSAVG: 395000 1420.76 8.53083 -34.9141 12.7274 1455.95 6.53002 428.842 206.553 5051.65
+GPRESSAVG: 395000 1420.7 8.39879 -35.1956 12.4489 1456.01 6.03298 428.782 206.566 5051.95
+ENERGY:  395000         0.0000         0.0000         0.0000         0.0000          -5805.8736       569.9575         0.0000         0.0000       931.5893          -4304.3268       294.8409     -5235.9162     -4302.9053       299.8194           3050.5964      3071.4177     21141.5399      2642.7894      2642.8859
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 395000
+LDB: ============= START OF LOAD BALANCING ============== 2440.98
+LDB: ============== END OF LOAD BALANCING =============== 2440.98
+LDB: =============== DONE WITH MIGRATION ================ 2440.98
+LDB: ============= START OF LOAD BALANCING ============== 2441.28
+LDB: ============== END OF LOAD BALANCING =============== 2441.28
+LDB: =============== DONE WITH MIGRATION ================ 2441.28
+LDB: ============= START OF LOAD BALANCING ============== 2453.26
+LDB: ============== END OF LOAD BALANCING =============== 2453.26
+LDB: =============== DONE WITH MIGRATION ================ 2453.26
+LDB: ============= START OF LOAD BALANCING ============== 2453.56
+LDB: ============== END OF LOAD BALANCING =============== 2453.56
+LDB: =============== DONE WITH MIGRATION ================ 2453.56
+PRESSURE: 400000 1397.46 48.5165 304.463 56.8567 2740.9 292.515 16.1731 552.402 5893.57
+GPRESSURE: 400000 1447.62 -38.1874 100.846 166.765 2679.76 83.623 353.399 756.395 5943.52
+PRESSAVG: 400000 1750.71 14.2675 19.7965 24.646 1679.07 12.0064 335.035 142.049 5578.26
+GPRESSAVG: 400000 1750.27 13.8608 20.0447 24.6933 1679.2 11.5441 334.82 142.601 5578.52
+TIMING: 400000  CPU: 2452.44, 0.00601761/step  Wall: 2452.83, 0.00601796/step, 0.167166 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  400000         0.0000         0.0000         0.0000         0.0000          -5822.9369       574.5678         0.0000         0.0000       979.7440          -4268.6250       310.0815     -5248.3690     -4266.7998       299.4679           3343.9741      3356.9682     21141.5399      3002.6781      3002.6661
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 400000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 400000
+WRITING COORDINATES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2465.3
+LDB: ============== END OF LOAD BALANCING =============== 2465.3
+LDB: =============== DONE WITH MIGRATION ================ 2465.3
+LDB: ============= START OF LOAD BALANCING ============== 2465.6
+LDB: ============== END OF LOAD BALANCING =============== 2465.6
+LDB: =============== DONE WITH MIGRATION ================ 2465.6
+LDB: ============= START OF LOAD BALANCING ============== 2477.36
+LDB: ============== END OF LOAD BALANCING =============== 2477.36
+LDB: =============== DONE WITH MIGRATION ================ 2477.36
+LDB: ============= START OF LOAD BALANCING ============== 2477.66
+LDB: ============== END OF LOAD BALANCING =============== 2477.66
+LDB: =============== DONE WITH MIGRATION ================ 2477.66
+LDB: ============= START OF LOAD BALANCING ============== 2489.4
+LDB: ============== END OF LOAD BALANCING =============== 2489.4
+LDB: =============== DONE WITH MIGRATION ================ 2489.4
+LDB: ============= START OF LOAD BALANCING ============== 2489.71
+LDB: ============== END OF LOAD BALANCING =============== 2489.71
+LDB: =============== DONE WITH MIGRATION ================ 2489.71
+PRESSURE: 405000 1296.31 268.691 241.849 335.473 664.347 -265.375 328.348 -7.55889 5115.19
+GPRESSURE: 405000 1278.64 484.614 230.017 162.26 863.827 -5.91577 563.946 -6.05616 5031.5
+PRESSAVG: 405000 1572.96 8.39528 -54.6027 14.5269 1532.72 -25.7176 -46.7361 -46.5205 5150.28
+GPRESSAVG: 405000 1572.92 8.64527 -55.4038 14.3839 1532.61 -25.562 -47.1956 -46.7498 5150.2
+ENERGY:  405000         0.0000         0.0000         0.0000         0.0000          -5747.5271       535.2218         0.0000         0.0000       946.7982          -4265.5071       299.6544     -5212.3053     -4262.5577       304.0697           2358.6158      2391.3217     21141.5399      2751.9834      2751.9107
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 405000
+LDB: ============= START OF LOAD BALANCING ============== 2502.2
+LDB: ============== END OF LOAD BALANCING =============== 2502.2
+LDB: =============== DONE WITH MIGRATION ================ 2502.2
+LDB: ============= START OF LOAD BALANCING ============== 2502.52
+LDB: ============== END OF LOAD BALANCING =============== 2502.52
+LDB: =============== DONE WITH MIGRATION ================ 2502.52
+LDB: ============= START OF LOAD BALANCING ============== 2514.74
+LDB: ============== END OF LOAD BALANCING =============== 2514.74
+LDB: =============== DONE WITH MIGRATION ================ 2514.74
+LDB: ============= START OF LOAD BALANCING ============== 2515.05
+LDB: ============== END OF LOAD BALANCING =============== 2515.05
+LDB: =============== DONE WITH MIGRATION ================ 2515.05
+PRESSURE: 410000 922.65 214.431 -336.675 225.755 1159.24 15.4068 -227.724 -274.48 5034.88
+GPRESSURE: 410000 917.764 455.449 -260.382 111.378 1190.4 191.381 -110.748 -193.47 5060.97
+PRESSAVG: 410000 1626.45 -8.41389 -33.1444 -10.2971 1486.92 38.9612 15.8377 -26.0348 4983.47
+GPRESSAVG: 410000 1626.66 -7.9924 -33.2841 -10.3937 1487.02 38.6087 16.13 -25.8384 4983.29
+ENERGY:  410000         0.0000         0.0000         0.0000         0.0000          -5783.7619       542.5791         0.0000         0.0000       985.0568          -4256.1261       311.7630     -5241.1829     -4253.8980       302.1958           2372.2571      2389.7125     21141.5399      2698.9448      2698.9891
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 410000
+LDB: ============= START OF LOAD BALANCING ============== 2527.1
+LDB: ============== END OF LOAD BALANCING =============== 2527.1
+LDB: =============== DONE WITH MIGRATION ================ 2527.1
+LDB: ============= START OF LOAD BALANCING ============== 2527.42
+LDB: ============== END OF LOAD BALANCING =============== 2527.42
+LDB: =============== DONE WITH MIGRATION ================ 2527.42
+LDB: ============= START OF LOAD BALANCING ============== 2539.67
+LDB: ============== END OF LOAD BALANCING =============== 2539.67
+LDB: =============== DONE WITH MIGRATION ================ 2539.67
+LDB: ============= START OF LOAD BALANCING ============== 2539.97
+LDB: ============== END OF LOAD BALANCING =============== 2539.97
+LDB: =============== DONE WITH MIGRATION ================ 2539.97
+LDB: ============= START OF LOAD BALANCING ============== 2551.93
+LDB: ============== END OF LOAD BALANCING =============== 2551.93
+LDB: =============== DONE WITH MIGRATION ================ 2551.93
+LDB: ============= START OF LOAD BALANCING ============== 2552.23
+LDB: ============== END OF LOAD BALANCING =============== 2552.23
+LDB: =============== DONE WITH MIGRATION ================ 2552.23
+PRESSURE: 415000 1964.53 -479.504 -12.3492 -479.648 1743.04 630.604 145.334 873.574 6389.51
+GPRESSURE: 415000 2182.57 -509.99 -34.8858 -667.915 1752.29 886.192 164.744 715.69 6214.95
+PRESSAVG: 415000 1598.34 11.3031 -10.9635 10.2633 1604.9 -32.4214 366.515 150.21 5165.56
+GPRESSAVG: 415000 1598.45 11.1203 -11.0539 10.617 1605.07 -32.4051 366.339 150.228 5165.52
+ENERGY:  415000         0.0000         0.0000         0.0000         0.0000          -5848.2514       595.7280         0.0000         0.0000       946.9961          -4305.5273       299.7171     -5252.5233     -4303.8640       295.5040           3365.6928      3383.2676     21141.5399      2789.6019      2789.6828
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 415000
+LDB: ============= START OF LOAD BALANCING ============== 2563.98
+LDB: ============== END OF LOAD BALANCING =============== 2563.98
+LDB: =============== DONE WITH MIGRATION ================ 2563.98
+LDB: ============= START OF LOAD BALANCING ============== 2564.29
+LDB: ============== END OF LOAD BALANCING =============== 2564.29
+LDB: =============== DONE WITH MIGRATION ================ 2564.29
+LDB: ============= START OF LOAD BALANCING ============== 2576.34
+LDB: ============== END OF LOAD BALANCING =============== 2576.34
+LDB: =============== DONE WITH MIGRATION ================ 2576.34
+LDB: ============= START OF LOAD BALANCING ============== 2576.65
+LDB: ============== END OF LOAD BALANCING =============== 2576.65
+LDB: =============== DONE WITH MIGRATION ================ 2576.65
+PRESSURE: 420000 1003.27 -156.838 70.2174 -143.412 1859.41 -113.979 140.37 -148.05 5108.97
+GPRESSURE: 420000 1040.72 -70.2989 212.167 -97.8363 1818.82 -93.6876 133.128 -54.3279 5172.39
+PRESSAVG: 420000 1668.22 1.53938 -44.4782 -5.58182 1753.39 1.19515 143.927 192.765 5476.32
+GPRESSAVG: 420000 1668.28 1.49206 -43.9415 -5.91897 1753.11 1.41177 143.764 192.547 5476.55
+ENERGY:  420000         0.0000         0.0000         0.0000         0.0000          -5809.1810       560.4528         0.0000         0.0000       931.9926          -4316.7356       294.9686     -5248.7282     -4316.0917       298.2016           2657.2156      2677.3125     21141.5399      2965.9772      2965.9812
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 420000
+LDB: ============= START OF LOAD BALANCING ============== 2588.95
+LDB: ============== END OF LOAD BALANCING =============== 2588.95
+LDB: =============== DONE WITH MIGRATION ================ 2588.95
+LDB: ============= START OF LOAD BALANCING ============== 2589.26
+LDB: ============== END OF LOAD BALANCING =============== 2589.26
+LDB: =============== DONE WITH MIGRATION ================ 2589.26
+LDB: ============= START OF LOAD BALANCING ============== 2601.08
+LDB: ============== END OF LOAD BALANCING =============== 2601.08
+LDB: =============== DONE WITH MIGRATION ================ 2601.08
+LDB: ============= START OF LOAD BALANCING ============== 2601.38
+LDB: ============== END OF LOAD BALANCING =============== 2601.38
+LDB: =============== DONE WITH MIGRATION ================ 2601.38
+LDB: ============= START OF LOAD BALANCING ============== 2613.56
+LDB: ============== END OF LOAD BALANCING =============== 2613.56
+LDB: =============== DONE WITH MIGRATION ================ 2613.56
+LDB: ============= START OF LOAD BALANCING ============== 2613.87
+LDB: ============== END OF LOAD BALANCING =============== 2613.87
+LDB: =============== DONE WITH MIGRATION ================ 2613.87
+PRESSURE: 425000 964.107 -1040.78 14.1618 -1043.1 1501.71 297.304 1057.87 -250.922 5817.27
+GPRESSURE: 425000 1155.76 -899.018 -29.0899 -947.337 1519.72 460.89 1215.68 -208.178 5705.08
+PRESSAVG: 425000 1599.14 5.92143 -17.4915 11.0722 1626.35 -4.46755 452.716 210.756 5141.55
+GPRESSAVG: 425000 1599.08 5.68034 -17.6813 11.2263 1626.54 -4.68551 452.929 210.764 5141.51
+ENERGY:  425000         0.0000         0.0000         0.0000         0.0000          -5735.0859       547.1220         0.0000         0.0000       931.4933          -4256.4705       294.8105     -5187.9638     -4254.1773       298.9493           2761.0296      2793.5165     21141.5399      2789.0120      2789.0421
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 425000
+LDB: ============= START OF LOAD BALANCING ============== 2625.93
+LDB: ============== END OF LOAD BALANCING =============== 2625.93
+LDB: =============== DONE WITH MIGRATION ================ 2625.93
+LDB: ============= START OF LOAD BALANCING ============== 2626.23
+LDB: ============== END OF LOAD BALANCING =============== 2626.23
+LDB: =============== DONE WITH MIGRATION ================ 2626.23
+LDB: ============= START OF LOAD BALANCING ============== 2638.56
+LDB: ============== END OF LOAD BALANCING =============== 2638.56
+LDB: =============== DONE WITH MIGRATION ================ 2638.56
+LDB: ============= START OF LOAD BALANCING ============== 2638.87
+LDB: ============== END OF LOAD BALANCING =============== 2638.87
+LDB: =============== DONE WITH MIGRATION ================ 2638.87
+PRESSURE: 430000 3031.4 -63.0193 709.236 -93.4069 1665.52 -393.262 752.22 234.97 4631.78
+GPRESSURE: 430000 2946.93 536.656 882.791 -427.595 1724.56 -202.358 305.573 8.71686 4704.15
+PRESSAVG: 430000 1335.45 -23.6116 -1.94843 -21.3083 1399.91 -10.3411 541.371 389.277 4939.37
+GPRESSAVG: 430000 1335.52 -22.8937 -2.76837 -21.1845 1399.77 -10.0278 541.621 388.704 4939.68
+ENERGY:  430000         0.0000         0.0000         0.0000         0.0000          -5800.0212       585.4395         0.0000         0.0000       906.5279          -4308.0538       286.9092     -5214.5817     -4305.6562       299.1129           3109.5659      3125.2105     21141.5399      2558.2443      2558.3207
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 430000
+LDB: ============= START OF LOAD BALANCING ============== 2651.07
+LDB: ============== END OF LOAD BALANCING =============== 2651.07
+LDB: =============== DONE WITH MIGRATION ================ 2651.07
+LDB: ============= START OF LOAD BALANCING ============== 2651.37
+LDB: ============== END OF LOAD BALANCING =============== 2651.37
+LDB: =============== DONE WITH MIGRATION ================ 2651.37
+LDB: ============= START OF LOAD BALANCING ============== 2663.05
+LDB: ============== END OF LOAD BALANCING =============== 2663.05
+LDB: =============== DONE WITH MIGRATION ================ 2663.05
+LDB: ============= START OF LOAD BALANCING ============== 2663.35
+LDB: ============== END OF LOAD BALANCING =============== 2663.35
+LDB: =============== DONE WITH MIGRATION ================ 2663.35
+LDB: ============= START OF LOAD BALANCING ============== 2675.07
+LDB: ============== END OF LOAD BALANCING =============== 2675.07
+LDB: =============== DONE WITH MIGRATION ================ 2675.07
+LDB: ============= START OF LOAD BALANCING ============== 2675.37
+LDB: ============== END OF LOAD BALANCING =============== 2675.37
+LDB: =============== DONE WITH MIGRATION ================ 2675.37
+PRESSURE: 435000 2000.11 -507.405 70.7627 -433.668 898.454 1.16004 494.603 860.76 5607.8
+GPRESSURE: 435000 2196.19 -709.153 -41.2175 -398.94 859.119 24.8206 209.189 905.232 5539.17
+PRESSAVG: 435000 1723.04 41.5932 39.1024 41.2395 1656.47 29.4692 526.262 280.177 5337.69
+GPRESSAVG: 435000 1723.04 41.5735 39.0916 40.7062 1656.41 29.382 526.092 280.309 5337.72
+ENERGY:  435000         0.0000         0.0000         0.0000         0.0000          -5808.7660       558.1356         0.0000         0.0000       944.7375          -4305.8930       299.0022     -5250.6304     -4303.1002       297.7688           2835.4520      2864.8272     21141.5399      2905.7349      2905.7222
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 435000
+LDB: ============= START OF LOAD BALANCING ============== 2687.02
+LDB: ============== END OF LOAD BALANCING =============== 2687.02
+LDB: =============== DONE WITH MIGRATION ================ 2687.02
+LDB: ============= START OF LOAD BALANCING ============== 2687.32
+LDB: ============== END OF LOAD BALANCING =============== 2687.32
+LDB: =============== DONE WITH MIGRATION ================ 2687.32
+LDB: ============= START OF LOAD BALANCING ============== 2698.96
+LDB: ============== END OF LOAD BALANCING =============== 2698.97
+LDB: =============== DONE WITH MIGRATION ================ 2698.97
+LDB: ============= START OF LOAD BALANCING ============== 2699.26
+LDB: ============== END OF LOAD BALANCING =============== 2699.26
+LDB: =============== DONE WITH MIGRATION ================ 2699.26
+PRESSURE: 440000 1727.87 -369.958 551.331 -369.67 2143.01 373.279 698.593 1073.09 5648.32
+GPRESSURE: 440000 1875.35 -204.317 352.675 -520.055 2179.02 677.205 748.741 521.26 5570.86
+PRESSAVG: 440000 1828.19 -21.6956 71.9621 -22.0087 1725.41 13.8692 384.178 611.074 5527.52
+GPRESSAVG: 440000 1828.13 -21.022 72.5929 -22.3261 1725.76 14.0141 384.085 610.78 5527.56
+ENERGY:  440000         0.0000         0.0000         0.0000         0.0000          -5792.3346       573.1931         0.0000         0.0000       933.0104          -4286.1312       295.2907     -5219.1416     -4284.3863       302.4916           3173.0645      3208.4116     21141.5399      3027.0362      3027.1500
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 440000
+LDB: ============= START OF LOAD BALANCING ============== 2710.93
+LDB: ============== END OF LOAD BALANCING =============== 2710.93
+LDB: =============== DONE WITH MIGRATION ================ 2710.93
+LDB: ============= START OF LOAD BALANCING ============== 2711.23
+LDB: ============== END OF LOAD BALANCING =============== 2711.23
+LDB: =============== DONE WITH MIGRATION ================ 2711.23
+LDB: ============= START OF LOAD BALANCING ============== 2722.86
+LDB: ============== END OF LOAD BALANCING =============== 2722.86
+LDB: =============== DONE WITH MIGRATION ================ 2722.86
+LDB: ============= START OF LOAD BALANCING ============== 2723.16
+LDB: ============== END OF LOAD BALANCING =============== 2723.16
+LDB: =============== DONE WITH MIGRATION ================ 2723.16
+LDB: ============= START OF LOAD BALANCING ============== 2734.83
+LDB: ============== END OF LOAD BALANCING =============== 2734.83
+LDB: =============== DONE WITH MIGRATION ================ 2734.83
+LDB: ============= START OF LOAD BALANCING ============== 2735.12
+LDB: ============== END OF LOAD BALANCING =============== 2735.12
+LDB: =============== DONE WITH MIGRATION ================ 2735.13
+PRESSURE: 445000 1547.32 851.812 1118.66 851.573 1172.75 -292.204 1634.78 685.807 4901.81
+GPRESSURE: 445000 1421.76 931.36 1106.29 914.642 1217.18 -33.0017 1552.91 470.469 5028.68
+PRESSAVG: 445000 1803.5 77.7444 -32.8969 84.6838 1854.83 -27.1723 482.851 579.632 5498.48
+GPRESSAVG: 445000 1803.29 77.5323 -32.7881 84.8387 1854.75 -27.0843 482.828 579.764 5498.65
+ENERGY:  445000         0.0000         0.0000         0.0000         0.0000          -5728.5779       531.2475         0.0000         0.0000       921.4319          -4275.8984       291.6262     -5197.3304     -4273.5467       299.9077           2540.6255      2555.8749     21141.5399      3052.2695      3052.2308
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 445000
+LDB: ============= START OF LOAD BALANCING ============== 2746.77
+LDB: ============== END OF LOAD BALANCING =============== 2746.77
+LDB: =============== DONE WITH MIGRATION ================ 2746.77
+LDB: ============= START OF LOAD BALANCING ============== 2747.07
+LDB: ============== END OF LOAD BALANCING =============== 2747.07
+LDB: =============== DONE WITH MIGRATION ================ 2747.07
+LDB: ============= START OF LOAD BALANCING ============== 2758.71
+LDB: ============== END OF LOAD BALANCING =============== 2758.71
+LDB: =============== DONE WITH MIGRATION ================ 2758.71
+LDB: ============= START OF LOAD BALANCING ============== 2759
+LDB: ============== END OF LOAD BALANCING =============== 2759
+LDB: =============== DONE WITH MIGRATION ================ 2759
+PRESSURE: 450000 2103.15 -104.318 363.631 -157.462 862.515 375.86 418.33 389.627 5570.09
+GPRESSURE: 450000 1939.65 -161.496 109.867 -480.698 865.35 544.813 412.977 -26.5114 5755.28
+PRESSAVG: 450000 1595.67 -37.5257 40.5511 -34.8466 1615.18 -15.4841 564.553 590.492 5246.64
+GPRESSAVG: 450000 1595.91 -37.1942 40.4355 -35.1285 1615.01 -15.3348 564.2 590.818 5246.42
+TIMING: 450000  CPU: 2757.74, 0.00610609/step  Wall: 2758.16, 0.00610653/step, 0.084813 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  450000         0.0000         0.0000         0.0000         0.0000          -5770.4496       543.1288         0.0000         0.0000       974.1046          -4253.2162       308.2967     -5227.3208     -4250.6770       302.3844           2845.2514      2853.4259     21141.5399      2819.1605      2819.1128
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 450000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 450000
+WRITING COORDINATES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2770.62
+LDB: ============== END OF LOAD BALANCING =============== 2770.62
+LDB: =============== DONE WITH MIGRATION ================ 2770.62
+LDB: ============= START OF LOAD BALANCING ============== 2770.92
+LDB: ============== END OF LOAD BALANCING =============== 2770.92
+LDB: =============== DONE WITH MIGRATION ================ 2770.92
+LDB: ============= START OF LOAD BALANCING ============== 2782.62
+LDB: ============== END OF LOAD BALANCING =============== 2782.62
+LDB: =============== DONE WITH MIGRATION ================ 2782.62
+LDB: ============= START OF LOAD BALANCING ============== 2782.92
+LDB: ============== END OF LOAD BALANCING =============== 2782.92
+LDB: =============== DONE WITH MIGRATION ================ 2782.92
+LDB: ============= START OF LOAD BALANCING ============== 2794.58
+LDB: ============== END OF LOAD BALANCING =============== 2794.58
+LDB: =============== DONE WITH MIGRATION ================ 2794.58
+LDB: ============= START OF LOAD BALANCING ============== 2794.88
+LDB: ============== END OF LOAD BALANCING =============== 2794.88
+LDB: =============== DONE WITH MIGRATION ================ 2794.88
+PRESSURE: 455000 2473.17 33.7562 -508.494 30.3793 1045.88 -12.7493 363.467 527.365 5478.8
+GPRESSURE: 455000 2457.93 455.188 -667.165 -231.444 1164.93 347.276 611.587 242.788 5439.95
+PRESSAVG: 455000 1753.67 -2.31605 8.28397 -0.748839 1738.98 5.71597 628.586 598.283 5502.2
+GPRESSAVG: 455000 1753.5 -2.85618 8.35343 -0.85943 1738.89 5.59101 628.704 598.085 5502.07
+ENERGY:  455000         0.0000         0.0000         0.0000         0.0000          -5795.5055       554.4340         0.0000         0.0000       965.1132          -4275.9583       305.4510     -5241.0714     -4273.8075       298.9967           2999.2819      3020.9365     21141.5399      2998.2808      2998.1510
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 455000
+LDB: ============= START OF LOAD BALANCING ============== 2806.51
+LDB: ============== END OF LOAD BALANCING =============== 2806.51
+LDB: =============== DONE WITH MIGRATION ================ 2806.51
+LDB: ============= START OF LOAD BALANCING ============== 2806.81
+LDB: ============== END OF LOAD BALANCING =============== 2806.81
+LDB: =============== DONE WITH MIGRATION ================ 2806.81
+LDB: ============= START OF LOAD BALANCING ============== 2818.45
+LDB: ============== END OF LOAD BALANCING =============== 2818.45
+LDB: =============== DONE WITH MIGRATION ================ 2818.45
+LDB: ============= START OF LOAD BALANCING ============== 2818.75
+LDB: ============== END OF LOAD BALANCING =============== 2818.75
+LDB: =============== DONE WITH MIGRATION ================ 2818.75
+PRESSURE: 460000 1015.65 -107.117 -305.189 -128.797 2887.6 230.947 30.9476 557.905 5601.58
+GPRESSURE: 460000 1029.22 -9.66454 -459.541 -195.849 2954.13 224.493 103.367 305.972 5660.88
+PRESSAVG: 460000 1366.12 -9.04701 -56.9159 -9.3952 1307.49 -48.9983 636.09 -82.5688 4959.78
+GPRESSAVG: 460000 1366.2 -9.24191 -56.8803 -9.27612 1307.45 -49.0453 636.261 -82.6188 4959.69
+ENERGY:  460000         0.0000         0.0000         0.0000         0.0000          -5789.8495       593.7667         0.0000         0.0000       963.4600          -4232.6228       304.9277     -5196.0827     -4231.1068       302.0504           3168.2781      3214.7415     21141.5399      2544.4654      2544.4457
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 460000
+LDB: ============= START OF LOAD BALANCING ============== 2830.42
+LDB: ============== END OF LOAD BALANCING =============== 2830.42
+LDB: =============== DONE WITH MIGRATION ================ 2830.42
+LDB: ============= START OF LOAD BALANCING ============== 2830.72
+LDB: ============== END OF LOAD BALANCING =============== 2830.72
+LDB: =============== DONE WITH MIGRATION ================ 2830.72
+LDB: ============= START OF LOAD BALANCING ============== 2842.35
+LDB: ============== END OF LOAD BALANCING =============== 2842.35
+LDB: =============== DONE WITH MIGRATION ================ 2842.35
+LDB: ============= START OF LOAD BALANCING ============== 2842.66
+LDB: ============== END OF LOAD BALANCING =============== 2842.66
+LDB: =============== DONE WITH MIGRATION ================ 2842.66
+LDB: ============= START OF LOAD BALANCING ============== 2854.34
+LDB: ============== END OF LOAD BALANCING =============== 2854.34
+LDB: =============== DONE WITH MIGRATION ================ 2854.34
+LDB: ============= START OF LOAD BALANCING ============== 2854.64
+LDB: ============== END OF LOAD BALANCING =============== 2854.64
+LDB: =============== DONE WITH MIGRATION ================ 2854.64
+PRESSURE: 465000 518.369 49.9433 712.325 42.8309 1161.1 230.009 896.972 170.186 4261.37
+GPRESSURE: 465000 706.226 439.523 576.298 -380.115 1091.21 149.751 1191.07 384.614 4230.9
+PRESSAVG: 465000 1438.97 18.0928 27.5591 13.2212 1508.9 17.2949 412.234 133.992 4865.53
+GPRESSAVG: 465000 1439.15 18.0837 27.3969 12.8512 1508.97 17.1066 412.487 134.261 4865.48
+ENERGY:  465000         0.0000         0.0000         0.0000         0.0000          -5732.7735       493.0197         0.0000         0.0000       933.4351          -4306.3186       295.4251     -5239.7537     -4304.3351       300.9196           1980.2802      2009.4448     21141.5399      2604.4670      2604.5313
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 465000
+LDB: ============= START OF LOAD BALANCING ============== 2866.27
+LDB: ============== END OF LOAD BALANCING =============== 2866.27
+LDB: =============== DONE WITH MIGRATION ================ 2866.27
+LDB: ============= START OF LOAD BALANCING ============== 2866.57
+LDB: ============== END OF LOAD BALANCING =============== 2866.57
+LDB: =============== DONE WITH MIGRATION ================ 2866.57
+LDB: ============= START OF LOAD BALANCING ============== 2878.17
+LDB: ============== END OF LOAD BALANCING =============== 2878.17
+LDB: =============== DONE WITH MIGRATION ================ 2878.17
+LDB: ============= START OF LOAD BALANCING ============== 2878.47
+LDB: ============== END OF LOAD BALANCING =============== 2878.47
+LDB: =============== DONE WITH MIGRATION ================ 2878.47
+PRESSURE: 470000 2480.58 -519.361 37.0763 -506.48 2502.03 -585.399 301.068 -1073.09 6558.19
+GPRESSURE: 470000 2310.05 -505.351 351.017 -149.303 2629.76 -611.894 386.011 -888.913 6627.48
+PRESSAVG: 470000 1672.88 -28.069 14.7229 -21.919 1810.54 39.6117 434.824 116.325 5898.66
+GPRESSAVG: 470000 1672.44 -28.1112 14.415 -21.6372 1810.41 39.8352 435.11 116.447 5898.89
+ENERGY:  470000         0.0000         0.0000         0.0000         0.0000          -5882.8457       605.0993         0.0000         0.0000       952.2946          -4325.4518       301.3940     -5277.7464     -4323.2253       295.6291           3846.9341      3855.7619     21141.5399      3127.3595      3127.2474
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 470000
+LDB: ============= START OF LOAD BALANCING ============== 2890.1
+LDB: ============== END OF LOAD BALANCING =============== 2890.1
+LDB: =============== DONE WITH MIGRATION ================ 2890.1
+LDB: ============= START OF LOAD BALANCING ============== 2890.4
+LDB: ============== END OF LOAD BALANCING =============== 2890.4
+LDB: =============== DONE WITH MIGRATION ================ 2890.4
+LDB: ============= START OF LOAD BALANCING ============== 2902.01
+LDB: ============== END OF LOAD BALANCING =============== 2902.01
+LDB: =============== DONE WITH MIGRATION ================ 2902.01
+LDB: ============= START OF LOAD BALANCING ============== 2902.31
+LDB: ============== END OF LOAD BALANCING =============== 2902.31
+LDB: =============== DONE WITH MIGRATION ================ 2902.31
+LDB: ============= START OF LOAD BALANCING ============== 2914.02
+LDB: ============== END OF LOAD BALANCING =============== 2914.02
+LDB: =============== DONE WITH MIGRATION ================ 2914.02
+LDB: ============= START OF LOAD BALANCING ============== 2914.31
+LDB: ============== END OF LOAD BALANCING =============== 2914.31
+LDB: =============== DONE WITH MIGRATION ================ 2914.32
+PRESSURE: 475000 1681.01 -216.988 -576.572 -208.639 2267.52 -240.716 204.242 -644.51 6541.68
+GPRESSURE: 475000 1695.83 -257.505 -394.087 -116.608 2250.9 -651.709 378.06 -555.861 6641.57
+PRESSAVG: 475000 2090.1 -24.2413 4.8984 -25.65 2067.45 -5.09481 349.498 -257.664 6314.87
+GPRESSAVG: 475000 2090.13 -23.9586 5.51898 -25.7738 2067.52 -5.14927 349.399 -257.48 6314.99
+ENERGY:  475000         0.0000         0.0000         0.0000         0.0000          -5872.1718       600.1818         0.0000         0.0000       930.6970          -4341.2930       294.5585     -5271.9900     -4339.7598       300.2953           3496.7365      3529.4347     21141.5399      3490.8074      3490.8818
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 475000
+LDB: ============= START OF LOAD BALANCING ============== 2925.97
+LDB: ============== END OF LOAD BALANCING =============== 2925.97
+LDB: =============== DONE WITH MIGRATION ================ 2925.97
+LDB: ============= START OF LOAD BALANCING ============== 2926.27
+LDB: ============== END OF LOAD BALANCING =============== 2926.27
+LDB: =============== DONE WITH MIGRATION ================ 2926.27
+LDB: ============= START OF LOAD BALANCING ============== 2937.92
+LDB: ============== END OF LOAD BALANCING =============== 2937.92
+LDB: =============== DONE WITH MIGRATION ================ 2937.92
+LDB: ============= START OF LOAD BALANCING ============== 2938.22
+LDB: ============== END OF LOAD BALANCING =============== 2938.22
+LDB: =============== DONE WITH MIGRATION ================ 2938.22
+PRESSURE: 480000 1221.84 -305.163 315.09 -297.056 1149.21 -230.673 829.133 36.7037 6066.74
+GPRESSURE: 480000 1299.09 -469.629 40.4542 -395.971 1171.1 19.6524 742.47 17.9858 6074.98
+PRESSAVG: 480000 1631.68 17.2257 26.5718 28.7759 1697.19 -57.686 345.957 48.5522 5846.17
+GPRESSAVG: 480000 1631.39 17.1805 26.7314 28.8459 1697 -58.1219 346.084 48.4153 5845.83
+ENERGY:  480000         0.0000         0.0000         0.0000         0.0000          -5842.5188       535.3439         0.0000         0.0000       931.6269          -4375.5481       294.8528     -5307.1749     -4374.1421       291.3714           2812.5981      2848.3891     21141.5399      3058.3465      3058.0753
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 480000
+LDB: ============= START OF LOAD BALANCING ============== 2949.84
+LDB: ============== END OF LOAD BALANCING =============== 2949.84
+LDB: =============== DONE WITH MIGRATION ================ 2949.84
+LDB: ============= START OF LOAD BALANCING ============== 2950.14
+LDB: ============== END OF LOAD BALANCING =============== 2950.14
+LDB: =============== DONE WITH MIGRATION ================ 2950.14
+LDB: ============= START OF LOAD BALANCING ============== 2961.77
+LDB: ============== END OF LOAD BALANCING =============== 2961.77
+LDB: =============== DONE WITH MIGRATION ================ 2961.77
+LDB: ============= START OF LOAD BALANCING ============== 2962.06
+LDB: ============== END OF LOAD BALANCING =============== 2962.06
+LDB: =============== DONE WITH MIGRATION ================ 2962.06
+LDB: ============= START OF LOAD BALANCING ============== 2973.7
+LDB: ============== END OF LOAD BALANCING =============== 2973.7
+LDB: =============== DONE WITH MIGRATION ================ 2973.7
+LDB: ============= START OF LOAD BALANCING ============== 2974
+LDB: ============== END OF LOAD BALANCING =============== 2974
+LDB: =============== DONE WITH MIGRATION ================ 2974
+PRESSURE: 485000 1706.98 14.785 -12.0707 9.17868 1887.95 233.733 13.4396 272.303 5940.5
+GPRESSURE: 485000 1834.94 -87.7926 77.4943 -111.777 1826.33 17.6827 -68.9982 331.078 5930.39
+PRESSAVG: 485000 2118.72 39.1455 47.4987 45.9152 2070.32 58.5149 419.78 381.668 6661.45
+GPRESSAVG: 485000 2118.41 39.1531 47.099 45.7842 2070.29 58.8335 419.914 381.408 6661.41
+ENERGY:  485000         0.0000         0.0000         0.0000         0.0000          -5876.8464       569.7590         0.0000         0.0000       996.6316          -4310.4558       315.4263     -5307.0874     -4309.0018       297.2417           3178.4742      3197.2197     21141.5399      3616.8282      3616.7034
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 485000
+LDB: ============= START OF LOAD BALANCING ============== 2985.61
+LDB: ============== END OF LOAD BALANCING =============== 2985.61
+LDB: =============== DONE WITH MIGRATION ================ 2985.61
+LDB: ============= START OF LOAD BALANCING ============== 2985.9
+LDB: ============== END OF LOAD BALANCING =============== 2985.9
+LDB: =============== DONE WITH MIGRATION ================ 2985.9
+LDB: ============= START OF LOAD BALANCING ============== 2997.51
+LDB: ============== END OF LOAD BALANCING =============== 2997.51
+LDB: =============== DONE WITH MIGRATION ================ 2997.51
+LDB: ============= START OF LOAD BALANCING ============== 2997.81
+LDB: ============== END OF LOAD BALANCING =============== 2997.81
+LDB: =============== DONE WITH MIGRATION ================ 2997.81
+PRESSURE: 490000 2388.82 659.734 -559.897 714.417 2152.38 -435.033 -708.556 134.212 5850.81
+GPRESSURE: 490000 2453.87 696.014 -505.014 462.236 2248.03 -912.993 -533.55 318.351 5745.71
+PRESSAVG: 490000 2051.98 -9.23642 -14.1129 -12.7758 2082.63 -1.36547 112.048 319.92 6112.18
+GPRESSAVG: 490000 2051.92 -9.35624 -13.7705 -12.6999 2082.76 -1.11371 111.74 319.87 6112.7
+ENERGY:  490000         0.0000         0.0000         0.0000         0.0000          -5850.3063       595.7573         0.0000         0.0000       952.1075          -4302.4415       301.3348     -5254.5490     -4300.3609       299.2652           3464.0053      3482.5388     21141.5399      3415.5949      3415.7917
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 490000
+LDB: ============= START OF LOAD BALANCING ============== 3009.39
+LDB: ============== END OF LOAD BALANCING =============== 3009.39
+LDB: =============== DONE WITH MIGRATION ================ 3009.39
+LDB: ============= START OF LOAD BALANCING ============== 3009.69
+LDB: ============== END OF LOAD BALANCING =============== 3009.69
+LDB: =============== DONE WITH MIGRATION ================ 3009.69
+LDB: ============= START OF LOAD BALANCING ============== 3021.29
+LDB: ============== END OF LOAD BALANCING =============== 3021.29
+LDB: =============== DONE WITH MIGRATION ================ 3021.29
+LDB: ============= START OF LOAD BALANCING ============== 3021.58
+LDB: ============== END OF LOAD BALANCING =============== 3021.58
+LDB: =============== DONE WITH MIGRATION ================ 3021.58
+LDB: ============= START OF LOAD BALANCING ============== 3033.21
+LDB: ============== END OF LOAD BALANCING =============== 3033.21
+LDB: =============== DONE WITH MIGRATION ================ 3033.21
+LDB: ============= START OF LOAD BALANCING ============== 3033.51
+LDB: ============== END OF LOAD BALANCING =============== 3033.51
+LDB: =============== DONE WITH MIGRATION ================ 3033.51
+PRESSURE: 495000 1685.93 352.172 -639.313 342.081 2260.41 -16.2709 -359.261 704.012 5085.29
+GPRESSURE: 495000 1915.21 203.67 -298.881 167.118 2124.43 -184.047 -603.824 1050.87 5041.42
+PRESSAVG: 495000 1513.79 35.0097 -23.3348 44.8758 1640.07 -15.3237 123.16 579.134 5402.9
+GPRESSAVG: 495000 1513.78 34.769 -23.3493 45.0743 1639.99 -15.5318 123.186 579.449 5402.89
+ENERGY:  495000         0.0000         0.0000         0.0000         0.0000          -5919.4098       595.1286         0.0000         0.0000       960.4638          -4363.8174       303.9795     -5324.2812     -4361.4089       296.4364           3010.5414      3027.0200     21141.5399      2852.2520      2852.2178
+
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 495000
+LDB: ============= START OF LOAD BALANCING ============== 3045.09
+LDB: ============== END OF LOAD BALANCING =============== 3045.09
+LDB: =============== DONE WITH MIGRATION ================ 3045.09
+LDB: ============= START OF LOAD BALANCING ============== 3045.39
+LDB: ============== END OF LOAD BALANCING =============== 3045.39
+LDB: =============== DONE WITH MIGRATION ================ 3045.39
+LDB: ============= START OF LOAD BALANCING ============== 3056.98
+LDB: ============== END OF LOAD BALANCING =============== 3056.98
+LDB: =============== DONE WITH MIGRATION ================ 3056.98
+LDB: ============= START OF LOAD BALANCING ============== 3057.28
+LDB: ============== END OF LOAD BALANCING =============== 3057.28
+LDB: =============== DONE WITH MIGRATION ================ 3057.28
+PRESSURE: 500000 2056.51 -490.519 -397.227 -457.91 1175.1 126.738 265.712 1126.37 5742.63
+GPRESSURE: 500000 2103.68 -631.518 -417.729 -735.12 1257.71 561.609 313.905 946.896 5677.78
+PRESSAVG: 500000 1607.79 -5.30586 9.42494 -1.32963 1543.09 17.1385 285.802 578.46 5237.21
+GPRESSAVG: 500000 1607.5 -4.69627 9.21857 -1.33607 1543.41 17.1736 285.788 577.941 5237.3
+TIMING: 500000  CPU: 3055.99, 0.00596501/step  Wall: 3056.41, 0.00596508/step, 0 hours remaining, 311.101562 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  500000         0.0000         0.0000         0.0000         0.0000          -5796.8548       566.0368         0.0000         0.0000       939.5026          -4291.3154       297.3454     -5230.8180     -4289.3185       297.8975           2991.4163      3013.0571     21141.5399      2796.0288      2796.0679
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500000
+WRITING COORDINATES TO DCD FILE MD.dcd AT STEP 500000
+WRITING COORDINATES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART VELOCITIES
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 500000
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 500000
+CLOSING COORDINATE DCD FILE MD.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 500000
+====================================================
+
+WallClock: 3067.986572  CPUTime: 3067.564941  Memory: 311.359375 MB
+[Partition 0][Node 0] End of program
