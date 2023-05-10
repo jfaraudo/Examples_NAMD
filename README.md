@@ -1,6 +1,9 @@
 # Examples_NAMD
 examples for NAMD simulations
 
+MD_nanoparticle:
+Files corresponding to a simple model of a 2 nm nanoparticle (atoms modelled as LJ potentials with parameters corresponding to gold)
+
 protein:
 Files corresponding to an example simulation of the human ubiquitin protein (PDB code: 1UBQ) generated from experimental data
 
