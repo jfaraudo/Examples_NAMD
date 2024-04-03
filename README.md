@@ -1,5 +1,5 @@
 # Examples_NAMD
-examples for NAMD simulations
+Examples of NAMD simulations
 
 MD_nanoparticle:
 Files corresponding to a simple model of a 2 nm nanoparticle (atoms modelled as LJ potentials with parameters corresponding to gold)
