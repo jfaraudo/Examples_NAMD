@@ -1,18 +1,18 @@
-## Examples_NAMD
+# Examples_NAMD
 Examples of NAMD simulations
 
-# MD_nanoparticle:
+## MD_nanoparticle:
 
 Files corresponding to a simple model of a 2 nm nanoparticle (atoms modelled as LJ potentials with parameters corresponding to gold)
 
-# protein:
+## protein:
 
 Files corresponding to an example simulation of the human ubiquitin protein (PDB code: 1UBQ) generated from experimental data
 
-# nanotube:
+## nanotube:
 Files corresponding to the simulation of water flow across a carbon nanotube
 
-# membrane:
+## membrane:
 A bilayer membrane made with DPPC phospholipid hydrated with TIP3P water
 
 
