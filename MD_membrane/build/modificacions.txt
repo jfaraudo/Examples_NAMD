@@ -1,0 +1,48 @@
+loading history file ... 48 events added
+Main console display active (Tcl8.5.6 / Tk8.5.6)
+(build) 49 % set seleccio [atomselect top "all"]
+atomselect162
+>Main< (build) 50 % set seleccio [atomselect top "resname DPPC"]
+atomselect163
+>Main< (build) 51 % $seleccio segname L
+atomselection: improper method: segname
+usage: <atomselection> <command> [args...]
+
+Commands for manipulating atomselection metadata:
+  frame [new frame value]      -- get/set frame
+  molid|molindex               -- get selection's molecule id
+  text                         -- get selection's text
+  delete                       -- delete atomselection (to free memory)
+  global                       -- move atomselection to global scope
+  update                       -- recalculate selection
+
+Commands for getting/setting attributes:
+  num                          -- number of atoms
+  list                         -- get atom indices
+  get <list of attributes>     -- for attributes use 'atomselect keywords'
+  set <list of attributes> <nested list of values>
+  getbonds                     -- get list of bonded atoms
+  setbonds <bondlists>
+  getbondorders                -- get list of bond orders
+  setbondorders <bondlists>
+  getbondtypes                 -- get list of bond types
+  setbondtypes  <bondlists>
+  moveto|moveby <3 vector>     -- change atomic coordinates
+  lmoveto|lmoveby <x> <y> <z>
+  move <4x4 transforamtion matrix>
+
+Commands for writing to a file:
+  writepdb <filename>          -- write sel to PDB file
+  writeXXX <filename>          -- write sel to XXX file (if XXX is a known format)
+
+>Main< (build) 52 % $seleccio set segname L
+>Main< (build) 53 % $seleccio set chain L
+>Main< (build) 54 % set seleccio [atomselect top "resname TIP3"]
+atomselect164
+>Main< (build) 55 % $seleccio set chain WT
+>Main< (build) 56 % $seleccio set segname WT1
+>Main< (build) 57 % set seleccio [atomselect top "all"]
+atomselect165
+>Main< (build) 58 % $seleccio writepdb initial_coordinates.pdb
+>Main< (build) 59 % $seleccio writepsf dppc_water.psf
+>Main< (build) 60 % 
