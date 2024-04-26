@@ -9,10 +9,10 @@ Files corresponding to a simple model of a 2 nm nanoparticle (atoms modelled as 
 - protein:
 Files corresponding to an example simulation of the human ubiquitin protein (PDB code: 1UBQ) generated from experimental data
 
--nanotube:
+- nanotube:
 Files corresponding to the simulation of water flow across a carbon nanotube
 
--membrane:
+- membrane:
 A bilayer membrane made with DPPC phospholipid hydrated with TIP3P water
 
 ## Useful links
