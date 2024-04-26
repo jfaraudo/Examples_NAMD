@@ -1,5 +1,12 @@
 # Examples_NAMD
-Examples of NAMD simulations
+The different folders contain examples of NAMD simulations.
+
+For an overview about preparing NAMD simulations and document describing how to execute NAMD:
+https://saco.csic.es/index.php/s/iyZYfPgqJEgFR2T
+
+For an overview about analyzing results from MD simulations
+[https://saco.csic.es/index.php/s/kps5jW3S3f3o7tr](https://saco.csic.es/index.php/s/yaZBGnDpaPERYsp)
+
 
 ## MD_nanoparticle:
 
@@ -15,12 +22,5 @@ Files corresponding to the simulation of water flow across a carbon nanotube
 ## membrane:
 A bilayer membrane made with DPPC phospholipid hydrated with TIP3P water
 
-
-
-Overview about preparing NAMD simulations and document describing how to execute NAMD:
-https://saco.csic.es/index.php/s/iyZYfPgqJEgFR2T
-
-Overview about analyzing results from MD simulations
-[https://saco.csic.es/index.php/s/kps5jW3S3f3o7tr](https://saco.csic.es/index.php/s/yaZBGnDpaPERYsp)
 
 
