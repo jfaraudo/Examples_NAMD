@@ -1,4 +1,4 @@
-Files corresponding to two example simulations: 10 ns run and 100 ns run
+Files corresponding to two simulations: an equilibration (1 ns run) and a continuation fomr the equilibration (100 ns run)
 
 
 
