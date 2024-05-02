@@ -1,7 +1,10 @@
 import MDAnalysis as mda
 
+#List of dcd files
+dcd_files = ['../equilibration/MDequil.dcd','../MD_100ns_v2/MD.dcd']
+
 #load simulaiton files
-simulacio = mda.Universe('input/system.psf','MD_100ns/MD.dcd')
+simulacio = mda.Universe('../input/system.psf',dcd_files)
 
 #select protein
 proteina = simulacio.select_atoms("protein")

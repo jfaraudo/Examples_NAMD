@@ -1,7 +1,7 @@
 import MDAnalysis as mda
 
 #load simulaiton files
-simulacio = mda.Universe('input/system.psf','MD_100ns/MD.dcd')
+simulacio = mda.Universe('../input/system.psf','../MD_100ns_v2/MD.dcd')
 
 #select protein
 proteina = simulacio.select_atoms("protein")

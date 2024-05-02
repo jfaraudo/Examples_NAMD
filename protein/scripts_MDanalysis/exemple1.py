@@ -1,5 +1,5 @@
 import MDAnalysis as mda
-simulacio = mda.Universe('input/system.psf','MD_100ns/MD.dcd')
+simulacio = mda.Universe('../input/system.psf','../MD_100ns_v2/MD.dcd')
 for ts in simulacio.trajectory:
     temps_actual = ts.time
     frame_actual = ts.frame
