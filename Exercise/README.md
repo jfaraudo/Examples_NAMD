@@ -1,5 +1,5 @@
 # Simulation of Water in Carbon nanotubes
-Exercise described in the *instructions* pdf document, based on the official NAMD tutorial [Simulation of Water Permeation through Nanotubes](https://www.ks.uiuc.edu/Training/Tutorials/#nanotubes).
+Exercise described in the *instructions* pdf document, based on the official NAMD tutorial [Simulation of Water Permeation through Nanotubes](https://www.ks.uiuc.edu/Training/Tutorials/#nanotubes). This exercise uses python (MDAnalysis) instead of the tcl scripts employed in the original tutorial.
 
 Here we provide:
 
