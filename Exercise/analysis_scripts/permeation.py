@@ -77,7 +77,7 @@ with open(output_file, "w") as f:
             labels[i] = new_label
 
         # accumulate data to plot
-        time.append(ts.frame)
+        time.append(ts.time)
         permeation_pos.append(num1)
         permeation_neg.append(num2)
         # Save data to file

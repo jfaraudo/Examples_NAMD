@@ -37,7 +37,7 @@ with open(output_file, "w") as f:
             if old != new and old + new != 0:
                 total += new - old
         old_status = new_status.copy()
-        time.append(ts.frame)
+        time.append(ts.time)
         instantflow.append(total/2.0)
         f.write(f"{ts.frame} {total/2.0}\n")
 
