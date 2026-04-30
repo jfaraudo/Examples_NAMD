@@ -101,3 +101,12 @@ plt.ylabel('Number of Water molecules')
 plt.title('Permeation of Water molecules')
 plt.legend()
 plt.show()
+
+#plot overall permeation (one direction minos opposite direction)
+overall= [permeation_pos - permeation_neg for permeation_pos, permeation_neg in zip(permeation_pos, permeation_neg)]
+plt.plot(time, overall, label='Overall permeation')
+plt.xlabel('Time (ps)')
+plt.ylabel('Number of Water molecules')
+plt.title('Permeation of Water molecules')
+plt.legend()
+plt.show()
