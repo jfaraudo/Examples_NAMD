@@ -34,5 +34,5 @@ for ts in simulacio.trajectory:
     #print data
     print(f"Frame: {frame_actual:4d},Time {temps_actual:4.0f} ps, N= {numW:4.0f}, F= {forcetot:4.0f} pN, dp= {presdif:4.0f} atm")
     #save data
-    fitxer.write(f'{temps_actual} {numW} {forcetot} {presdif}\n') #save number of monomers
+    fitxer.write(f'{temps_actual} {numW} {forcetot} {presdif}\n') 
 
