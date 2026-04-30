@@ -3,6 +3,7 @@
 
 import MDAnalysis as mda
 import numpy as np
+import matplotlib.pyplot as plt
 
 # --- region of crossing ---
 upper_end = 6.754
@@ -13,11 +14,11 @@ skip_frame = 0
 output_file = "permeation.dat"
 
 # Load your trajectory (replace with your own files)
-u = mda.Universe("your_structure_file.psf", "your_trajectory_file.dcd")
+u = mda.Universe('../input/system.psf','MDequil.dcd')
 wat = u.select_atoms("name OH2")
 
-seg_list = wat.segments.segids
-resids = wat.resids
+seg_list = wat.segids  # Per-atom segid
+resids = wat.resids    # Per-atom resid
 num_atoms = len(wat)
 labels = np.zeros(num_atoms, dtype=int)
 
@@ -40,6 +41,10 @@ num2 = 0  # -z direction count
 # will be determined by its old label.
 
 print("Computing permeation events... (please wait)")
+
+time=[]
+permeation_pos=[]
+permeation_neg=[]
 
 with open(output_file, "w") as f:
     f.write("# frame +z -z \n")
@@ -71,6 +76,10 @@ with open(output_file, "w") as f:
 
             labels[i] = new_label
 
+        # accumulate data to plot
+        time.append(ts.frame)
+        permeation_pos.append(num1)
+        permeation_neg.append(num2)
         # Save data to file
         f.write(f"{round(ts.time)} {num1} {num2}\n")
 
@@ -83,3 +92,12 @@ else:
     print(f"The specified first frame ({skip_frame}) is larger than the total number of frames.")
 
 print("Time evolution saved in a .dat file")
+
+#Plot
+plt.plot(time, permeation_pos, label='Permeation z>0')
+plt.plot(time, permeation_neg, label='Permeation z<0')
+plt.xlabel('Time (ps)')
+plt.ylabel('Number of Water molecules')
+plt.title('Permeation of Water molecules')
+plt.legend()
+plt.show()
